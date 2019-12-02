@@ -26,7 +26,6 @@ excellence](https://less.works/img/technical-excellence/xtechnical-excellence-ov
 
 ```
 Организационная Гибкость ограничена Технической Гибкостью
-
 (Organizational Agility is constrained by Technical Agility)
 ```
 
