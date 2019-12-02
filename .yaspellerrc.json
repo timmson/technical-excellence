@@ -15,6 +15,7 @@
   "dictionary": [
     "Doxygen",
     "Feathers.*",
-    "Fowler.*"
+    "Fowler.*",
+    "рефакторинг.*"
   ]
 }
