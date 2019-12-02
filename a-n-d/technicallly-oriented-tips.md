@@ -1,6 +1,8 @@
 # Технические рекомендации / Technically Oriented Tips
 
-Источник: [https://less.works/less/technical-excellence/architecture-design.html#TechnicallyOrientedTips]
+| Источник | Статус |
+| - | - |
+| [Сcылка](https://less.works/less/technical-excellence/architecture-design.html#TechnicallyOrientedTips) | В работе |
 
 За то время, что мы работали с крупными продуктами, обычно это были встраиваемые системы (embedded systems), мы составили список общих рекомендаций,
 которые могли бы уменьшить часть боли и страданий, которые мы видим и испытываем наши клиенты. В этом разделе перечислены
