@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "npx yaspeller -c .yaspellerrc.json . && npx eclint check ."
+    "test": "npx yaspeller l ru,en -c .yaspellerrc.json . && npx eclint check ."
   },
   "repository": {
     "type": "git",
