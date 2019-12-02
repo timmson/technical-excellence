@@ -5,7 +5,7 @@
 | [Ссылка](https://less.works/less/technical-excellence/architecture-design.html) | *В работе* |
 
 ## Содержание
-- Thinking About Design
+- [Забота о проектировании / Thinking About Design](thinking-about-design.md)
 - Behavior-Oriented Tips
 - [Технические рекомендации / Technically Oriented Tips](technicallly-oriented-tips.md)
 - Conclusion
