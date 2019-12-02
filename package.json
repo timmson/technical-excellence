@@ -1,0 +1,24 @@
+{
+  "name": "technical-excellence",
+  "version": "1.0.0",
+  "description": "Project of translation Technical Excellence section of LeSS.works to Russian",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "npx yaspeller -c .yaspellerrc.json . && npx eclint check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timmson/technical-excellence.git"
+  },
+  "author": "Krotov Artem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timmson/technical-excellence/issues"
+  },
+  "homepage": "https://github.com/timmson/technical-excellence#readme",
+  "dependencies": {
+    "eclint": "2.8.1",
+    "yaspeller": "6.0.2"
+  }
+}

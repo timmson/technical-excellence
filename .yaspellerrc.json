@@ -1,0 +1,16 @@
+{
+  "lang": "ru",
+  "fileExtensions": [
+    ".md"
+  ],
+  "excludeFiles": [
+    ".git",
+    ".editorconfig",
+    "node_modules"
+  ],
+  "ignoreUppercase": true,
+  "ignoreUrls": true,
+  "ignoreCapitalization": true,
+  "ignoreText": [],
+  "dictionary": []
+}
