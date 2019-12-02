@@ -16,6 +16,7 @@
     "Doxygen",
     "Feathers.*",
     "Fowler.*",
+    "md",
     "рефакторинг.*"
   ]
 }
