@@ -12,5 +12,9 @@
   "ignoreUrls": true,
   "ignoreCapitalization": true,
   "ignoreText": [],
-  "dictionary": []
+  "dictionary": [
+    "Doxygen",
+    "Feathers.*",
+    "Fowler.*"
+  ]
 }
