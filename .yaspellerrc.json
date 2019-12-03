@@ -13,12 +13,16 @@
   "ignoreCapitalization": true,
   "ignoreText": [],
   "dictionary": [
+    "Booch.*",
     "Doxygen",
     "Feathers.*",
     "Fowler.*",
+    "VxWorks",
     "md",
     "билд.*",
+    "Грэди",
     "Ларман.*",
+    "многосайтов.*",
     "рефакторинг.*"
   ]
 }
