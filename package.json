@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "npx yaspeller -l ru,en -c .yaspellerrc.json . && npx markdownlint **/*.md --ignore node_modules"
+    "test": "npx yaspeller -l ru,en . && npx markdownlint **/*.md --ignore node_modules"
   },
   "repository": {
     "type": "git",
