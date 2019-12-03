@@ -2,7 +2,7 @@
 
 | Источник | Статус |
 | - | - |
-| [Ссылка](https://less.works/less/technical-excellence/architecture-design.html#TechnicallyOrientedTips) | *В работе* |
+| [Ссылка](https://less.works/less/technical-excellence/architecture-design.html#TechnicallyOrientedTips) | *Проверяется* |
 
 За то время, что мы работали с крупными продуктами, обычно это были встраиваемые системы (embedded systems), мы составили
 список общих рекомендаций, которые могли бы уменьшить часть боли и страданий, которые на наших глазах испытывают наши
