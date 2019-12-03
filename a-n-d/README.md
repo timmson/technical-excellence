@@ -9,7 +9,7 @@
 - Behavior-Oriented Tips
 - [Технические рекомендации / Technically Oriented Tips](technicallly-oriented-tips.md)
 - Conclusion
-- Recommended Readings
+- [Что почитать / Recommended Readings](recommended-readings.md)
 - Notes
 
 > Существует 10 типа людей: кто понимает двоичный формат и кто нет.
