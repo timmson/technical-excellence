@@ -13,7 +13,7 @@ excellence](https://less.works/img/technical-excellence/xtechnical-excellence-ov
 - Continuous Integration
 - Continuous Delivery
 - Clean Code
-- [Архитектура и Проектирование / Architecture & Design](a-n-d)
+- [Архитектура и Проектирование / Architecture & Design](architecture-and-design.md)
 - Unit Testing
 - Test-Driven Development
 - Thinking About Testing
