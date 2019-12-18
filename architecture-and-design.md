@@ -157,7 +157,7 @@
 ниже. Обратите внимание на несколько положительных петель обратной связи, которые могут усиливать ухудшение или улучшение со
 временем.
 
-![dynamics_related_to_architecting_metaphoor.png](https://less.works/img/design_&_architecture/xdynamics_related_to_architecting_metaphoor.png.pagespeed.ic.Xuf0bZleqa.webp)
+[![dynamics_related_to_architecting_metaphoor.png](img/ru_dynamics_related_to_architecting_metaphoor.png)](https://less.works/img/design_&_architecture/xdynamics_related_to_architecting_metaphoor.png.pagespeed.ic.Xuf0bZleqa.webp)
 
 CLD иллюстрирует метафору "архитектура"
 ___
