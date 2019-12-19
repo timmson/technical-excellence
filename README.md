@@ -4,13 +4,13 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 Это проект предназначен для перевода на русский язык материалов раздела.
 "[Technical Excellence](https://less.works/less/technical-excellence/index.html)" сайта [LeSS.works](https://less.works)
 
-Как помочь проекту, можно почитать в [CONTRIBUTE.md](CONTRIBUTE.md)
+Как помочь проекту, можно прочитать в [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ![less_technical_
 excellence](https://less.works/img/technical-excellence/xtechnical-excellence-overview.png.pagespeed.ic.SpWvIkJ3jo.webp)
 
 ## Содержание
-- Continuous Integration
+- [Непрерывная интеграция / Continuous Integration](continuous-integration.md)
 - Continuous Delivery
 - Clean Code
 - [Архитектура и Проектирование / Architecture & Design](architecture-and-design.md)
