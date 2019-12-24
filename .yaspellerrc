@@ -5,8 +5,9 @@
   ],
   "excludeFiles": [
     ".git",
-    ".editorconfig",
-    "node_modules"
+    ".markdownlintrc",
+    "node_modules",
+    "original"
   ],
   "ignoreUppercase": true,
   "ignoreUrls": true,
