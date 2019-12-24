@@ -14,6 +14,7 @@
   "ignoreCapitalization": true,
   "ignoreText": [],
   "dictionary": [
+    "architecting",
     "Beck99.*",
     "Booch.*",
     "Cockburn.*",
