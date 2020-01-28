@@ -10,7 +10,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 excellence](https://less.works/img/technical-excellence/xtechnical-excellence-overview.png.pagespeed.ic.SpWvIkJ3jo.webp)
 
 ## Содержание
-- [Непрерывная интеграция / Continuous Integration](continuous-integration.md)
+- [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
 - Continuous Delivery
 - Clean Code
 - [Архитектура и Проектирование / Architecture & Design](architecture-and-design.ru.md)
