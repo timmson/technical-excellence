@@ -21,6 +21,7 @@
     "Booch.*",
     "CanonPrinterMotor",
     "ci",
+     "ClearCase",
     "Cockburn.*",
     "diff.*",
     "endhighlight",
