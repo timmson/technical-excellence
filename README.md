@@ -10,11 +10,11 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 excellence](https://less.works/img/technical-excellence/xtechnical-excellence-overview.png.pagespeed.ic.SpWvIkJ3jo.webp)
 
 ## Содержание
+- [Архитектура и Проектирование / Architecture & Design](architecture-design.ru.md)
+- [Модульное тестирование](unit-testing.ru.md)
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
 - Continuous Delivery
 - Clean Code
-- [Архитектура и Проектирование / Architecture & Design](architecture-and-design.ru.md)
-- Unit Testing
 - Test-Driven Development
 - Thinking About Testing
 - Test Automation

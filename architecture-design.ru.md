@@ -83,7 +83,7 @@ order: 30
 течением времени. Почему? Динамика такой системы показана на причинно-следственная диаграмме (casual-loop diagram, [CLD](https://en.wikipedia.org/wiki/Causal_loop_diagram)) ниже. Обратите внимание на несколько положительных петель обратной связи, которые могут усиливать деградацию или улучшение со временем.
 
 <figure>
-  <img src="/img/design_&_architecture/dynamics_related_to_architecting_metaphoor.ru.png" alt="dynamics_related_to_architecting_metaphoor.ru.png">
+  <img src="/img/design_&_architecture/dynamics_related_to_architecting_metaphoor-ru.png" alt="dynamics related to architecting metaphoor">
   <figcaption>диаграмма причинно-следственных связей с некоторой динамикой, относящейся к метафоре ‘архитектуры’.</figcaption>
 </figure>
 
@@ -554,7 +554,7 @@ class LaserPrinter {
 
 ### Упрощайте координацию процессом изменения интерфейсов путём создания фиче-команд
 
-[Фиче-команда](..structure/feature-teams.html) является межкомпонентной и изменяет весь код *во всех компонентах*, необходимых для выполнения ориентированной на клиента функции. Это уменьшает проблемы координации, связанные с интерфейсами, потому что один и тот же человек или команда работают, как над вызывающей, так и над вызываемой стороной интерфейса. Напротив, выделенные компонентные команды увеличивают сложность координации процесса изменения интерфейса.
+[Фиче-команда](../structure/feature-teams.html) является межкомпонентной и изменяет весь код *во всех компонентах*, необходимых для выполнения ориентированной на клиента функции. Это уменьшает проблемы координации, связанные с интерфейсами, потому что один и тот же человек или команда работают, как над вызывающей, так и над вызываемой стороной интерфейса. Напротив, выделенные компонентные команды увеличивают сложность координации процесса изменения интерфейса.
 
 ### Избегайте "замороженных" интерфейсов
 
@@ -608,10 +608,10 @@ class LaserPrinter {
 ## Рекомендуем к прочтению
 
 * Сайт [*www.codingthearchitecture.com*](http://www.codingthearchitecture.com) подчёркивает необходимость того, чтобы архитекторы были опытными действующими разработчиками.
-- Многие из наших клиентов имеют огромное количество "грязного" унаследованного кода, который сложно протестировать изолированно и трудно поддерживать. Книга Майкла Физерса [*Working Effectively with Legacy Code*](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052) является важным противоядием, описывающим методы, позволяющие разработчикам начать разработку более гибкой архитектуры в рамках существующей кодовой базы. * Ключевым элементом технической гибкости является шаблон проектирования. Рассмотрим следующие статьи на эту тему: 
-[*Design Patterns*](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), [*Pattern-Oriented Software Architecture*](http://www.amazon.com/Pattern-Oriented-Software-Architecture-Volume-Patterns/dp/0471958697) (в 5 томах), [*Applying UML and Patterns*](https://www.amazon.com/Applying-UML-Patterns-Introduction-Object-Oriented/dp/0131489062), and [*Pattern Languages of Program Design*](https://www.amazon.com/Pattern-Languages-Program-Design-Coplien/dp/0201607344) (в 5 томах).
-- Две книги Боба Мартина вдохновляют на адаптивную архитектуру: [*Agile Development, Principles, Patterns and Practices*](http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445) и [*Clean Code: A Handbook of Agile Craftsmanship*](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). - ещё две полезные книги, ориентированные на качественный код, включают: [*Code Complete*](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670) Стива Макконнелла и [*Implementation Patterns*](http://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091) Кента Бэка.
-* [*Growing Object-Oriented Software, Guided by Tests*](http://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) Стив Фриман и Нат Прайс укрепляют культуру "выращивания", а не определяют "архитектуру". 
+* Многие из наших клиентов имеют огромное количество "грязного" унаследованного кода, который сложно протестировать изолированно и трудно поддерживать. Книга Майкла Физерса [*Working Effectively with Legacy Code*](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052) является важным противоядием, описывающим методы, позволяющие разработчикам начать разработку более гибкой архитектуры в рамках существующей кодовой базы.
+* Ключевым элементом технической гибкости является шаблон проектирования. Рассмотрим следующие статьи на эту тему: [*Design Patterns*](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), [*Pattern-Oriented Software Architecture*](http://www.amazon.com/Pattern-Oriented-Software-Architecture-Volume-Patterns/dp/0471958697) (в 5 томах), [*Applying UML and Patterns*](https://www.amazon.com/Applying-UML-Patterns-Introduction-Object-Oriented/dp/0131489062), and [*Pattern Languages of Program Design*](https://www.amazon.com/Pattern-Languages-Program-Design-Coplien/dp/0201607344) (в 5 томах).
+* Две книги Боба Мартина вдохновляют на адаптивную архитектуру: [*Agile Development, Principles, Patterns and Practices*](http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445) и [*Clean Code: A Handbook of Agile Craftsmanship*](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). - ещё две полезные книги, ориентированные на качественный код, включают: [*Code Complete*](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670) Стива Макконнелла и [*Implementation Patterns*](http://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091) Кента Бэка.
+* [*Growing Object-Oriented Software, Guided by Tests*](http://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) Стив Фриман и Нат Прайс укрепляют культуру "выращивания", а не определяют "архитектуру".
 * [*Domain-Driven Design*](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) Эрика Эванса поощряет вдумчивый итеративный дизайн, общее понимание и модель предметной области, которая должна быть хорошо выражена в коде.
 * Статья [Agile Product Development](http://connection.ebscohost.com/c/articles/1378797/agile-product-development-managing-development-flexibility-uncertain-environments) исследует бизнес-ценность разработки продукта и гибкости дизайна, а также то, как можно измерить гибкость разработки.
 
