@@ -11,7 +11,7 @@ excellence](https://less.works/img/technical-excellence/xtechnical-excellence-ov
 
 ## Содержание
 - [Архитектура и Проектирование / Architecture & Design](architecture-design.ru.md)
-- [Модульное тестирование](unit-testing.ru.md)
+- [Модульное тестирование / Unit-testing](unit-testing.ru.md)
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
 - Continuous Delivery
 - Clean Code
