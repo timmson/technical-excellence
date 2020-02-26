@@ -72,7 +72,7 @@ order: 30
 
 ### Модульные тесты пишут инженеры по тестированию
 
-The purpose of unit test is not for finding bugs. Technically, it _checks_ rather than _tests_ if the code under test has implemented the behaviour intended by the programmer who designed it. So the reasonable choice is just let the same programmer writes both the test and the code under test.
+Предназначение модульных тестов не в нахождение ошибок. Технически, они скорее _проверяют_, а не _тестируют_, что тестируемый код ведёт себя так, как это предполагал написавший его разработчик. Поэтому будет разумным решением дать возможность одному программисту написать тест и код, который он проверяет.
 
 It's also encouraged to have two or more people pair up to do the programming together. They write the unit test and the code under test together. There are many fun ways of _pair-programming_. You may find more information in the Test-Driven Development section.
 
