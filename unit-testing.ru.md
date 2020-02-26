@@ -66,17 +66,17 @@ order: 30
 
 ### Модульный тест не так важен, как продуктивный код
 
-It is true that in the end, it's production code that makes the product. But most software products have evolutionary life cycles. The code is not static. It changes over time. Code without unit test does not have the necessary protection when being changed. Unit test also contains important information that is not included in the production code.
+Это правда, что, в конце концов, продукт состоит из продуктового кода. Но большинство программных продуктов имеют эволюционные жизненные циклы. Код не является статичным. Он меняется со временем. Код без unit-теста не имеет необходимой защиты при изменении. Модульное тестирование также содержит важную информацию, которая не включена в продуктовый код.
 
-So unit test is just as important as the production code. They should be **in the same SCM repository**. They should follow the same coding standard as the production code.
+Поэтому модульные тесты так же важны, как и тестируемый код. Они должны быть **в одном и том же SCM-репозитории**. Они должны следовать тем же стандартам разработки, что и продуктовый код.
 
-### Unit Test is done by testing engineers
+### Модульные тесты пишут инженеры по тестированию
 
 The purpose of unit test is not for finding bugs. Technically, it _checks_ rather than _tests_ if the code under test has implemented the behaviour intended by the programmer who designed it. So the reasonable choice is just let the same programmer writes both the test and the code under test.
 
 It's also encouraged to have two or more people pair up to do the programming together. They write the unit test and the code under test together. There are many fun ways of _pair-programming_. You may find more information in the Test-Driven Development section.
 
-### You can write unit test without changing the code under test
+### Вы можете писать unit-тесты без изменения тестируемого кода
 
 This is often not true. If the code doesn't have good testability, you might still be able to write unit test for it technically. But the unit test written for non-testable code is usually very hard to maintain and understand. Therefore, it doesn't make much sense to have it.
 
