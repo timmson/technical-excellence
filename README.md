@@ -6,8 +6,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 
 Как помочь проекту, можно прочитать в [CONTRIBUTE.md](CONTRIBUTE.md)
 
-![less_technical_
-excellence](https://less.works/img/technical-excellence/xtechnical-excellence-overview.png.pagespeed.ic.SpWvIkJ3jo.webp)
+![less_technical_excellence](https://less.works/img/technical-excellence/xtechnical-excellence-overview.png.pagespeed.ic.SpWvIkJ3jo.webp)
 
 ## Содержание
 - [Архитектура и Проектирование / Architecture & Design](architecture-design.ru.md)

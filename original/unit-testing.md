@@ -1,21 +1,21 @@
 ---
-title: Unit-testing
+title: Модульное тестирование
 order: 30
 ---
 
-## What Is Unit Test?
+## Что такое модульные тесты?
 
-**Unit Test**s are software programs written to exercise other software programs (called **Code Under Test**, or **Production Code**) with **specific** preconditions and verify the **expected behaviour**s of the CUT. 
+**Модульные тесты** (или unit-тесты) - это программы, созданные для запуска других программ (называемых **тестируемым кодом** (Code Under Test, CUT) или **продуктивным кодом** (Production Code)) с **конкретными** предварительными условиями и проверкой **ожидаемого поведения** CUT.
 
-Unit tests are usually written in the same programming language as their code under test.
+Модульные тесты обычно написаны на том же языке программирования что и код, проверяемый ими.
 
-Each **unit test** should be small and test only limited piece of code functionality. Test cases are often grouped into **Test Groups** or **Test Suites**. There are many open source **unit test framework**s. The popular ones usually follow an **xUnit** pattern invented by [Kent Beck](http://c2.com/cgi/wiki?KentBeck "Kent Beck"), for example, JUnit for Java and CppUTest for C/C++.
+Каждый **unit-тест** должен быть небольшим и проверять ограниченный объем функциональности. Тест-кейсы (Test cases) часто объединяются в **Группы Тестов**(Test Groups) или **Наборы Тестов**(Test Suites). Существует огромное количество **фреймворков модульного тестирования**. Самые популярные из них реализуют шаблон **xUnit**, представленный [Кентом Беком](http://c2.com/cgi/wiki?KentBeck "Kent Beck"). Например, JUnit для Java или CppUTest для C/C++.
 
-Unit tests should also run very fast. Usually, we expect to **run hundreds of unit test cases within a few seconds**.
+Модульные тесты также должны быть быстрыми. Обычно предполагается, что **сотни тест-кейсов выполняются за несколько секунд**.
 
-## Why Unit Test
+## Почему именно модульные тесты?
 
-The purpose of unit testing is not for finding bugs. It's a **specification** for the expected behaviours of the code under test. The code under test is the implementation for those expected behaviours. So unit test and the code under test are used to check the correctness of each other, and protect each other. Later when someone changed the code under test, and it changed the behaviour that is expected by the original author, the test will fail. If you code is covered by reasonable unit test, you can maintain the code without breaking the existing feature. That's why Michael Feathers define **legacy code** as _code without unit test_.
+Предназначение модульных тестов не в нахождение ошибок. Они являются **спецификацией** ожидаемого поведения тестируемого кода. Этот тестируемый код как раз реализует ожидаемое поведение. Поэтому unit-тесты и CUT используются для проверки корректности и защиты друг друга. Если кто-то модифицирует продуктиный код, и это изменяет первоначально заложенное поведение программы, то тест упадёт. Если ваш код покрыт адекватными unit-тестами, то вы можете его развивать, не боясь сломать текущий функционал. Майкл Физерс описывает **унаследованный код** (legacy code), как _код, непокрытый модульными тестами_.
 
 <img src="/img/technical-excellence/unit_test.png" width="60%">
 
