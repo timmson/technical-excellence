@@ -3,36 +3,36 @@ title: Модульное тестирование
 order: 30
 ---
 
-## What Is Unit Test?
+## Что такое модульные тесты?
 
-**Unit Test**s are software programs written to exercise other software programs (called **Code Under Test**, or **Production Code**) with **specific** preconditions and verify the **expected behaviour**s of the CUT. 
+**Модульные тесты** (или unit-тесты) - это программы, созданные для запуска других программ (называемых **тестируемым кодом** (Code Under Test, CUT) или **продуктивным кодом** (Production Code)) с **конкретными** предварительными условиями и проверкой **ожидаемого поведения** CUT.
 
-Unit tests are usually written in the same programming language as their code under test.
+Модульные тесты обычно написаны на том же языке программирования что и код, проверяемый ими.
 
-Each **unit test** should be small and test only limited piece of code functionality. Test cases are often grouped into **Test Groups** or **Test Suites**. There are many open source **unit test framework**s. The popular ones usually follow an **xUnit** pattern invented by [Kent Beck](http://c2.com/cgi/wiki?KentBeck "Kent Beck"), for example, JUnit for Java and CppUTest for C/C++.
+Каждый **unit-тест** должен быть небольшим и проверять ограниченный объем функциональности. Тест-кейсы (Test cases) часто объединяются в **Группы Тестов**(Test Groups) или **Наборы Тестов**(Test Suites). Существует огромное количество **фреймворков модульного тестирования**. Самые популярные из них реализуют шаблон **xUnit**, представленный [Кентом Беком](http://c2.com/cgi/wiki?KentBeck "Kent Beck"). Например, JUnit для Java или CppUTest для C/C++.
 
-Unit tests should also run very fast. Usually, we expect to **run hundreds of unit test cases within a few seconds**.
+Модульные тесты также должны быть быстрыми. Обычно предполагается, что **сотни тест-кейсов выполняются за несколько секунд**.
 
-## Why Unit Test
+## Почему именно модульные тесты?
 
-The purpose of unit testing is not for finding bugs. It's a **specification** for the expected behaviours of the code under test. The code under test is the implementation for those expected behaviours. So unit test and the code under test are used to check the correctness of each other, and protect each other. Later when someone changed the code under test, and it changed the behaviour that is expected by the original author, the test will fail. If you code is covered by reasonable unit test, you can maintain the code without breaking the existing feature. That's why Michael Feathers define **legacy code** as _code without unit test_.
+Предназначение модульных тестов не в нахождение ошибок. Они являются **спецификацией** ожидаемого поведения тестируемого кода. Этот тестируемый код как раз реализует ожидаемое поведение. Поэтому unit-тесты и CUT используются для проверки корректности и защиты друг друга. Если кто-то модифицирует продуктивный код, и это изменяет первоначально заложенное поведение программы, то тест упадёт. Если ваш код покрыт адекватными unit-тестами, то вы можете его развивать, не боясь сломать текущий функционал. Майкл Физерс описывает **унаследованный код** (legacy code), как _код, непокрытый модульными тестами_.
 
 <img src="/img/technical-excellence/unit_test.png" width="60%">
 
-The purpose for unit testing is rather protect what we have implemented than to find any defects, just like the anchors set by a rock climber along his way up the rock. These anchors help him to protect what he has achieved.
+Предназначение модульного тестирования состоит в том, чтобы защитить уже реализованный функционал, нежели найти в нем дефекты. Это похоже на страховочный якорь, который используют скалолазы. Такие якоря защищают от того, чтобы не упасть ниже уже набранной высоты.
 
-### Purpose of Unit Test
+### Цель модульного теста
 
-The purpose of unit test can be summarised as:
+Цель модульного теста в том, чтобы
 
-* Facilitates changes
-  * It protects the behaviours decided by the previous programmers. So that people can change the code without breaking the existing features.
-* Simplifies integration
-  * Unit test tests the basic units of the program, the functions and the classes. It makes sure the basic units are functioning as expected. When these units are integrated together, we can separate the integration problems (the coupling problems) from the unit internal problems (the cohesion problems).
-* Documentation
-  * Well-written unit test can be used as documentation for the functionality of the code under test. Unit test contains information typically you cannot find from the code under test, for example, the design purpose of the original programming who wrote the code, and how the code is expected to be used. Unit test as documentation, unlike other traditional documentation, it doesn't "lie". Because if it lies, the test would fail. And that indicates either the test or the code is wrong.
-* Design tool
-  * Unit test is also an important design tool. Unit test requires testability from the code understand. Easy-to-test usually means easy-to-use. So unit test could be used to make sure the design has consideration from the perspective of use, rather than only from the perspective of implementation. Testable code needs better modularity and fewer dependencies. So that the unit test can easily take a small part of the code under test (a "unit") without taking care of the overwhelming amount of dependencies. So unit test could be used to make sure the design has "high cohesion, low coupling".
+* Облегчать изменения
+  * Он защищает поведение, определённое предыдущими разработчиками. Так что люди могут менять код, не нарушая существующую функциональность.
+* Упрощать интеграцию
+  * Модульный тест проверяет основные модули программы, функции и классы. Это гарантирует, что основные блоки функционируют, как ожидалось. Когда эти блоки объединены вместе, мы можем отделить интеграционные проблемы (проблемы связывания, the coupling problem) от внутренних проблем блока (проблемы зацепления, the cohesion problems).
+* Документировать
+  * Хорошо написанный модульный тест может использоваться, как документация для описания функциональности тестируемого кода. Модульное тестирование содержит информацию, которую вы обычно не можете найти в тестируемом коде, например, цель, которую преследовал разработчик, написавший код, и как он ожидал, как его код будут использовать. Модульное тестирование как документация, в отличие от другой традиционной документации, не "лжёт". Потому что, если он лжёт, тест не пройдёт. И это означает, что либо тест, либо код неверен.
+* Быть инструментом проектирования
+  * Модульное тестирование также является важным инструментом проектирования. Модульное тестирование требует тестируемости понимания кода. Простота тестирования обычно означает простоту использования. Таким образом, модульное тестирование может быть использовано для того, чтобы убедиться, что проект имеет смысл с точки зрения использования, а не только с точки зрения реализации. Тестируемый код требует лучшей модульности и меньшего количества зависимостей. Так что модульный тест может легко взять небольшую часть тестируемого кода ("модуль", unit), не заботясь о подавляющем количестве зависимостей. Таким образом, модульное тестирование может быть использовано, чтобы убедиться, что спроектированный продукт имеет "высокая степень зацепления, низкая степень связанности" (high cohesion, low coupling).
 
 ### Why on "Unit" Level?
 
