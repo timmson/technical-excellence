@@ -65,10 +65,10 @@ But related to test-driven development, we cannot stress strongly enough: Hire c
 
 ## Разработка через тестирование для создания лучшей архитектуры
 
-TDD можем помочь улучшить архитектуру системы. Как?
+TDD может помочь улучшить архитектуру системы. Как?
 
-When we are coaching, a frequent request is help for dealing with our client’s “inflexible architecture.” This most often boils down to problems in high coupling between components—a common problem in legacy code written without TDD because the original developer did not try to test the component in isolation.
+Когда мы консультируем, частый запрос состоит в помощи при работе с "негибкой архитектурой" наших клиентов. Чаще всего это сводится к проблемам в сильной связанности компонентов - распространенная проблема в унаследованном коде, написанном без TDD, потому что разработчик-автор не пытался тестировать компонент изолированно.
 
-On the other hand, when a developer creates a new component (such as a class) with TDD, or refactors a legacy component to be unit-testable, they must break the dependencies of that component so that it is testable in isolation. That requires designing (or refactoring) for dependency injection and increased use of mechanisms for flexibility: interfaces, polymorphism, design patterns, dependency injection frameworks, function pointers, and more.
+С другой стороны, когда разработчики создают новый компонент (например, новый класс) по TDD, или производят рефакторинг унаследованного компонента для того, чтобы его можно быть протестировать, они должны нарушить зависимости между этим компонентом и всеми остальными, чтобы протестировать его в изоляции. Это требует проектирования (или рефаккторинга) для внедерения зависимостей и улучшает использование механизмов гибкости: интерфейсов, полиморфизма, шаблонов проектирования, фреймворков для внедрения зависимостей, функциональных указателй и прочих.
 
-In this way, TDD encourages lower coupling and simple, flexible configuration—qualities of a good architecture.
+В таком случае, TDD поддерживает слабую связанность, простоту, гибкое конфигурирование - качества хорошей архитектуры.
