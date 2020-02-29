@@ -74,21 +74,22 @@ order: 30
 
 Предназначение модульных тестов не в нахождение ошибок. Технически, они скорее _проверяют_, а не _тестируют_, что тестируемый код ведёт себя так, как это предполагал написавший его разработчик. Поэтому будет разумным решением дать возможность одному программисту написать тест и код, который он проверяет.
 
-It's also encouraged to have two or more people pair up to do the programming together. They write the unit test and the code under test together. There are many fun ways of _pair-programming_. You may find more information in the Test-Driven Development section.
+Также рекомендуется объединять двух или более человек для совместного программирования. Они пишут unit-тесты и продуктивный код вместе.
+Существует много необычных видов _парного программирования_. Больше информации об этом вы можете найти в разделе "Разработка через тестирование" (Test-Driven Development).
 
 ### Вы можете писать unit-тесты без изменения тестируемого кода
 
-This is often not true. If the code doesn't have good testability, you might still be able to write unit test for it technically. But the unit test written for non-testable code is usually very hard to maintain and understand. Therefore, it doesn't make much sense to have it.
+Часто это не так. Если код не обладает хорошими возможностями для тестирования, вы все равно технически можете написать для него unit-тест. Но это тест, написанные для такого кода, часто бывает довольно сложным в понимании и сопровождении. Поэтому, в нем нет особого смысла.
 
-**The secret of unit test is not about writing test, but writing testable code under test.** We want testable code and easy test, which is a win-win. We don't want non-testable code and hard-to-maintain code, which is a lose-lose.
+**Секрет модульного теста не в его написании самого теста, а в написание CUT, пригодно для тестирования.** Мы хотим иметь в итоге пригодный для тестирования код и простой тест, что будет "абсолютной победой" (win-win). Мы не хотим иметь сложный в сопровождении код без возможности его тестирования, что является "полным провалом" (lose-lose). 
 
-### I can add unit test later
+### Я могу потом дописать модульные тесты
 
-Well, try asking the rock climbers to set their anchors later.
+Что ж, попробуйте попросить скалолаза зацепить страховочный крюк позже. 
 
 <img src="/img/technical-excellence/unit_test.png" width="40%">
 
-## Good Unit Test Patterns
+## Хорошие шаблоны для модульных тестов
 
 ### No news is good news
 
