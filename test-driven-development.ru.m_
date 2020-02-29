@@ -54,18 +54,18 @@ But related to test-driven development, we cannot stress strongly enough: Hire c
 
 Внешние тренеры необходимы для внедрения TDD, потому что данный навык еще не привит внутри компании. Но по прошествии времени, воспитание внутренних тренеров снижает зависимость от их внешних коллег и снижает стоимость обучения.
 
-That said, we have seen several attempts fail to develop internal coaches. Some reasons:
+Мы наблюдали несколько попыток провала в развитии внутренних тренеров. Во некоторые их причины:
 
-* No structure was in place to decide when and with which teams to work.
-* No time was reserved for coaching. Instead the internal coaches were asked to do normal development.
-* Developers were less eager to learn from internal coaches...you are never a prophet in your own land.
-* Coaching skills were not appreciated and further developed. The result is that skilled internal coaches often leave to be an external coach.
+* Отсутствие структуры в точке принятия решений, когда и какими командами кто будет работаь.
+* Отсутствие времения, выделенно на тренировки. Вместо этого тренеров просили заниматься обычно разработкой.
+* Разработчиким менее охотно учились у внутренних тренеров... вы никогда не будете пророком на своей земле.
+* Тренерские навыки не ценились и не поличали дальнейшее развитие. В результате опытные тренеры часто уходили, чтобы стать внешними консультантами.
 
-Choose both internal and external coaching. Depending on either of them alone is risky but combining them can lead to good results.
+Выбирайтие как внутреннее так и внешнее обучение. Если остается только одно из них, это становиться рискованным. Но их комбинация может привести к хорошим результатам.
 
-## Test-driven development for a better architecture
+## Разработка через тестирование для создания лучшей архитектуры
 
-TDD can help improve the architecture of a system. How?
+TDD можем помочь улучшить архитектуру системы. Как?
 
 When we are coaching, a frequent request is help for dealing with our client’s “inflexible architecture.” This most often boils down to problems in high coupling between components—a common problem in legacy code written without TDD because the original developer did not try to test the component in isolation.
 
