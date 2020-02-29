@@ -18,41 +18,41 @@ order: 30
 Разработка через тестирование чем-то отличается для случаев крупномасштабной разработки? Нет. Это индивидуальный навык конкретного разработчика, поэтому их количество в продукте не имеет значение.
 Объем унаследованного кода, старых технологий, встраиваемого ПО не оказывает влияения на возможность применения unit-тестирования и TDD. Следовательно, большинство экспериментов в это разделе относятся и к таким случаям.
 
-### A TDD cycle Should Be ...
+### TDD-цикл должен быть ...
 
 <dl>
-<dt>Short</dt>
-<dd>The turnaround time for passing each test is short. It could take 5 mins per cycle.</dd>
+<dt>Коротким</dt>
+<dd>Время выполнение каждого теста мало. Цикл не должен занимать более 5 минут.</dd>
 
-<dt>Rhythmic</dt>
-<dd>You’ll feel the rhythm distinctly - “red, green, refactor... red, green refactor...”</dd>
+<dt>Ритмичным</dt>
+<dd>Вы отчетливо почуствуете ритм - “красный, зеленй, рефакторинг... краный, зеленый, рефакторинг...” (red-green-refactor)</dd>
 
-<dt>Incremental</dt>
-<dd>You’ll know that as you write and pass more tests, working functionalities are being build up incrementally.</dd>
+<dt>Инкрементальным</dt>
+<dd>Вы знаете, что при написании и прохождении новых тестов, работающий функционал приращается инкрментно.</dd>
 
-<dt>Design-focused</dt>
-<dd>With good knowledge of software design principles, you’ll discover TDD is not a testing technique but a method of designing software.</dd>
+<dt>Сфокусированным на дизайне</dt>
+<dd>Хорошо зная принципы дизайна ПО, вы откроете для себя, что TDD это не техника тестироавания, а метод проектирования ПО.</dd>
 
-<dt>Disciplined</dt>
-<dd>TDD is a different way of developing software. To break the old habit of "code and fix" and to adopt a new habit will require discipline and persistence.</dd>
+<dt>Дисциплинированным</dt>
+<dd>TDD это другой подход к разработке ПО. Отказ от старой привычки "code and fix" и внедрение новой потребуют дисциплины и упорства.</dd>
 </dl>
 
-## Why TDD?
+## Почему TDD?
 
 
-## Coaching TDD
+## Тренировка TDD
 
-### Use TDD Coaches
+### Воспользуйтесь помощью тренеров по TDD
 
 When a client of ours reviewed a draft of the companion book, he mentioned that we ought to stress coaching more. “One of our mistakes is that we didn’t provide enough coaching,” he said. Though we agreed with him, we pointed out that since we are both consultants and provide such coaching, this advice would not be very credible. We might as well add an experiment “Try...Hire us.” Thus, we minimized the advice related to hiring coaches.
 
 But related to test-driven development, we cannot stress strongly enough: Hire coaches! Adopting TDD means unlearning traditional programming and relearning how to design and code. We rarely meet people who were able to adopt this by self-education. Most developers need a coach to pair-program with them for days or weeks. The coach constantly reminds them to write the tests first and to really clean up the code—including the test code. He helps them apply TDD and refactoring to their real code.
 
-Test-driven development might be the hardest agile practice to adopt, but it is also one of the biggest opportunities for improving the quality of the design and code. Hire coaches!
+Разработка через тестирование может быть самой сложной гибкой практикой для внедрения, но это также одна из самых больших возможностей для увеличения качества проектирования и кода. Наймите тренеров!
 
-### Internal and external coaches
+### Внутренние и внешние тренеры
 
-External coaches are needed when adopting TDD because the com- petence does not yet exist inside the company. But, over time, growing internal coaches reduces the dependence on externals and the cost of coaching.
+Внешние тренеры необходимы для внедрения TDD, потому что данный навык еще не привит внутри компании. Но по прошествии времени, воспитание внутренних тренеров снижает зависимость от их внешних коллег и снижает стоимость обучения.
 
 That said, we have seen several attempts fail to develop internal coaches. Some reasons:
 
