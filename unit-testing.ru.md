@@ -104,7 +104,7 @@ order: 30
 И когда он падает, он должен предоставить точную информацию об этом. Цель состоит в сокращении времени, которое вы тратите на отладке упавших тестов.
 <img src="/img/technical-excellence/unit_test_fail.png" width="342px">
 
-### Arrange, Act, Assert
+### Шаблон Arrange, Act, Assert
 
 "**AAA**" - хороший шаблон для написания unit-тестов: **Arrange**, **Act** and **Assert**. (входные данные, действие, ожидаемый результат)
 
@@ -129,10 +129,11 @@ order: 30
 </div>
 </div>
 
-### Behaviour Driven Development (BDD) Style
+### Шаблон "Разработка через поведение" (Behaviour Driven Development, BDD)
 
-Similar to the **AAA** pattern, the **BDD** style uses three other keywords to specify each test case: **Given**, **When** and **Then**. (You can also use **And** as another keyword.)
+Будучи похожим на **AAA** паттерн, подход BDD использует три других ключевых слова для описания каждого тест-кейса: **Given**, **When** and **Then**. (Вы также можете использовать **And** в качестве ключевого слова.) На русском  **Дано**, **Когда**, **Тогда**, **И** соответственно.
 
+    На английском:
     Given The Text Wrapper's Width Defined As 10
     And Using '-' As Word Connector
     When The Wrapper Wrap Text Length is Less Than 10
