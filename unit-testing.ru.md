@@ -91,24 +91,24 @@ order: 30
 
 ## Хорошие шаблоны для модульных тестов
 
-### No news is good news
+### Отсутствие новостей - уже хорошая новость
 
-If the test passes, it should just print OK (and perhaps some dots to show the progress). No other information.
+Если тест проходит, он должно просто напечатать "OK" (и, возможно, несколько точек, чтобы показать прогресс). И никакой другой информации.
 
 <img src="/img/technical-excellence/unit_test_success.png" width="500px">
 
-Rule of thumb:
+"Правило большого пальца" (эмпирическая закономерность,  rule of thumb)
 
-> No human intervention should be needed to get ready for the test, running the test cases or checking the result.
+> Не должно требоваться вмешательства человека для подготовки, запуска тестов или проверки их результатов.
 
-And when it fails, it should provide precise information. The goal is to limit the amount of time you spend on debugging when the test fails.
+И когда он падает, он должен предоставить точную информацию об этом. Цель состоит в сокращении времени, которое вы тратите на отладке упавших тестов.
 <img src="/img/technical-excellence/unit_test_fail.png" width="342px">
 
 ### Arrange, Act, Assert
 
-A good pattern to follow in a unit test is "**AAA**": **Arrange**, **Act** and **Assert**. 
+"**AAA**" - хороший шаблон для написания unit-тестов: **Arrange**, **Act** and **Assert**. (входные данные, действие, ожидаемый результат)
 
-If you can easily find this pattern in each of your test cases, your tests should be easy to understand, and they should be fairly specific and to the point. One unit test case should test only one thing. Therefore, there should be only one set of AAA in one test case. A test case shouldn't be very long (longer than 10 lines of code) if it follows the AAA pattern.
+Если вы можете проследить использование такого подхода в каждом вашем тест-кейсе, то ваши тесты должны бать простыми для понимания, конкретными и вызывающими доверие. Следовательно, каждый тест-кейс должен содержать только один AAA-набор. Тест-кейс не должен быть слишком большим (больше 10 строк кода), если он поддерживает шаблон ААА.
 
 <div class="inner_cell">
     <div class="input_area">
