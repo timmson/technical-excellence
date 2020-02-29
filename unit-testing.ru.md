@@ -139,21 +139,21 @@ order: 30
     When The Wrapper Wrap Text Length is Less Than 10
     Then The Text Should Not Be Wrapped
     
-As you can see, "given-when-then" maps to "arrange-act-assert" pretty well. They both simply define a state transition of a Finite State Machine (FSM). You can find more on this in the [Uncle Bob's article](https://sites.google.com/site/unclebobconsultingllc/the-truth-about-bdd). Some differences:
+Как вы видите, "given-when-then" подход почти аналогичен "arrange-act-assert" подходу. Они оба просто определяют переход в теории Конечного Автомата (Finite State Machine, FSM). Более подробную информацию вы можете найти в [статье "Дяди Боба" (Роберта Мартина)](https://sites.google.com/site/unclebobconsultingllc/the-truth-about-bdd). Но между этими подходами есть ряд отличий:
 
-* BDD is more "outside-in", which means that it emphasises more the external behaviour
-* With BDD, you need to define a **domain specific language** to write your test specifications. Because of this, usually you'll need a different framework. One example for Python is [behave](http://pythonhosted.org/behave/).
+* BDD смотрит на модуль как-бы "извне", т.е фокусируется на его поведении
+* Используя BDD, вы должны определить **язык предметной области** (domain specific language, DSL) при написании ваших спецификаций. Из-за этого, скорее всего вам потребуется использовать другой фреймворк. Например, для языка Python это [behave](http://pythonhosted.org/behave/).
 
-### The Golden Rule Of a Unit Test
+### Золотое правило модульного тестирования
 
-In general, a good rule for unit test case is:
+В общем, хорошие правила для каждого модульного тест-кейса звучит так:
 
-> **Each unit test case should be very limited in scope.**
+> **Каждый модульный тест-кейс должен быть сильно ограничен**
 
-So that:
+Поэтому
 
-* When the test fails, no debugging is needed to locate the problem.
-* Tests are stable because dependencies are simple.
-* Less duplication, easier to maintain.
+* Когда тест падает, не требуется отладки для локализации проблемы.
+* Тесты стабильны, потому что имеют мало зависимостей.
+* Минимум дублирования, удобнее в сопровождении.
 
-There is no secret to write good unit test. In order to write good unit test, you need to create easy-to-test design.
+Нет секрета в там, как написать хороший модульный тест. Для того чтобы это сделать, вы должны "легко тестируемый" дизайн ваших систем.
