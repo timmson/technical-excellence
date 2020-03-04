@@ -1,6 +1,6 @@
 ---
 title: Acceptance Testing
-order: 10
+order: 65
 ---
 
 ## Don't confusing acceptance and user-acceptance test
