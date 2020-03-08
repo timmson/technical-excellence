@@ -11,13 +11,13 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 ## Содержание
 - [Архитектура и Проектирование / Architecture & Design](architecture-design.ru.md)
 - [Модульное тестирование / Unit-testing](unit-testing.ru.md)
+- [Разработка через тестирование/ Test-Driven Development](test-driven-development.ru.md)
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
+- [Приёмочное тестирование / Acceptance Testing](acceptance-testing.ru.md)
 - Continuous Delivery
 - Clean Code
-- Test-Driven Development
 - Thinking About Testing
 - Test Automation
-- Acceptance Testing
 - Specification by Example
 
 Истинная гибкость (agility) может быть достигнута только тогда, когда вы можете менять свой продукт простыми, быстрыми и
