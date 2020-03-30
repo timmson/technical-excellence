@@ -1,6 +1,6 @@
 ---
 title: Thinking About Testing
-order: 10
+order: 55
 ---
 
 <div class="chapter_quote"><p>

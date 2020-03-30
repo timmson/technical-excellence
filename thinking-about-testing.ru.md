@@ -1,6 +1,6 @@
 ---
-title: Thinking About Testing
-order: 10
+title: Thinking About Testing ???
+order: 55
 ---
 
 <div class="chapter_quote"><p>
@@ -9,36 +9,36 @@ order: 10
 --Эдсгер Дейкстра
 </p></div>
 
-## *Тестирование* больше не означает *проверку*
+## *Тестирование* больше не означает *тестирование*
 
-Запутаны? Можем себе представить. Раньше цель тестирования была достаточно ясной -- "Тестирование - это процесс выполнения программы с целью назождения ошибок" [[Meyers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). Но она меняется при переходе к гибкой и бережливой разработке.
+Запутаны? Можем себе представить. Раньше цель тестирования была достаточно ясной -- "Тестирование - это процесс выполнения программы с целью нахождения ошибок" [[Meyers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). Но она меняется при переходе к гибкой и бережливой разработке.
 
 Параллельное проектирование требует распараллеливания работы. Выделенные кросс-функциональные команды поощряют отдельных специалистов расширять свою экспертизу. Это приводит цели обычных действий по разработке -- таких как тестирование -- к смещению.
 
-At the code level, practices such as (unit) test-driven development *blur* the division between *test* and *design* as is made explicit by agile leader [Ward Cunningham’s statement](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=951502&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A20576%29):
+Практики работы с кодом, такие как (модульная) разработка через тестирование, размывают границы между тестированием и проектированием, на что явно указывает лидера гибкой разработки [Уорда Каннингема](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=951502&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A20576%29): 
 
-> “Test-first coding is not a testing technique.”
+> “Написание тестов сначала - это не практика тестирования”
 
-Acceptance test-driven development *fuzzes* the distinction between *test* and *requirements analysis* . In their IEEE Software article, [“Test and Requirements, Requirements and Test: A Möbius strip,”](http://gmelnik.com/papers/Melnik-Martin-Tests-and-Requirements-The-Moebius-Strip-IEEE-Software-2008.pdf) Martin and Melnik argue...
+Разработка через приёмочное тестирование (A-TDD) *убирает* различия между *тестированием* и *анализом требований*. В журнале IEEE Software в статье [“Тесты и Требования, Требования и Тесты: Лента Мёбиуса (Test and Requirements, Requirements and Test: A Möbius strip.)”](http://gmelnik.com/papers/Melnik-Martin-Tests-and-Requirements-The-Moebius-Strip-IEEE-Software-2008.pdf) Роберт Мартин и Григорий Мельник утверждают...
 
 <figure>
   <img src="/img/test_automation/moebius.png" alt="mobius.png">
 </figure>
 
-> ... for early writing of acceptance tests as a requirements-engineering technique. We believe that concrete requirements blend with acceptance tests in much the same way as the two sides of a strip of paper become one side in a Möbius strip. In other words, requirements and tests become indistinguishable, so you can specify system behavior by writing tests and then verify that behavior by executing the tests.
+> ... для раннего написания приёмочных тестов, как методики разработки требований. Мы считаем, что конкретные требования сочетаются с приёмочными тестами во многом так же, как две стороны полосы бумаги становятся одной в ленте Мёбиуса. Другими словами, требования и тесты становятся неразличимыми, поэтому вы можете указать поведение системы, написав тесты, а затем проверить это поведение, выполнив эти тесты.
 
-This blurring of boundaries is fraught with fallacies. Adopting (unit) test-driven development as a *testing* technique misses the point and drives superficial adoption. Likewise, we regularly need to clarify to testing groups that *they* cannot adopt acceptance test-driven development without involvement of others.
+Это размывание границ может привести к заблуждениям. Внедрение (модульной) разработки через тестирование в качестве техники *тестирования* упускает его цель из виду и приводит к поверхностному внедрению. Точно так же мы должны регулярно разъяснять группам тестирования, что *они* не могут внедрить разработку через приёмочное тестирование без участия других членов команд.
 
-Testing is no longer testing.
+Тестирование больше не тестирование.
 {: .box_top_bottom  .text_centered_bold }
 
-## Challenge assumptions about testing
+## Бросьте вызов предположениям о тестировании
 
-As touched upon, testing discussions are rife with assumptions. Challenge these! To be clear, we are not saying that these assumptions are *false,* but that leaving them unchallenged *will* limit thinking and the ability to improve. Deeply rooted in the Toyota culture is a pillar of the Toyota way: *continuous improvement* by challenging everything. Taiichi Ohno (a founder of lean thinking) said:
+Как уже говорилось выше, дискуссии о тестировании изобилуют предположениями. Бросьте им вызов! Чтобы было ясно, мы не говорим, что эти предположения являются *ложными*, но не ставя их под сомнения, мы *ограничиваем* наше мышление и способность улучшаться. Глубоко укоренившийся принцип в культуре Тойота является опорой Пути Toyota (Toyota Way): *непрерывное улучшение*, бросая вызов всему. Тайити Оно (основатель бережливого мышления) сказал: 
 
-> If you’re going to do kaizen continuously... you’ve got to assume that things are a mess. Too many people assume that things are all right the way they are... Kaizen is about changing the way things are. If you assume that things are all right the way they are, you can’t do kaizen. So change something!
+> Если вы собираетесь постоянно следовать философии Кайдзен... Вы должны предположить, что все не идеально. Слишком много людей предполагают, что все в порядке, как они есть... Кайдзен о том, как все изменить. Если вы предполагаете, что все в порядке, то вы не сможете заниматься Кайдзен. Так что измените что-нибудь!
 
-What assumptions? Some of the beliefs we*bump into* :
+Что за предположения? С некоторыми из них мы *столкнёмся*:
 
 * testing must be independent and thus separated from development
 * testing cannot start before coding is finished
@@ -120,7 +120,7 @@ In these arguments, test *independence* is equated to test separation from devel
 
 > The requirement is that an independence of ***spirit*** be achieved, not necessarily that a separate individual of group do the testing.
 
-This point is reiterated in [*Agile Testing*](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468) in which the authors also point out the suboptimization created by separating testing:
+This point is reiterated in [*Agile Testing*](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468) in which the authors also point out the локальной субоптимизацией created by separating testing:
 
 > Teams often confuse “independent” with “separate.” If the reporting structure, budgets, and processes are kept in discrete functional areas, a division between programmers and testers is inevitable. Time is wasted on duplicate meetings, programmers and testers don’t share a common goal, and information sharing is nonexistent.
 
@@ -172,7 +172,7 @@ Why? The assumption that is the *creation* *of the testware* is the difficult pa
 * Insights obtained during testware creation is perhaps more important than the testware itself.
 * Creating testware without *using* it leads to complex and unusable testware.
 
-Considering these aspects, a separate automation team causes additional complexity, the wastes of handoff, and knowledge scatter. No wonder it so often fails.
+Considering these aspects, a separate automation team causes additional complexity, the потери от передач, and knowledge scatter. No wonder it so often fails.
 
 Test automation should be the responsibility of the cross-functional development teams--just as testing is also their responsibility.
 
@@ -208,7 +208,7 @@ We *do* believe it is possible to write *bug-free code* . We do *not* believe it
 “Zero tolerance on open defects” is a guideline used by one of our clients. If they find a defect, they fix it as soon as possible. This prevents
 
 * effort spent on tracking many defects
-* effort spent on prioritization
+* усилия, потраченные на приоритизацию
 * delaying the learning that happens when fixing a defect
 * spending extra time on fixing because the developers do not remember the code anymore
 

@@ -16,7 +16,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 - [Приёмочное тестирование / Acceptance Testing](acceptance-testing.ru.md)
 - Continuous Delivery
 - Clean Code
-- Thinking About Testing
+- [Thinking About Testing ??? / Thinking About Testing](thinking-about-testing.ru.md)
 - Test Automation
 - Specification by Example
 
