@@ -4,16 +4,16 @@ order: 10
 ---
 
 <div class="chapter_quote"><p>
-Testing can be used very convincingly to show the presence of bugs,but never to demonstrate their absence.
+Тестирование программы может весьма эффективно продемонстрировать наличие ошибок, но безнадежно неадекватно для демонстрации их отсутствия.
 <br/>
 --Эдсгер Дейкстра
 </p></div>
 
-## *Testing* no longer means *testing*
+## *Тестирование* больше не означает *проверку*
 
-Confused? We can imagine! The purpose of testing used to be fairly clear--“Testing is the process of executing a program with the intent of finding errors” [[Meyers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). This changes when adopting agile and lean development.
+Запутаны? Можем себе представить. Раньше цель тестирования была достаточно ясной -- "Тестирование - это процесс выполнения программы с целью назождения ошибок" [[Meyers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). Но она меняется при переходе к гибкой и бережливой разработке.
 
-Concurrent engineering necessitates parallelizing work. Dedicated cross-functional teams encourage single-specialists to broaden their expertise. These cause the purpose of conventional development activities--such as test--to shift.
+Параллельное проектирование требует распараллеливания работы. Выделенные кросс-функциональные команды поощряют отдельных специалистов расширять свою экспертизу. Это приводит цели обычных действий по разработке -- таких как тестирование -- к смещению.
 
 At the code level, practices such as (unit) test-driven development *blur* the division between *test* and *design* as is made explicit by agile leader [Ward Cunningham’s statement](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=951502&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A20576%29):
 
