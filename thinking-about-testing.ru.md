@@ -59,48 +59,48 @@ order: 55
 
 ## Избегайте использования сложной терминологии в тестировании
 
-A question we enjoy asking big product groups is, “What do you all need to do before you can ship your product?”
+Вопрос, который нам нравится задавать крупным продуктовым группам, звучит так: “Что всем вам нужно сделать, прежде чем поставить свой продукт?”
 
-Long ago, we learned that we need two columns: one for ‘normal’ activities, and a larger one for *testing* activities. The first column fills up with items such as coding, creating the users documentation, developing hardware, pricing, and training sales personnel. The second column comprises test *activities* , test *levels* , or test *classifications* . Common entries in the second column are shown below:
+Давным-давно мы узнали, что нам нужны два столбца: один для ‘нормальных’ действий, а другой большего размера - для активностей *тестирования*. Первый столбец заполнен такими элементами, как кодирование, создание документации для пользователей, разработка оборудования, ценообразование и обучение торгового персонала. Второй столбец содержит тестовые *активности*, тестовые *уровни* или тестовые *классификации*. Обобщённые записи из второго столбца показаны ниже:
 
-* unit test
-* functional test
-* stress test
-* interoperability test
-* load test
-* installation test
-* monkey test
-* documentation test
-* module test
-* system test
-* stability test
-* compatibility test
-* traffic test
-* security test
-* exploratory test
-* acceptance test
-* developer test
-* integration test
-* regression test
-* reliability test
-* performance test
-* capacity test
-* usability test
-* user-acceptance test
+* блочное тестирование
+* функциональное тестирование
+* стресс-тестирование
+* тестирование совместимости
+* нагрузочное тестирование
+* тестирование установки
+* обезьянье тестирование
+* тестирование документации
+* модульное тестирование
+* системное тестирование
+* тестирование стабильности
+* тестирование совместимости
+* тестирование под трафиком
+* тестирование безопасности
+* исследовательское тестирование
+* приёмочное тестирование
+* разработческое тестирование
+* интеграционное тестирование
+* регрессионное тестирование
+* тестирование надёжности
+* тестирование производительности
+* ёмкостное тестирование
+* тестирование удобства
+* пользовательское приёмочное тестирование
 {: .two_columns .box_top_bottom}
 
-## Keep testing classifications simple
+## Сохраняйте простую классификацию тестов
 
-Straightforward terminology inspires intelligent behavior. For example, technology-facing tests that support the team are normally done by programmers during coding, while customer-facing tests that critique the product are usually done by a person other than the original author and are executed right after some user-functionality is implemented.
+Простая терминология вдохновляет разумное поведение. Например, технологические тесты, которые поддерживают команду, обычно выполняются программистами во время кодирования, в то время как тесты, ориентированные на клиента, которые проверяют продукт, обычно выполняются человеком, не являющимся первоначальным автором, и выполняются сразу после реализации некоторой пользовательской функциональности.
 
-Two groups:
+Две группы:
 
-* [developer test](unit-testing.html)
-* [customer-facing test](test-automation.html)
+* [разработческое тестирование](unit-testing.html)
+* [пользовательское тестирование](test-automation.html)
 
-*Developer test* --these are usually created by the person who is implementing. The purpose is to check whether the code is doing what the programmer wants. If the tests pass, it means that the system does what the developer intended--but this does not necessarily mean it does what the customers wants.
+*Разработческое тестирование* --these are usually created by the person who is implementing. The purpose is to check whether the code is doing what the programmer wants. If the tests pass, it means that the system does what the developer intended--but this does not necessarily mean it does what the customers wants.
 
-*Customer-facing tests* --these test whether the requirements are fulfilled. They are frequently implemented and executed by a person other than the one who wrote the code. In this grouping, non-functional tests are classified as customer-facing tests because non-functional requirements for large systems are typically explicit and the most important.
+*Пользовательское тестирование* --these test whether the requirements are fulfilled. They are frequently implemented and executed by a person other than the one who wrote the code. In this grouping, non-functional tests are classified as customer-facing tests because non-functional requirements for large systems are typically explicit and the most important.
 
 ## Don't separate development and testing
 
