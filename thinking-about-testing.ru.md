@@ -40,18 +40,18 @@ order: 55
 
 Что за предположения? С некоторыми из них мы *столкнёмся*:
 
-* testing must be independent and thus separated from development
-* testing cannot start before coding is finished
-* testing follows the sequence of (1) test case design, (2) test case execution, (3) test case reporting (a test waterfall)
-* there must be a separate test department
-* there must be a *test manager*
-* testing must be done at the end
-* testing must be “well planned”
-* there must be a “testing strategy” and a “master test plan”
-* 100% coverage is too expensive
-* 100% test automation is too expensive
-* testing requires a sophisticated test-management tool
-* testing must be done by ‘testers’
+* тестирование должно быть независимым и поэтому отделённым от разработки
+* тестирование не может начаться, пока код не написан полностью
+* тестирование следует последовательности (1) создание тест-кейса, (2) выполнения тест-кейса, (3) отчёта о прохождении тест-кейса (тестовый водопад)
+* должен быть отдельное подразделение тестирования
+* должен быть *менеджер по тестированию*
+* тестирование должно быть сделано в конце
+* тестирование должно быть “хорошо спланировано”
+* должна быть “стратегия тестирования” и “генеральный план тестирования”
+* 100% покрытие тестами слишком дорого
+* 100% автоматизация тестирования слишком дорога
+* тестирование требует сложного инструмента для управления тестированием
+* тестирование должно проводиться ‘тестерами’
 {: .two_columns .box_top_bottom}
 
 
