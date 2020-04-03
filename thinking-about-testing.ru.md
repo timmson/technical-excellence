@@ -127,9 +127,9 @@ order: 55
 Независимость тестирования не означает независимых тестеров.
 {: .box_top_bottom  .text_centered_bold }
 
-How to achieve test independence in *spirit* without separating testing? *By writing tests before implementing code* . The test cannot be influenced by the implementation, because it does not exist yet. This way, test-driven development achieves the *spirit* of independence without separation of departments.
+Как добиться *духа* независимости тестирования в без отделения тестирования? *Путём написания тестов до реализации кода*. Тест не может оказаться под влиянием реализации, потому что она ещё не существует. Таким образом, разработка через тестирование позволяет достичь *духа* независимости разделения разработки и тестирования на обособленные отделы.
 
-## Testers and programmers work together
+## Тестировщики и программисты работают вместе
 
 Separating testing from development often leads to a conflict between programmers and testers. Testers--hunting for bugs--try to prove that part of the program is faulty. Programmers--with their ego in their code--defend themselves, their code, and the program. Probably everyone who has been in the role of a tester in a test department has experienced this.
 
