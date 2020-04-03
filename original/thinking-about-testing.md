@@ -11,7 +11,7 @@ Testing can be used very convincingly to show the presence of bugs,but never to 
 
 ## *Testing* no longer means *testing*
 
-Confused? We can imagine! The purpose of testing used to be fairly clear--“Testing is the process of executing a program with the intent of finding errors” [[Meyers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). This changes when adopting agile and lean development.
+Confused? We can imagine! The purpose of testing used to be fairly clear--“Testing is the process of executing a program with the intent of finding errors” [[Myers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). This changes when adopting agile and lean development.
 
 Concurrent engineering necessitates parallelizing work. Dedicated cross-functional teams encourage single-specialists to broaden their expertise. These cause the purpose of conventional development activities--such as test--to shift.
 

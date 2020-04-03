@@ -11,7 +11,7 @@ order: 55
 
 ## *Тестирование* больше не означает *тестирование*
 
-Запутаны? Можем себе представить. Раньше цель тестирования была достаточно ясной -- "Тестирование - это процесс выполнения программы с целью нахождения ошибок" [[Meyers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). Но она меняется при переходе к гибкой и бережливой разработке.
+Запутаны? Можем себе представить. Раньше цель тестирования была достаточно ясной -- "Тестирование - это процесс выполнения программы с целью нахождения ошибок" [[Myers79]](http://www.amazon.com/Art-Software-Testing-Glenford-Myers/dp/1118031962). Но она меняется при переходе к гибкой и бережливой разработке.
 
 Параллельное проектирование требует распараллеливания работы. Выделенные кросс-функциональные команды поощряют отдельных специалистов расширять свою экспертизу. Это приводит цели обычных действий по разработке -- таких как тестирование -- к смещению.
 
@@ -98,15 +98,15 @@ order: 55
 * [разработческое тестирование](unit-testing.html)
 * [пользовательское тестирование](test-automation.html)
 
-*Разработческое тестирование* --these are usually created by the person who is implementing. The purpose is to check whether the code is doing what the programmer wants. If the tests pass, it means that the system does what the developer intended--but this does not necessarily mean it does what the customers wants.
+*Разработческое тестирование* -- оно обычно проводится  человеком, который пишет код. Цель состоит в том, чтобы проверить, выполняет ли код то, что хочет программист. Если тесты пройдены, это означает, что система делает то, что задумал разработчик, но это не обязательно означает, что она делает то, что хотят клиенты.
 
-*Пользовательское тестирование* --these test whether the requirements are fulfilled. They are frequently implemented and executed by a person other than the one who wrote the code. In this grouping, non-functional tests are classified as customer-facing tests because non-functional requirements for large systems are typically explicit and the most important.
+*Пользовательское тестирование* -- оно проверяет, выполнены ли требования. Они часто реализуются и выполняются человеком, отличным от того, кто написал код. В этой группе нефункциональные тесты классифицируются как тесты, ориентированные на клиента, поскольку требования для них в больших системах обычно являются явными и наиболее важными.
 
-## Don't separate development and testing
+## Не разделяйте разработку и тестирование
 
-Bill Hetzel, the organizer of the first software testing conference, defined in [*The Complete Guide to Software Testing*](http://www.amazon.com/Complete-Guide-Software-Testing/dp/0471565679) six principles of testing. The sixth principles--test independence--is a common theme throughout the history of software testing. Glenford Meyers, author of the first book on software testing, stressed the independence of testing in [*Software Reliability*](http://www.amazon.com/Software-Reliability-Principles-Glenford-Myers/dp/0471627658) :
+Бил Хертцель (Bill Hetzel), организатор первой конференции по тестированию ПО, определил в книге [*The Complete Guide to Software Testing*](http://www.amazon.com/Complete-Guide-Software-Testing/dp/0471565679) шесть принципов тестированию. Шестой принцип -- независимость тестов -- общая мотив на протяжении всей истории тестирования ПО. Гленфорд Майерс (Glenford Myers), автор первой книги о тестировании ПО, подчёркивал независимость тестирования в ней [*Software Reliability*](http://www.amazon.com/Software-Reliability-Principles-Glenford-Myers/dp/0471627658) :
 
-> Testing should always be done by an outside party who is somewhat detached from the program and project... System testing should always be done by an independent group such as a separate quality-assurance department.
+> Тестирование всегда должно выполняться внешней стороной, которая несколько отстранена от программы и проекта... Тестирование системы всегда должно выполняться независимой группой, такой как обособленный отдел обеспечения качества.
 
 Why is separation important? Some frequently stated arguments:
 
