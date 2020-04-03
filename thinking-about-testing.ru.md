@@ -104,27 +104,27 @@ order: 55
 
 ## Не разделяйте разработку и тестирование
 
-Бил Хертцель (Bill Hetzel), организатор первой конференции по тестированию ПО, определил в книге [*The Complete Guide to Software Testing*](http://www.amazon.com/Complete-Guide-Software-Testing/dp/0471565679) шесть принципов тестированию. Шестой принцип -- независимость тестов -- общая мотив на протяжении всей истории тестирования ПО. Гленфорд Майерс (Glenford Myers), автор первой книги о тестировании ПО, подчёркивал независимость тестирования в ней [*Software Reliability*](http://www.amazon.com/Software-Reliability-Principles-Glenford-Myers/dp/0471627658) :
+Бил Хетцель (Bill Hetzel), организатор первой конференции по тестированию ПО, определил в книге [*The Complete Guide to Software Testing*](http://www.amazon.com/Complete-Guide-Software-Testing/dp/0471565679) шесть принципов тестированию. Шестой принцип -- независимость -- общая мотив на протяжении всей истории тестирования ПО. Гленфорд Майерс (Glenford Myers), автор первой книги о тестировании ПО, подчёркивал независимость тестирования в ней [*Software Reliability*](http://www.amazon.com/Software-Reliability-Principles-Glenford-Myers/dp/0471627658) :
 
 > Тестирование всегда должно выполняться внешней стороной, которая несколько отстранена от программы и проекта... Тестирование системы всегда должно выполняться независимой группой, такой как обособленный отдел обеспечения качества.
 
-Why is separation important? Some frequently stated arguments:
+Почему разделение так важно? Некоторые часто приводимые аргументы:
 
-* Programming is constructive whereas testing is destructive--thus, programmers cannot test.
-* If programmers test their own code, then they will change the test according to the implementation.
-* When testing is done by the same group as implementation, then they can meet their deadline by skipping testing.
+* Программирование конструктивно, тогда как тестирование деструктивно -- поэтому программисты не могут тестировать.
+* Если программисты тестируют свой собственный код, они изменят тест в соответствии с реализацией.
+* Когда тестирование выполняется той же группой, что и разработка, они могут уложиться в срок, пропустив тестирование.
 
-The first two arguments assume single-specialist teams rather than cross-functional teams. The last argument suggests a quick fix for the much larger problem of quality-destroying shortcuts when pressuring developers.
+Первые два аргумента предполагают команды узкофункциональных специалистов, а не кросс-функциональные команды. Последний аргумент предлагает быстрое решение гораздо более серьёзной проблемы, связанной с разрушением качества путём срезания углов при оказании давления на разработчиков.
 
-In these arguments, test *independence* is equated to test separation from development. However, [Hetzel](http://www.amazon.com/Complete-Guide-Software-Testing/dp/0471565679) clarifies the principle:
+В этих аргументов, *независимость* тестов приравнено к отделению тестирования от разработки. Однако, [Хетцель](http://www.amazon.com/Complete-Guide-Software-Testing/dp/0471565679) проясняет этот принцип:
 
-> The requirement is that an independence of ***spirit*** be achieved, not necessarily that a separate individual of group do the testing.
+> Требуется, чтобы была достигнута независимость ***духа***, но не обязательно, чтобы тестирование проводилось отдельной группой людей.
 
-This point is reiterated in [*Agile Testing*](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468) in which the authors also point out the локальной субоптимизацией created by separating testing:
+Этот момент повторяется в книге [*Agile Testing*](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468), в которой авторы также указывают на локальную субоптимизацию, создаваемую отделением тестирования:
 
-> Teams often confuse “independent” with “separate.” If the reporting structure, budgets, and processes are kept in discrete functional areas, a division between programmers and testers is inevitable. Time is wasted on duplicate meetings, programmers and testers don’t share a common goal, and information sharing is nonexistent.
+> Команды часто путают “независимый” с “отдельным”. Если структура подчинения, бюджеты и процессы относятся к разным функциональным областям, разделение между программистами и тестировщиками неизбежно. Время тратится на дублирующие встречи, программисты и тестировщики не имеют общей цели, а обмен информацией отсутствует.
 
-Test independence does not mean independent testers.
+Независимость тестирования не означает независимых тестеров.
 {: .box_top_bottom  .text_centered_bold }
 
 How to achieve test independence in *spirit* without separating testing? *By writing tests before implementing code* . The test cannot be influenced by the implementation, because it does not exist yet. This way, test-driven development achieves the *spirit* of independence without separation of departments.
