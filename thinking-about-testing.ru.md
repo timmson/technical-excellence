@@ -131,13 +131,13 @@ order: 55
 
 ## Тестировщики и программисты работают вместе
 
-Separating testing from development often leads to a conflict between programmers and testers. Testers--hunting for bugs--try to prove that part of the program is faulty. Programmers--with their ego in their code--defend themselves, their code, and the program. Probably everyone who has been in the role of a tester in a test department has experienced this.
+Отделение тестирования от разработки часто приводит к конфликту между программистами и тестировщиками. Тестеры -- охотясь за ошибками -- пытаются доказать, что часть программы неисправна. Программисты -- гордясь своим кодом -- защищают себя, свой код и свою программу. Вероятно, это испытал каждый, кто работал в роли тестировщика в отделе тестирования.
 
-In a Scrum team, *‘testers’ are no longer testers* but ‘simply’ members of the team--with testing as their *primary specialization* . ‘Programmers’ are *any* members of the team who can code. Every member of the team has a shared goal and is held--as a team--accountable to that goal. Team members with different primary specializations have to cooperate in order to reach that goal.
+В команде Скрам-команде *‘тестеры’ уже не тестеры*, а ‘просто’ члены команды - с тестированием в качестве *основной специализации*. ‘Программисты’ - это *любые* члены команды, которые могут писать код. Каждый член команды разделяет общую цель и -- как и вся команда -- ответственен за достижение этой цели. Члены команды с разными основными специализациями должны сотрудничать для достижения этой цели.
 
-## Educate and coach testing
+## Обучайте и тренируйте навык тестирование
 
-Good testing skills come with deliberate practice and time. Unfortunately, especially in large organizations, testing skills are not respected. *“Everybody* can do that” is their belief, so they offshore it to a company that grabs people randomly from the street and assigns them to test. Random people hired to *bang away* on an application routinely see their job as a temporary stage they need to go through before advancing to a “real job.” They do not bother deepening their testing skills and so contribute to the false belief that testing is trivial.
+Хорошие навыки тестирования приходят с осознанной практикой и временем. К сожалению, особенно в крупных организациях, навыки тестирования не находят уважения. *“Каждый* может это делать” - убеждение крупных компаний по поводу тестирования, поэтому они передают подряд на поиск тестировщиков в другую компанию, которая случайным образом отбирает людей с улицы и назначает их на позиции тестирования. Случайный люди Random people hired to *bang away* on an application routinely see their job as a temporary stage they need to go through before advancing to a “real job.” They do not bother deepening their testing skills and so contribute to the false belief that testing is trivial.
 
 > Testers who don’t bother to learn new skills and grow professionally contribute to the perception that testing is low-skilled work. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
 
