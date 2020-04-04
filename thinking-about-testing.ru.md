@@ -155,7 +155,7 @@ Education and coaching are not the only ways to grow expertise. Open discussion 
 
 Test managers can play an important role in this community. They can use their expertise in testing and management and become CoP coordinators--in accordance with the [lean principle of manager-teachers](../principles/lean-thinking.html).
 
-> Rather than keeping the testers separate... [think about] a community of testers. Provide a learning organization to help your testers ... share ideas and help each other. If the QA manager becomes a practice leader in the organization, that person will be able to teach the skills that testers need to become stronger and better able to cope with the ever-changing environment. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
+> Вместо того, чтобы держать тестировщиков в отдельной команде... [подумайте о] сообществе тестировщиков. Постройте организацию обучения таким образом, чтобы помочь тестировщикам... в обмене идеями и взаимной помощи. Когда менеджер по качеству станет настоящим лидером в организации, он сможет повысить квалификацию и ценность тестировщиков в постоянно меняющейся среде. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
 
 ## Don't have separate test automation teams
 
