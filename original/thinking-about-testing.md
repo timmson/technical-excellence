@@ -212,7 +212,7 @@ We *do* believe it is possible to write *bug-free code* . We do *not* believe it
 * delaying the learning that happens when fixing a defect
 * spending extra time on fixing because the developers do not remember the code anymore
 
-Delaying the fixing of bugs is a false economy inasmuch as they need to be fixed anyway and the cost will be higher. Moving bugs from queue to queue is fooling yourself--they are still there!
+Delaying the fixing of bugs is a false economy in as much as they need to be fixed anyway and the cost will be higher. Moving bugs from queue to queue is fooling yourself--they are still there!
 
 ## Conclusion
 

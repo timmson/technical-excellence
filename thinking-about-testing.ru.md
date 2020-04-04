@@ -178,48 +178,48 @@ order: 55
 
 Нет никакого быстрого пути к знанию по автоматизации; отдельная команда автоматизации является *быстрым решением* -- но вредным в долгосрочной перспективе.
 
-## Feature team as test automation team
+## Команда автоматизации тестирования в качестве фиче-команды
 
-A separate test-automation team has many drawbacks but also some advantages. They can create the initial test framework, produce training material, and support the teams.
+Отдельная команда по автоматизации тестирования имеет много недостатков, но также имеет ряд преимуществ. Они могут создать первоначальный каркас тестов, учебные материалы и поддерживать команды на старте обучения.
 
-How to get these benefits without the drawbacks?
+Как получить эти преимущества без недостатков?
 
-A [feature team](../structure/feature-teams.html) can temporarily take on the role of test-automation team. Advantages:
+[Фиче-команда](../structure/feature-teams.html) может временно взять на себя роль команды автоматизации тестирования. Преимущества:
 
-* They have a deep understanding of the system.
-* They can take a small feature so that the automation is concrete and realistic.
-* The learning created during test -automation will not be lost.
-* There is visibility into test automation as the items go on the Product Backlog.
+* У них есть глубокое понимание системы.
+* Они могут взять небольшую задачу, поэтому автоматизация будет конкретной и реалистичной
+* Знания, созданные в во время автоматизации не потеряются.
+* Прозрачность прогресса автоматизации осуществляется за счёт помещения таких задач в Бэклог Продукта.
 
-## All tests pass--stop and fix
+## Тесты падают -- остановись и исправь
 
-Test fails?
+Тесты падают?
 
-Stop and fix it!
+Остановись и исправь это!
 
-“What about your automated tests?” we ask product groups when we visit them. Sometimes they reply, “We have 800 automated tests of which 200 are failing right now.” This is a huge queue and causes a complete lack of transparency in the development. When automated tests fail, fix them immediately.
+"А что у вас с автоматическими тестами?” - мы спрашиваем продуктовые группы во время их посещения. Иногда, они отвечают: “У нас 800 автотестов, 200 из которых не проходят.” Это является громадной очередью и создаёт полное отсутствие прозрачности в разработке. Когда автотесты падают, исправьте это немедленно.
 
-## Have zero tolerance on open defects
+## Отсутствие терпимости к открытым дефектам
 
-Why do people insist on creating defects? They spend effort to insert a defect, then they need to search for it, prioritize it, and finally fix it. Not creating the bug in the first place would be a lot less work.
+Почему люди настаивают на создании дефектов? Они тратят усилия на то, чтобы создать дефект, затем им нужно найти его, расставить приоритеты и, наконец, устранить его. Не создавать его в первую очередь было бы экономией усилий.
 
-We *do* believe it is possible to write *bug-free code* . We do *not* believe it is easy or common. Still, focus on preventing defects.
+Мы *действительно* считаем, что можно написать *код без ошибок*. Мы *не* верим, что это легко или просто. Тем не менее, сосредоточьтесь на предотвращении дефектов.
 
-“Zero tolerance on open defects” is a guideline used by one of our clients. If they find a defect, they fix it as soon as possible. This prevents
+“Отсутствие терпимости к открытым дефектам” - это рекомендация одного из наших клиентов. Если в его команде находят дефекты, они исправляют их как можно скорее. Это предотвращает
 
-* effort spent on tracking many defects
-* усилия, потраченные на приоритизацию
-* delaying the learning that happens when fixing a defect
-* spending extra time on fixing because the developers do not remember the code anymore
+* трату сил на отслеживание многих дефектов
+* трату сил на приоритизацию
+* отсрочка в получении знаний, которые возникают при исправление дефекта
+* трату дополнительного времени во время исправления, так как разработчики уже могу не помнить тот участок кода
 
-Delaying the fixing of bugs is a false economy inasmuch as they need to be fixed anyway and the cost will be higher. Moving bugs from queue to queue is fooling yourself--they are still there!
+Отложенное исправление дефектов является ложной экономией, так как править их все равно придётся, но цена такого исправления будет выше. Перемещение дефектов между очередями является самообманом - они всё равно ещё там!
 
-## Conclusion
+## Заключение
 
-Testing is not what it used to be. The barriers between testing and programming have to be demolished. Testing and programming are two sides of the same activity done by the same people. The purpose of the tests changes from finding defects to preventing them by writing the specifications as tests; and from checking the implementation to driving the design. This fundamentally different perspective leads to vital changes in the way people work--and work together.
+Тестирование не то, к ему мы привыкли. Барьеры между тестированием и программированием должны быть убраны. Тестирование и программирование - это две стороны одной и той же деятельности, выполняемой одними и теми же людьми. Цель тестирования сдвигается от обнаружения дефектов к их устранению путём написания тестовых спецификаций; от проверки реализации до управления дизайном. Эта принципиально иная точка зрения приводит к существенным изменениям в том, как люди работают -- работают вместе.
 
 ## Рекомендуем к прочтению
 
-* [*Agile Testing* , by Lisa Crispin and Janet Gregory](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468). A great overview of the role of testing in agile development. It covers the challenges organizations face when adopting agile development and also describes the concrete role of testing during the iteration.
-* [*Lessons Learned in Software Testing* , by Cem Kaner, James Bach, and Bret Pettichord](http://www.amazon.com/Lessons-Learned-Software-Testing-Context-Driven/dp/0471081124). This book describes the lessons learned from decades of experience in testing and also introduces the context-driven school of thinking in software testing.
-* [*Agile Testing Directions* , by Brian Marick](http://www.exampler.com/old-blog/2004/05/26/). A series of blog posts wherein Brian Marick introduces the agile testing quadrants.
+* [*Agile Testing* , by Lisa Crispin and Janet Gregory](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468). Лучший обзор роли тестирование в гибкой разработке ПО. Она рассказывает о вызовах, с которыми сталкивается организация при внедрения гибких подходов, а также а роли тестировщиков в рамках каждой итерации.
+* [*Lessons Learned in Software Testing* , by Cem Kaner, James Bach, and Bret Pettichord](http://www.amazon.com/Lessons-Learned-Software-Testing-Context-Driven/dp/0471081124). Эта книга описывает уроки, выученные во время десятков экспериментов в тестировании и представляет школу контекстного тестирование ПО.
+* [*Agile Testing Directions* , by Brian Marick](http://www.exampler.com/old-blog/2004/05/26/). Серия публикаций, в которы Брайан Марик знакомит с квадрантами гибкого тестирования.
