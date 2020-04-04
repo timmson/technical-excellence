@@ -147,13 +147,13 @@ order: 55
 
 > Они (рассказ одного из участников сессии "Конференция внутри конференции" на Agile 2007, [прим. переводчика]) разделили свою организацию тестирования... Однако они включили тестировщиков в подразделения разработчиков без какого-либо тренинга; после этого в течение трёх месяцев все тестировщики уволились, потому что не понимали своей новой роли.[[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
 
-Similarly, in an agile transition we worked with, many testers left to different products because they felt they had lost their identity and did not know how to work in a Scrum team. Prevent this by developing the team’s testing expertise.
+Точно так же, при переход к гибкой организации, с которым мы работали, многие тестировщики ушли в другие продуктовые группы, потому что они чувствовали, что потеряли свою идентичность и не знали, как работать в Скрам-команде. Предотвратите это, развивая опыт тестирования команды.
 
-## Create community of testing
+## Создайте сообщество тестировщиков
 
-Education and coaching are not the only ways to grow expertise. Open discussion and experience-sharing foster learning. One purpose of a functional unit--a test department--is to enable this learning. Without it, other means for discussion and sharing experiences are needed. For instance, by establishing a [Community of Practice](../structure/communities.html) for testing. People interested in testing--not only those with testing as their main specialization--meet every now and then to learn from each other or discuss via a mailing list or wiki.
+Образование и коучинг - не единственные способы повышения квалификации. Открытая дискуссия и обмен опытом для стимулируют обучение. Предназначении функциональной единицы -- отдела тестирования -- сделать возможным такое обучение. При отсутствии такого отдела нужны другие средства для обсуждения и обмена опытом. Например, запуск [Сообщества практик](../structure/communities.html) тестирования. Люди, заинтересованные в тестировании -- не те только, для которых основной специализацией является тестирование -- встречаются время от времени, чтобы учиться друг у друга или обсуждать в списках рассылок или вики.
 
-Test managers can play an important role in this community. They can use their expertise in testing and management and become CoP coordinators--in accordance with the [lean principle of manager-teachers](../principles/lean-thinking.html).
+Менеджеры по тестированию могут играть важную роль в таком сообществе. Они могут использовать свою экспертизу в тестировании и менеджменте и стать координаторами сообщества -- в соответствии с [принципом менеджеров-учителей в бережливого мышлении](../principles/lean-thinking.html).
 
 > Вместо того, чтобы держать тестировщиков в отдельной команде... [подумайте о] сообществе тестировщиков. Постройте организацию обучения таким образом, чтобы помочь тестировщикам... в обмене идеями и взаимной помощи. Когда менеджер по качеству станет настоящим лидером в организации, он сможет повысить квалификацию и ценность тестировщиков в постоянно меняющейся среде. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
 
