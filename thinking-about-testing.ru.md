@@ -135,7 +135,7 @@ order: 55
 
 В команде Скрам-команде *‘тестеры’ уже не тестеры*, а ‘просто’ члены команды - с тестированием в качестве *основной специализации*. ‘Программисты’ - это *любые* члены команды, которые могут писать код. Каждый член команды разделяет общую цель и -- как и вся команда -- ответственен за достижение этой цели. Члены команды с разными основными специализациями должны сотрудничать для достижения этой цели.
 
-## Обучайте и тренируйте навык тестирование
+## Обучайте и тренируйте навык тестирования
 
 Хорошие навыки тестирования приходят с осознанной практикой и временем. К сожалению, особенно в крупных организациях, навыки тестирования не находят уважения. *“Каждый* может это делать” - распространённое убеждение в крупных компаниях по поводу тестирования, поэтому поиском тестировщиков занимается подрядная компания, которая случайным образом отбирает людей с улицы и назначает их на позиции тестирования. Случайные люди, нанятые, чтобы *отмахиваться* от приложения, обычно рассматривают свою работу как временную стадию, через которую они должны пройти, прежде чем перейти к “настоящей работе”. Они не заботятся об углублении своих навыков тестирования и, таким образом, внушают ложное убеждение, что тестирование тривиально.
 
@@ -157,26 +157,26 @@ order: 55
 
 > Вместо того, чтобы держать тестировщиков в отдельной команде... [подумайте о] сообществе тестировщиков. Постройте организацию обучения таким образом, чтобы помочь тестировщикам... в обмене идеями и взаимной помощи. Когда менеджер по качеству станет настоящим лидером в организации, он сможет повысить квалификацию и ценность тестировщиков в постоянно меняющейся среде. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
 
-## Don't have separate test automation teams
+## Не создавайте отдельную команду автоматизации тестирования
 
-We advise organizations to invest in test automation and create a safety net of regression tests around their legacy code so that they can gradually work themselves out of the mess. They listen, and then create a separate test automation team.
+Мы советуем организациям инвестировать в автоматизацию тестирования и создавать безопасную сеть регрессионных тестов вокруг их унаследованного кода, чтобы они могли постепенно выходить из сложного положения. Они слушают нас, а затем создают отдельную команду автоматизации тестирования.
 
-Sometimes the test automation team tries to solve *all world problems* with their testware, and the effort produces only a lot of paper. But, sometimes we encounter a more pragmatic test automation team that actually creates testware such as an automation framework. They release every couple of months and everyone is impressed with the results.
+Иногда, команда автоматизации тестирования пытается решить *все проблемы в мире* с помощью своего тестового ПО, и в результате получается только много бумаги.
 
-What happens then? New functionality is implemented. Interfaces change and the automated tests fail. The development teams are upset and tell the test automation team to fix the tests. Or, the development teams comment out the tests because they do not understand them. Or, the testware is handed over to the development teams who discover it is unusable or incomprehensible and ignore it. Or... we have experienced a dozen different scenarios in organizations. It never worked.
+Что происходит потом? Новый функционал реализован. Интерфейсы поменялись и автоматические тесты падают. Команды разработчиков расстроены и просят команду автоматизации тестирования исправить тесты. Или команды разработчиков отключают такие тесты, потому что их не понимают. Или тестовое ПО передаётся командам разработчиков, которые обнаруживают, что оно непригодно или непонятно, и игнорируют его. Или... мы испытали дюжину различных сценариев в организациях. Это никогда не работает.
 
-Why? The assumption that is the *creation* *of the testware* is the difficult part and the most important thing. But other important aspects are under-appreciated:
+Почему? Предположение, что *создание* *тестового ПО* является сложной и самой важной частью. Но другие важные аспекты недооцениваются:
 
-* Creating testware requires deep understanding of the product.
-* Maintenance and evolution is more effort than initial creation.
-* Insights obtained during testware creation is perhaps more important than the testware itself.
-* Creating testware without *using* it leads to complex and unusable testware.
+* Создании тестового ПО требует глубоких знаний продукта.
+* Поддержка и развитие требуют больше сил, чем создание с нуля.
+* Выводы, полученные при создании тестового ПО, возможно, важнее него самого.
+* Создание тестового ПО без его *использования* ведёт к повышению его сложности и непригодности.
 
-Considering these aspects, a separate automation team causes additional complexity, the потери от передач, and knowledge scatter. No wonder it so often fails.
+Учитывая эти аспекты, отдельная группа автоматизации увеличивает сложность, потери от передачи и разброс знаний. Неудивительно, что такая практика часто проваливается.
 
-Test automation should be the responsibility of the cross-functional development teams--just as testing is also their responsibility.
+Автоматизация должна быть ответственностью кросс-функциональных команд -- как и обычное тестирование.
 
-There is no shortcut to learning how to automate; a separate automation team is a *quick fix* --and harmful in the long run.
+Нет никакого быстрого пути к знанию по автоматизации; отдельная команда автоматизации является *быстрым решением* -- но вредным в долгосрочной перспективе.
 
 ## Feature team as test automation team
 
