@@ -137,15 +137,15 @@ order: 55
 
 ## Обучайте и тренируйте навык тестирование
 
-Хорошие навыки тестирования приходят с осознанной практикой и временем. К сожалению, особенно в крупных организациях, навыки тестирования не находят уважения. *“Каждый* может это делать” - убеждение крупных компаний по поводу тестирования, поэтому они передают подряд на поиск тестировщиков в другую компанию, которая случайным образом отбирает людей с улицы и назначает их на позиции тестирования. Случайный люди Random people hired to *bang away* on an application routinely see their job as a temporary stage they need to go through before advancing to a “real job.” They do not bother deepening their testing skills and so contribute to the false belief that testing is trivial.
+Хорошие навыки тестирования приходят с осознанной практикой и временем. К сожалению, особенно в крупных организациях, навыки тестирования не находят уважения. *“Каждый* может это делать” - распостранённое убеждение в крупных компаниях по поводу тестирования, поэтому поиском тестировщиков занимается подрядная компания, которая случайным образом отбирает людей с улицы и назначает их на позиции тестирования. Случайные люди, нанятые, чтобы *отмахиваться* от приложения, обычно рассматривают свою работу как временную стадию, через которую они должны пройти, прежде чем перейти к “настоящей работе”. Они не заботятся об углублении своих навыков тестирования и, таким образом, внушают ложное убеждение, что тестирование тривиально.
 
-> Testers who don’t bother to learn new skills and grow professionally contribute to the perception that testing is low-skilled work. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
+> Тестировщики, которые не хотят учиться новым навыкам и профессионально развиваются, способствуют восприятию того, что тестирование - это низкоквалифицированная работа. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
 
-Falling into the “testing is trivial” trap is costly. Support testing mastery by providing self-study material, education, and [coaching](../adoption/coaching.html). We have listed some general testing-skills literature in the recommended reading section.
+Попасть в ловушку “тестирование тривиально” дорого. Поддержите мастерство тестирования, предоставляя материал для самостоятельного изучения, обучение и [коучинг](../adoption/coaching.html). Мы перечислили некоторую общую литературу по навыкам тестирования в рекомендуемом разделе чтения.
 
-Of course, providing education and coaching in testing is also important to traditional environments. In cross-functional teams, this becomes even more relevant as testers at times feel marginalized. Not having a testing functional organization may impact the feeling of career progression and their interest in testing. And this is exacerbated if all education and coaching is related to development or management practices. High test turnover during an agile transition is not uncommon
+Конечно, обучение и коучинг по тестированию также важны для традиционной среды. В кросс-функциональных командах это становится ещё более актуальным, поскольку тестеры иногда чувствуют себя изолированными. Отсутствие в организации функциональных подразделений тестирования может повлиять на чувство карьерного роста и их интерес к тестированию. И это усугубляется, если все образование и коучинг связаны с практиками разработки или менеджмента. Высокая текучесть тестировщиков во время перехода к гибкой организации не редкость.
 
-> They split up their test organization... However, they put the testers into the development units without any training; within three months, all of the testers had quit because they didn’t understand their new role. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
+> Они разделили свою организацию тестирования ... Однако, они не ставят тестеров в отделы разработки без какого-либо обучения; в течение трёх месяцев все тестеры ушли, потому что не понимали своей новой роли. [[CG09]](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468)
 
 Similarly, in an agile transition we worked with, many testers left to different products because they felt they had lost their identity and did not know how to work in a Scrum team. Prevent this by developing the team’s testing expertise.
 
@@ -218,7 +218,7 @@ Delaying the fixing of bugs is a false economy inasmuch as they need to be fixed
 
 Testing is not what it used to be. The barriers between testing and programming have to be demolished. Testing and programming are two sides of the same activity done by the same people. The purpose of the tests changes from finding defects to preventing them by writing the specifications as tests; and from checking the implementation to driving the design. This fundamentally different perspective leads to vital changes in the way people work--and work together.
 
-## Recommended Readings
+## Рекомендуем к прочтению
 
 * [*Agile Testing* , by Lisa Crispin and Janet Gregory](http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468). A great overview of the role of testing in agile development. It covers the challenges organizations face when adopting agile development and also describes the concrete role of testing during the iteration.
 * [*Lessons Learned in Software Testing* , by Cem Kaner, James Bach, and Bret Pettichord](http://www.amazon.com/Lessons-Learned-Software-Testing-Context-Driven/dp/0471081124). This book describes the lessons learned from decades of experience in testing and also introduces the context-driven school of thinking in software testing.
