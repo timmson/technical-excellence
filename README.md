@@ -11,12 +11,12 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 ## Содержание
 - [Архитектура и Проектирование / Architecture & Design](architecture-design.ru.md)
 - [Модульное тестирование / Unit-testing](unit-testing.ru.md)
+- [Размышления о Тестировании / Thinking About Testing](thinking-about-testing.ru.md)
 - [Разработка через тестирование/ Test-Driven Development](test-driven-development.ru.md)
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
 - [Приёмочное тестирование / Acceptance Testing](acceptance-testing.ru.md)
 - Continuous Delivery
 - Clean Code
-- [Thinking About Testing ??? / Thinking About Testing](thinking-about-testing.ru.md)
 - Test Automation
 - Specification by Example
 
