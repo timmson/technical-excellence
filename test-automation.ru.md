@@ -3,11 +3,11 @@ title: Автоматизация Тестирования
 order: 60
 ---
 
-## Manual Tests
+## Ручные Тесты
 
 Agile developers emphasize the importance of automated tests. With short cycles, manual regression testing is nearly impossible. Does that mean there is no manual testing at all? No. Some manual testing is still recommended, though such testing differs from the traditional script-based manual testing.
 
-### Automate your manual tests
+### Автоматизируйте ваши ручные тесты
 
 Product groups often claim “It is impossible to automate tests related to a lost network connection” or “You can’t automate tests related to hardware failure” Our answer usually is “No, it is not” or “Yes, you can.”
 
