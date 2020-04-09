@@ -113,11 +113,11 @@ In order to speed up the tests and keep the investment in hardware low, maximize
 
 ### Избегайте использования коммерческих инструментов тестирования
 
-We once coached at a company building a commercial “automated testing” tool—a GUI testing tool. The requested coaching? To learn how to do automated testing for developing their automated testing tool...
+Однажды мы консультировали компании, которая разрабатывала коммерческий инструмент для “автоматизации тестирования” - инструмент с графическим интерфейсом. В чем состоял их запрос? Научить, как автоматизировать тестирование их инструмента, автоматизирующего тестирование...
 
-A огромное множество commercial test tools are available. We rarely meet people who are actually satisfied with any of them. Most are overly complex and focus more on reporting and ‘management’ than on robust test automation. Favor free and open-source tools—made by developers solving real problems—over commercial tools.
+Доступно огромное множество коммерческих инструментов. We rarely meet people who are actually satisfied with any of them. Most are overly complex and focus more on reporting and ‘management’ than on robust test automation. Favor free and open-source tools—made by developers solving real problems—over commercial tools.
 
-Example of common test automation tools:
+Список распространённых инструментов для автоматизации тестирования:
 
 * [RobotFramework](http://www.robotframework.org/)
 * [Cucumber](https://cucumber.io/)
@@ -125,4 +125,4 @@ Example of common test automation tools:
 * [Selenium](http://www.seleniumhq.org/)
 * [Capybara](https://github.com/jnicklas/capybara)
 
-There are much more. The above is just a list of common tools, but new tools pop up all the time.
+Выше всего лишь самый общий список, но каждый день появляются новые и новые инструменты.
