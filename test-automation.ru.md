@@ -71,7 +71,7 @@ order: 60
 
 Дублирование в коде приводит к дополнительной сложности, снижение прозрачности и дефектам - что ведёт к накладным расходам в сопровождении. Это правда для кода тестов, так и для продуктивного кода. Избегайте этого, удаляя дубликаты.
 
-Workflow tests are a common cause of duplication. They often consist of one mother scenario and multiple derived cases with only slight variations in them. When one step changes, all these workflow tests need to be updated. This duplication can be avoided by data-driven tests that focus on business rules or by separating the duplication into test libraries or fixtures.
+Процессные тесты (workflow tests) являются основной причина дублирования. Они часто состоят из одного материнского сценария и множества сценариев, незначительно отличающих друг от друга. Когда один шаг меняется, все эти тесты нужно обновить. Такое дублирование можно избежать с помощью тестов на основе данных (data-driven tests), которые фокусируются на бизнес-правилах, или переносом дубликатов в тестовые библиотеки или фикстуры
 
 We coached a team that made a common mistake—they delayed their test automation until the end of the iteration. Four days remaining and only automation tasks left. In the previous iterations, these tasks were done by the test specialist, but now they had to be done by the whole team.
 
