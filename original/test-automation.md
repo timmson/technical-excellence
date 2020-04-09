@@ -63,7 +63,7 @@ In the example, there is no detailed preconceived script or test case but instea
 “Automated tests will increase our test maintenance load” is a common objection we hear. Test maintenance will cost some effort, but a few straightforward techniques can minimize this cost:
 
 * remove duplication in and between tests
-* delete tests
+* delete tests when not adding value
 * do not test through the UI
 * run tests frequently
 

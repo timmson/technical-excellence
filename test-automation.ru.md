@@ -62,12 +62,12 @@ order: 60
 
 “Необходимость поддержки автотестов увеличит нашу загрузку” - возражение, которое мы слышим. Поддержка автотестов потребует от нас дополнительных усилий, но следующие техники могу их снизить:
 
-* исключайте дублирование кода внутри тестов и между ними
-* удаляйте тесты
-* не тестируйте через пользовательский интерфейс
+* удаляйте дублирование кода внутри тестов и между ними
+* удаляйте тесты, не добавляющих ценности
+* избегайте тестирования через пользовательский интерфейс
 * запускайте тесты часто
 
-### Remove duplication in and between tests
+### Удаляйте дублирование кода внутри тестов и между ними
 
 Code duplication causes extra complexity, obscurity, and defects—resulting in extra maintenance effort. This is as true for test code as it is for production code. Avoid this by removing the duplication.
 
@@ -77,31 +77,31 @@ We coached a team that made a common mistake—they delayed their test automatio
 
 They started with a one-day workshop in which the one specialist coached the other team members. After that, they split into two pairs and one triplet working in parallel on automating the tests. Something interesting happened: The team members who were experienced in programming complained about the extra effort needed because of the duplication in the tests. Previously, none of them had noticed it and the test specialist—who did not have much programming experience—never cared. Now that the whole team was involved, they cared and the quality of the tests improved immensely.
 
-### Delete tests when not adding value
+### Удаляйте тесты, не добавляющих ценности
 
 Tests serve multiple purposes. They act as requirements, as verification, and as a safety net preventing system regression.
 
 When an existing test is not needed anymore—because it is a subset of another test—then delete it. Leaving unnecessary tests brings no benefit but still increases maintenance effort and lowers test execution speed.
 
-### Avoid testing through the UI
+### Избегайте тестирования через пользовательский интерфейс
 
 User interfaces (UI) tend to change frequently. Running your tests through the UI makes them vulnerable to these changes—even when there is no change in test logic. This increases the test maintenance effort.
 
 Therefore, avoid testing through the UI and instead call the application logic directly through an API. Another advantage of doing this is that it speeds up your test since testing through the UI is slow.
 
-### Run tests frequently
+### Запускайте тесты часто
 
 Long ago, we worked with a large group following waterfall development. Traditional test automation advice is to select and automate only the most important cases—with a separate automation team— after the release. So they did. At the end of the next release, they executed the tests and... they all failed. Updating them would take much time, so they decided to do all testing manually.
 
 Executing tests once or twice a release seems efficient—fewer CPU cycles are wasted—but much will have changed and therefore many fail and cause a large batch of maintenance work. Alternatively, executing tests frequently—using a continuous integration system— uses more CPU cycles but results in less maintenance work since the effort to fix failing tests is small and straightforward. If you have a high test-maintenance load, chances are you are not executing the tests frequently enough.
 
-### Treat нефункциональные the same as функциональные
+### Относитесь функциональным м нефункциональным тестам одинаково 
 
 Automating and continuously running non-functional tests is essential. Delaying them to the end means moving one of the biggest risks to where they hurt most. For example, if the system needs a certain performance level, test early to reach it early, and continuously run the test while new functionality is added to ensure that the system does not regress from its performance target.
 
 нефункциональные are often treated экзотично people believe they cannot be specified and cannot be tested. This is unfortunate. In a requirements workshop, нефункциональные can be considered the same as функциональные, and example tests are created for clarifying them.
 
-### Continuously run long-running tests
+### Непрерывно выполняйте тесты, занимающие значительное время
 
 Non-functional tests frequently cannot be run in the normal continuous-integration-system cycle because they may take too long to execute—a stability test might take two weeks. Some product groups delay them until near the release—creating a delayed feed-back cycle. Not a good idea.
 
@@ -111,7 +111,7 @@ Run the long-running tests all the time in a slower continuous-integration-syste
 
 In order to speed up the tests and keep the investment in hardware low, maximize the use of виртуализацию using [VirtualBox](https://www.virtualbox.org/) or [VMWare](http://www.vmware.com/). An alternative to virtual machines (which aren't always fast to build and easy to maintain) are linux virtual containers such as [Docker](http://www.docker.io/)
 
-### Avoid using commercial test tools
+### Избегайте использования коммерческих инструментов тестирования
 
 We once coached at a company building a commercial “automated testing” tool—a GUI testing tool. The requested coaching? To learn how to do automated testing for developing their automated testing tool...
 
