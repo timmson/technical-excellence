@@ -95,12 +95,11 @@ Long ago, we worked with a large group following waterfall development. Traditio
 
 Executing tests once or twice a release seems efficient—fewer CPU cycles are wasted—but much will have changed and therefore many fail and cause a large batch of maintenance work. Alternatively, executing tests frequently—using a continuous integration system— uses more CPU cycles but results in less maintenance work since the effort to fix failing tests is small and straightforward. If you have a high test-maintenance load, chances are you are not executing the tests frequently enough.
 
-### Относитесь функциональным м нефункциональным тестам одинаково 
+### Относитесь функциональным м нефункциональным требованиям одинаково 
 
-Автоматизация и непрерывный запуск нефункциональных тестов
-Automating and continuously running non-functional tests is essential. Delaying them to the end means moving one of the biggest risks to where they hurt most. For example, if the system needs a certain performance level, test early to reach it early, and continuously run the test while new functionality is added to ensure that the system does not regress from its performance target.
+Автоматизация и непрерывный запуск нефункциональных тестов важна. Откладывая их на конец означает смещение одно из самых больших рисков туда, где они принесут больше всего вреда. Например, если требуется определённый уровень производительности системы, начните его раннее тестирование, чтобы также  достичь его раньше, и непрерывно запускайте эти тесты, пока будет добавляться новая функциональность, чтобы убедиться в том, что система не деградирует по производительности от её целевого уровня.
 
-нефункциональные are often treated экзотично people believe they cannot be specified and cannot be tested. This is unfortunate. In a requirements workshop, нефункциональные can be considered the same as функциональные, and example tests are created for clarifying them.
+К нефункциональным требованиям часто относятся по-особенному - люди верят, что они не могут быть описаны и протестированы. Это прискорбно. На воркшопе по уточнению, нефункциональные требования могут быть разобраны так же, как и функциональные, и могут быть созданы тесты из примеров для их прояснения.
 
 ### Непрерывно выполняйте длительные тесты
 
