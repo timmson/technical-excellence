@@ -9,7 +9,8 @@
     "lint": "npx markdownlint **/*.md --ignore node_modules --ignore original",
     "fixlint": "npx markdownlint **/*.md --ignore node_modules --ignore original --fix",
     "test": "npm run spell && npm run lint",
-    "start": "npm run fixlint && npm test"
+    "start": "npm run fixlint && npm test",
+    "push": "npm run start  && git commit -am $1 && git push"
   },
   "repository": {
     "type": "git",
