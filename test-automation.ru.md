@@ -25,7 +25,7 @@ order: 60
 
 Особенно в крупномасштабной разработке с фиче-командами и практикой общего владения кодом, страхующая сеть из автотестов имеет первостепенное значение.
 
-### Делайте некоторые тесты вручную
+### Проводите некоторые тесты вручную
 
 Автоматизация *всех* тестов может быть бесполезной или даже невозможной. Следующие тесты могут выполняться вручную:
 
@@ -37,12 +37,13 @@ order: 60
 
 ### Проводите исследовательское тестирование
 
-In [Perfect Software and Other Illusions about Testing](http://www.amazon.com/Perfect-Software-Other-Illusions-Testing/dp/0932633692), Джеральд Вайнберг calls it, “The Exhaustive Testing Fallacy, that it’s possible to test everything!” It is not. The number of possible scenarios to test is infinite and therefore automating all tests means infinite automation effort. Instead, automate all the anticipated tests and spend time as efficiently as possible on manual exploratory testing to find unforeseen cases.
-over-view of exploratory testing
+В книге [Perfect Software and Other Illusions about Testing](http://www.amazon.com/Perfect-Software-Other-Illusions-Testing/dp/0932633692), Джеральд Вайнберг называет их, “Исчерпывающая ошибка тестирования, что можно проверить все!” It is not. Количество возможных сценариев тестирования бесконечно, следовательно, автоматизация всех тестов означает бесконечные трудозатраты. Вместо этого автоматизируйте все типовые тесты и потратьте время эффективно, насколько это возможно, на исследовательское тестирование, чтобы обнаружить непредвиденные сценарии.
+обзор исследовательского тестирования
+
 
 <figure>
   <img src="/img/test_automation/et.png" alt="et.png">
-  <figcaption>Exploratory testing</figcaption>
+  <figcaption>Исследовательское тестирование</figcaption>
 </figure>
 
 What is exploratory testing? “Simultaneous learning, test design, and test execution” [[Bach03]](http://www.satisfice.com/articles/what_is_et.shtml). This is in contrast to traditional scripted testing where test-case design and execution are separated and sequential steps—first design then execution. Exploratory testing aims at fully utilizing human creativity during test execution, using feedback and observations rather than mindlessly following a script. In exploratory testing, the tester is exploring the system, learning about it and using that information to make test-design decisions. It is best explained by an example.
