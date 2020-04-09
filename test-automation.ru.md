@@ -62,14 +62,14 @@ order: 60
 
 “Необходимость поддержки автотестов увеличит нашу загрузку” - возражение, которое мы слышим. Поддержка автотестов потребует от нас дополнительных усилий, но следующие техники могу их снизить:
 
-* удаляйте дублирование кода внутри тестов и между ними
+* удаляйте дублирование внутри тестов и между ними
 * удаляйте тесты, не добавляющие ценности
 * избегайте тестирования через пользовательский интерфейс
 * запускайте тесты часто
 
-### Удаляйте дублирование кода внутри тестов и между ними
+### Удаляйте дублирование внутри тестов и между ними
 
-Code duplication causes extra complexity, obscurity, and defects—resulting in extra maintenance effort. This is as true for test code as it is for production code. Avoid this by removing the duplication.
+Дублирование в коде приводит к дополнительной сложности, снижение прозрачности и дефектам - что ведёт к накладным расходам в сопровождении. Это правда для кода тестов, так и для продуктивного кода. Избегайте этого, удаляя дубликаты.
 
 Workflow tests are a common cause of duplication. They often consist of one mother scenario and multiple derived cases with only slight variations in them. When one step changes, all these workflow tests need to be updated. This duplication can be avoided by data-driven tests that focus on business rules or by separating the duplication into test libraries or fixtures.
 
