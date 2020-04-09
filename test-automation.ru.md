@@ -97,15 +97,16 @@ Executing tests once or twice a release seems efficient—fewer CPU cycles are w
 
 ### Относитесь функциональным м нефункциональным тестам одинаково 
 
+Автоматизация и непрерывный запуск нефункциональных тестов
 Automating and continuously running non-functional tests is essential. Delaying them to the end means moving one of the biggest risks to where they hurt most. For example, if the system needs a certain performance level, test early to reach it early, and continuously run the test while new functionality is added to ensure that the system does not regress from its performance target.
 
 нефункциональные are often treated экзотично people believe they cannot be specified and cannot be tested. This is unfortunate. In a requirements workshop, нефункциональные can be considered the same as функциональные, and example tests are created for clarifying them.
 
 ### Непрерывно выполняйте длительные тесты
 
-Non-functional tests frequently cannot be run in the normal continuous-integration-system cycle because they may take too long to execute—a stability test might take two weeks. Some product groups delay them until near the release—creating a delayed feed-back cycle. Not a good idea.
+Нефункциональные тесты часто не могут запускаться в системном цикле непрерывной интеграции, потому что они занимают много времени - тесты стабильности могут занимать до двух недель. В некоторых продуктовых группах их откладывают до релиза - создавая отложенный цикл обратной связи. Не самая хорошая идея.
 
-Запускайте длительные тесты все время в медленном системном CI цикле. Относитесь к также, как и к любым другим. Когда они падают, оповещайте всех, кто изменял код. После их прохождения получите последнюю сборку и запустите их заново. Таким способом цикл обратной связи будет на столько коротким, насколько мог бы быть.
+Запускайте длительные тесты все время в медленном системном цикле непрерывной интеграции. Относитесь к также, как и к любым другим. Когда они падают, оповещайте всех, кто изменял код. После их прохождения получите последнюю сборку и запустите их заново. Таким способом цикл обратной связи будет на столько коротким, насколько мог бы быть.
 
 ### Используйте виртуализацию или контейнеризацию
 
