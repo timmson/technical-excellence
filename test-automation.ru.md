@@ -109,7 +109,7 @@ Run the long-running tests all the time in a slower continuous-integration-syste
 
 ### Используйте виртуализацию или контейнеризацию
 
-In order to speed up the tests and keep the investment in hardware low, maximize the use of виртуализацию using [VirtualBox](https://www.virtualbox.org/) or [VMWare](http://www.vmware.com/). An alternative to virtual machines (which aren't always fast to build and easy to maintain) are linux virtual containers such as [Docker](http://www.docker.io/)
+В порядке ускорения тестов и сохранения инвестиций в аппаратное обеспечение на низком уровне максимизируйте использование инструментов для виртуализации, например [VirtualBox](https://www.virtualbox.org/) или [VMWare](http://www.vmware.com/). Альтернативой виртуальным машиным (которые не всегда быстро собираются и легко поддерживаются) являются виртуальные linux контейнеры, такие как [Docker](http://www.docker.io/).
 
 ### Избегайте использования коммерческих инструментов тестирования
 
