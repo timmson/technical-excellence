@@ -38,22 +38,22 @@ order: 60
 ### Проводите исследовательское тестирование
 
 В книге [Perfect Software and Other Illusions about Testing](http://www.amazon.com/Perfect-Software-Other-Illusions-Testing/dp/0932633692), Джеральд Вайнберг называет их, “Исчерпывающая ошибка тестирования, что можно проверить все!” It is not. Количество возможных сценариев тестирования бесконечно, следовательно, автоматизация всех тестов означает бесконечные трудозатраты. Вместо этого автоматизируйте все типовые тесты и потратьте время эффективно, насколько это возможно, на исследовательское тестирование, чтобы обнаружить непредвиденные сценарии.
-обзор исследовательского тестирования
+
 
 <figure>
   <img src="/img/test_automation/et.png" alt="et.png">
-  <figcaption>Исследовательское тестирование</figcaption>
+  <figcaption>Обзор исследовательского тестирования</figcaption>
 </figure>
 
 Что такое исследовательское тестирование? “Одновременное обучение, разработка выполнение тестов” [[Bach03]](http://www.satisfice.com/articles/what_is_et.shtml). Это контрастирует с обычным сценарным тестированием, где проектирование тест-кейсов и их исполнение разделены и выполняются последовательно - сначала проектирование, потом исполнение. Исследовательское тестирование помогает полностью использовать творческое начало людей во время исполнения тестов, получение обратной связи и наблюдений в отличие от бездумного следования сценарию. В исследовательском тестировании тестировщик исследует систему, изучает её и использует эту информацию для принятия решений о дизайне самого теста. Это лучше объяснить на примере.
 
-Представьте, что Гита тестирует программу для 2D-моделирования. First, she defines the goal of her test session—in exploratory testing this is called a mission or charter. Her charter is “Explore changing shapes by dragging the control points.” She takes a shape, drops it on the canvas, and creates a couple of control points on it. She drags one of them and observes what happens. Based on this observation (learning), she determines the next step (design) and performs it (execute). The shape takes its new form, though she notices—while dragging the control points—that the shape temporarily took a form that it probably should not have. Therefore, she continues dragging it and moving it around until she can reproduce the accidental transformation.
+Представьте, что Гита тестирует программу для 2D-моделирования. Сначала, она определяет цель сессии тестирования - в исследовательском тестировании она называется миссией или чартером. Её чартер состоит в том, чтобы “Исследовать изменение фигур при перетаскивании контрольных точек.” Она берет фигуру, переносит её в рабочую область и создаёт пару контрольных точек на ней. Она перетаскивает одну из них и наблюдает, что произойдёт. Основываясь на этом наблюдении (новых знаниях), он определяет следующие шаг (дизайн) и выполняет его. Фигура приобретает новую форму, хотя она замечает - во время перетаскивания контрольных точек - что фигура временно приняла такую форму, котору не должна была принять. Поэтому, Гита продолжает перетаскивать фигура и перемещать её вокруг, пока не сможет воспроизвести случайное преобразование.   
 
-In the example, there is no detailed preconceived script or test case but instead an area of focus—a charter. The first step is to observe the system, and the next action is determined from that observation—this is test design. All traditional test techniques and heuristics are applied during this design step.
+В этом пример нет детального предопределённого сценария или тест-кейса, но есть фокус на области - чартере. Первым шагом является исследование системы, на нём строится определение следующего действия - это и есть дизайн теста. Все традиционные методы испытаний и эвристики применяются на этом этапе проектирования.
 
 <figure>
   <img src="/img/test_automation/et_scripted_difference.png" alt="et.png">
-  <figcaption>Exploratory testing</figcaption>
+  <figcaption>Исследовательское тестирование</figcaption>
 </figure>
 
 ## Automated Testing
