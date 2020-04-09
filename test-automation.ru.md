@@ -5,37 +5,37 @@ order: 60
 
 ## Ручные Тесты
 
-Agile developers emphasize the importance of automated tests. With short cycles, manual regression testing is nearly impossible. Does that mean there is no manual testing at all? No. Some manual testing is still recommended, though such testing differs from the traditional script-based manual testing.
+Разработчики, следующие гибким принципы разработки ПО, подчёркивают важность автотестов. В коротких циклах ручное регрессионное тестирование почти невозможно. Значит ли это, что не должно вообще ручного тестирования? Нет. Рекомендуемы только некоторые виды ручного тестирования, например, тестирование, отличное от традиционного сценарного ручного тестирования. 
 
 ### Автоматизируйте ваши ручные тесты
 
-Product groups often claim “It is impossible to automate tests related to a lost network connection” or “You can’t automate tests related to hardware failure” Our answer usually is “No, it is not” or “Yes, you can.”
+В продуктовых группах часто утверждают: “Невозможно автоматизировать тесты, основанные на потере сетевого соединения“ или “Вы не можете автоматизировать тесты с падением аппаратного обеспечения“. Наш ответ обычно: “Нет, это не так” или “Да, вы можете”.
 
-Элизабет Хендриксон, the author of the mini-book [*Exploratory Testing in an Agile Context*](/papers/et.pdf) , dares to state that:
+Элизабет Хендриксон, автор небольшой книги [*Exploratory Testing in an Agile Context*](/papers/et.pdf), осмеливается утверждать:
 
-> I do think that if you can write a manual script for a test, you can automate it.
+> Я думаю, если вы можете написать сценарий для ручного тестирования, то вы можете его автоматизировать
 
-It may be difficult to automate a test in *exactly the same way* as it would be carried out manually. For example, it is nearly impossible to remove the network cable automatically in a connection-lost test case. Therefore, the automated test is usually done in a different way. Instead of the cable being physically detached, the automated test instructs the driver to respond *as if* the cable were removed.
+Автоматизировать ручные тесты *как есть* может быть не лёгкой задачей. Например, почти невозможно вытащить сетевой шнур автоматически в тесте с потерей соединения. Однако автоматический тест может быть выполнен в другом ключе. Вместо того, чтобы физически вытащить шнур, автоматический тест даёт команд драйверу сетевой карты, *как если бы* шнур был вытащен на самом деле.
 
-Is automating all tests worth it? According to Хендриксон:
+Имеет ли ценность автоматизация всех тестов? Согласно Хендриксон:
 
-> If it’s a test that’s important enough to script, and execute, it’s important enough to automate.
+> Если тест достаточно важен, чтобы создать для него сценарий и выполнять его, он также достаточно важен для автоматизации.
 
-Why is this? Iterative and incremental development implies that code is not frozen at the end of the iteration but instead has the potential to be changed each iteration. Therefore, manual regression testing would mean rerunning most of the manual test--every iteration. Automating the tests therefore pays back quickly.
+Почему так? Итеративно-инкрементальная разработка по подразумевает, что исходный код не фиксируется навсегда в конце каждой итерации, а потенциально готов к изменениям в следующих итерациях. Однако ручное регрессионное тестирование может означать повторное прохождение большинства тестов -- каждую итерацию. Автоматизация тестирования быстро себя окупает.  
 
-Especially in large-scale development with feature teams and shared code-ownership, the safety net provided by automated tests is of paramount importance. Automating tests is well worth the effort.
+Особенно в крупномасштабной разработке с фиче-командами и практикой общего владения кодом, страхующая сеть из автотестов имеет первостепенное значение.
 
-### Do some manual tests
+### Делайте некоторые тесты вручную
 
-Automating *all* tests might not be worthwhile or even possible. These tests may need to be done manually:
+Автоматизация *всех* тестов может быть бесполезной или даже невозможной. Следующие тесты могут выполняться вручную:
 
-* *Tests requiring human opinion and creativity* --A person is needed to judge whether the interface looks good--usability testing. Exploratory testing by definition needs someone to decide the next step to explore.
-* *Tests requiring physical movement* --For example, tests with the system in different physical configurations. These can be automated with simulation, but the real configuration might be needed for the final test run.
-* *Expensive tests* --Running capacity tests on the production environment may be too expensive and is therefore done only once or twice. This delays risk. These risks should be tackled early with cheaper tests--for example, running capacity tests on a simulated environment--so that running the expensive test is merely a final check.
+* *Тесты, требующие человеческого внимания и творческого подхода* -- Для оценки пользовательского интерфейса требуется человек -- тестирование удобства (usability testing). Исследовательское тестирование по определению требует кого-либо, кто принимает решение о дальнейших шагах.
+* *Тесты, требующие физического движения* -- Например, тесты с различными физическими конфигурациями системы. Это может быть автоматизировано с помощью симуляции, но реальная конфигурация будет необходим для финального запуска тестов. 
+* *Дорогие тесты* -- Запуск ёмкостных тестов (capacity tests) в промышленной среде может слишком дорогим, поэтому может быть выполнено один или два раза. Это откладывает риск. Эти риски должны быть снижены за счёт дешёвых тестов -- например, путём запуска ёмкостных тестов в среде симуляции -- таки образом запуск дорогих тестов становится просто окончательной проверкой.
 
-No false dichotomy: Try to automate all tests, but do not forget to do the manual tests when needed.
+Ложной дихотомии тут нет: Попытайтесь автоматизировать все тесты, но не забывайте тестировать вручную, когда это требуется.
 
-### Do exploratory testing
+### Проводите исследовательское тестирование
 
 In [Perfect Software and Other Illusions about Testing](http://www.amazon.com/Perfect-Software-Other-Illusions-Testing/dp/0932633692), Джеральд Вайнберг calls it, “The Exhaustive Testing Fallacy, that it’s possible to test everything!” It is not. The number of possible scenarios to test is infinite and therefore automating all tests means infinite automation effort. Instead, automate all the anticipated tests and spend time as efficiently as possible on manual exploratory testing to find unforeseen cases.
 over-view of exploratory testing
