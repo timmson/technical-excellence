@@ -87,10 +87,11 @@ They started with a one-day workshop in which the one specialist coached the oth
 
 Пользовательские интерфейсы (UI) часто меняются. Запуск ваших тестов через пользовательский интерфейс делает их уязвимыми для этих изменений - даже в случае, когда логике тестов изменений не было. Это увеличивает затраты на содержание.
 
-Therefore, avoid testing through the UI and instead call the application logic directly through an API. Another advantage of doing this is that it speeds up your test since testing through the UI is slow.
+Поэтому, Избегайте тестирования через пользовательский интерфейс, а вместо этого обращайтесь к приложению напрямую через программно-прикладной  интерфейс (API). Ещё одно преимущество состоит в том, что это ускоряет ваши тесты, поскольку тестирование через пользовательский интерфейс выполняется медленно.
 
 ### Запускайте тесты часто
 
+Много лет назад мы работали с большой продуктовой группой, следующей водопадному подходу разработки. Традиционные в сфере автоматизации тестирования совет состоит в том, чтобы выбрать и автоматизировать наиболее важные случи - с отдельной командой автоматизации тестирования
 Long ago, we worked with a large group following waterfall development. Traditional test automation advice is to select and automate only the most important cases—with a separate automation team— after the release. So they did. At the end of the next release, they executed the tests and... they all failed. Updating them would take much time, so they decided to do all testing manually.
 
 Executing tests once or twice a release seems efficient—fewer CPU cycles are wasted—but much will have changed and therefore many fail and cause a large batch of maintenance work. Alternatively, executing tests frequently—using a continuous integration system— uses more CPU cycles but results in less maintenance work since the effort to fix failing tests is small and straightforward. If you have a high test-maintenance load, chances are you are not executing the tests frequently enough.
