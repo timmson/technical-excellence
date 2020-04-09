@@ -73,7 +73,7 @@ order: 60
 
 Процессные тесты (workflow tests) являются основной причина дублирования. Они часто состоят из одного материнского сценария и множества сценариев, незначительно отличающих друг от друга. Когда один шаг меняется, все эти тесты нужно обновить. Такое дублирование можно избежать с помощью тестов на основе данных (data-driven tests), которые фокусируются на бизнес-правилах, или переносом дубликатов в тестовые библиотеки или фикстуры
 
-We coached a team that made a common mistake—they delayed their test automation until the end of the iteration. Four days remaining and only automation tasks left. In the previous iterations, these tasks were done by the test specialist, but now they had to be done by the whole team.
+Мы консультировали команду, которая совершила типичную ошибку - они отложили автоматизацию тестирования на конце итерации. За 4 дня до конца остались только задачи на автоматизацию. В предыдущих итерациях эти задачи были выполнены специалистом по тестированию, но теперь их нужно было сделать всей команде.
 
 They started with a one-day workshop in which the one specialist coached the other team members. After that, they split into two pairs and one triplet working in parallel on automating the tests. Something interesting happened: The team members who were experienced in programming complained about the extra effort needed because of the duplication in the tests. Previously, none of them had noticed it and the test specialist—who did not have much programming experience—never cared. Now that the whole team was involved, they cared and the quality of the tests improved immensely.
 
