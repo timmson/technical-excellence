@@ -75,7 +75,7 @@ order: 60
 
 Мы консультировали команду, которая совершила типичную ошибку - они отложили автоматизацию тестирования на конце итерации. За 4 дня до конца остались только задачи на автоматизацию. В предыдущих итерациях эти задачи были выполнены специалистом по тестированию, но теперь их нужно было сделать всей команде.
 
-They started with a one-day workshop in which the one specialist coached the other team members. After that, they split into two pairs and one triplet working in parallel on automating the tests. Something interesting happened: The team members who were experienced in programming complained about the extra effort needed because of the duplication in the tests. Previously, none of them had noticed it and the test specialist—who did not have much programming experience—never cared. Now that the whole team was involved, they cared and the quality of the tests improved immensely.
+Они начали с однодневного воркшопа, на котором специалист по тестированию обучал других членов команды. После это, они разбились на пры и одну тройку для работы над автоматизацией тестирования параллельно. Далее произошло следующее: члены команды жаловались на трату дополнительных усилий из-за дублирований в тестах. До этого никто из них не замечал этого и специалист по тестированию - не имевший достаточного опыта в разработки - никогда об это не заботился. Теперь вся команда была вовлечена, они заботились и качество тестов улучшилось значительно. 
 
 ### Удаляйте тесты, не добавляющие ценности
 
