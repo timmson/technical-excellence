@@ -101,11 +101,11 @@ Automating and continuously running non-functional tests is essential. Delaying 
 
 нефункциональные are often treated экзотично people believe they cannot be specified and cannot be tested. This is unfortunate. In a requirements workshop, нефункциональные can be considered the same as функциональные, and example tests are created for clarifying them.
 
-### Непрерывно выполняйте тесты, занимающие значительное время
+### Непрерывно выполняйте длительные тесты
 
 Non-functional tests frequently cannot be run in the normal continuous-integration-system cycle because they may take too long to execute—a stability test might take two weeks. Some product groups delay them until near the release—creating a delayed feed-back cycle. Not a good idea.
 
-Run the long-running tests all the time in a slower continuous-integration-system cycle. Treat them as any other tests. When they fail, inform all people who checked in code. After they pass, get the latest build and immediately run them again. This way the feedback cycle is as short as it can be.
+Запускайте длительные тесты все время в медленном системном CI цикле. Относитесь к также, как и к любым другим. Когда они падают, оповещайте всех, кто изменял код. После их прохождения получите последнюю сборку и запустите их заново. Таким способом цикл обратной связи будет на столько коротким, насколько мог бы быть.
 
 ### Используйте виртуализацию или контейнеризацию
 
