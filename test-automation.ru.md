@@ -63,7 +63,7 @@ order: 60
 “Необходимость поддержки автотестов увеличит нашу загрузку” - возражение, которое мы слышим. Поддержка автотестов потребует от нас дополнительных усилий, но следующие техники могу их снизить:
 
 * удаляйте дублирование кода внутри тестов и между ними
-* удаляйте тесты, не добавляющих ценности
+* удаляйте тесты, не добавляющие ценности
 * избегайте тестирования через пользовательский интерфейс
 * запускайте тесты часто
 
@@ -77,15 +77,15 @@ We coached a team that made a common mistake—they delayed their test automatio
 
 They started with a one-day workshop in which the one specialist coached the other team members. After that, they split into two pairs and one triplet working in parallel on automating the tests. Something interesting happened: The team members who were experienced in programming complained about the extra effort needed because of the duplication in the tests. Previously, none of them had noticed it and the test specialist—who did not have much programming experience—never cared. Now that the whole team was involved, they cared and the quality of the tests improved immensely.
 
-### Удаляйте тесты, не добавляющих ценности
+### Удаляйте тесты, не добавляющие ценности
 
-Tests serve multiple purposes. They act as requirements, as verification, and as a safety net preventing system regression.
+Тесты служат нескольким целям. Они выступают требованиями, проверкой и страхующей сетью, не допуская регресса системы.
 
-When an existing test is not needed anymore—because it is a subset of another test—then delete it. Leaving unnecessary tests brings no benefit but still increases maintenance effort and lowers test execution speed.
+Когда существующий тест уже не больше нужен - потому что он включён в другой тест - то удалите его. Сохранение ненужных тестов пользы не приносит, но увеличивает затраты на содержание и снижает скорость тестирования.
 
 ### Избегайте тестирования через пользовательский интерфейс
 
-User interfaces (UI) tend to change frequently. Running your tests through the UI makes them vulnerable to these changes—even when there is no change in test logic. This increases the test maintenance effort.
+Пользовательские интерфейсы (UI) часто меняются. Запуск ваших тестов через пользовательский интерфейс делает их уязвимыми для этих изменений - даже в случае, когда логике тестов изменений не было. Это увеличивает затраты на содержание.
 
 Therefore, avoid testing through the UI and instead call the application logic directly through an API. Another advantage of doing this is that it speeds up your test since testing through the UI is slow.
 
@@ -99,7 +99,7 @@ Executing tests once or twice a release seems efficient—fewer CPU cycles are w
 
 Автоматизация и непрерывный запуск нефункциональных тестов важна. Откладывая их на конец означает смещение одно из самых больших рисков туда, где они принесут больше всего вреда. Например, если требуется определённый уровень производительности системы, начните его раннее тестирование, чтобы также  достичь его раньше, и непрерывно запускайте эти тесты, пока будет добавляться новая функциональность, чтобы убедиться в том, что система не деградирует по производительности от её целевого уровня.
 
-К нефункциональным требованиям часто относятся по-особенному - люди верят, что они не могут быть описаны и протестированы. Это прискорбно. На воркшопе по уточнению, нефункциональные требования могут быть разобраны так же, как и функциональные, и могут быть созданы тесты из примеров для их прояснения.
+К нефункциональным требованиям часто относятся по-особенному - люди верят, что их нельзя описать и протестировать. Это прискорбно. На воркшопе по уточнению, нефункциональные требования могут быть разобраны так же, как и функциональные, и могут быть созданы тесты из примеров для их прояснения.
 
 ### Непрерывно выполняйте длительные тесты
 
@@ -126,3 +126,5 @@ Executing tests once or twice a release seems efficient—fewer CPU cycles are w
 * [Capybara](https://github.com/jnicklas/capybara)
 
 Выше всего лишь самый общий список, но каждый день появляются новые и новые инструменты.
+
+Перевод статьи осуществлён [Кротовым Артёмом](https://www.facebook.com/artem.v.krotov).
