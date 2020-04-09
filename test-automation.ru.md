@@ -56,16 +56,16 @@ order: 60
   <figcaption>Исследовательское тестирование</figcaption>
 </figure>
 
-## Automated Testing
+## Автоматизированное тестирование
 
-### Create maintainable tests
+### Создавайте поддерживаемые тесты
 
-“Automated tests will increase our test maintenance load” is a common objection we hear. Test maintenance will cost some effort, but a few straightforward techniques can minimize this cost:
+“Необходимость поддержки автотестов увеличит нашу загрузку” - возражение, которое мы слышим. Поддержка автотестов потребует от нас дополнительных усилий, но следующие техники могу их снизить:
 
-* remove duplication in and between tests
-* delete tests
-* do not test through the UI
-* run tests frequently
+* исключайте дублирование кода внутри тестов и между ними
+* удаляйте тесты
+* не тестируйте через пользовательский интерфейс
+* запускайте тесты часто
 
 ### Remove duplication in and between tests
 
