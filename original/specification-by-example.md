@@ -1,6 +1,6 @@
 ---
 title: Specification by Example
-order: 75
+order: 70
 ---
 
 <div class="chapter_quote"><p>
