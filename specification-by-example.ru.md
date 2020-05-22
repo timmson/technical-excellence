@@ -9,7 +9,7 @@ order: 70
 --Альберт Эйнштейн
 </p></div>
 
-Specification by Example (близкий по смыслу перевод "тесты как требования", но устоявшегося термина нет [прим. переводчика]) or Acceptance test-driven development (A-TDD) is a collaborative requirements discovery approach where examples and automatable tests are used for specifying requirements—creating executable specifications. These are created with the team, Product Owner, and other stakeholders in requirements workshops.
+Specification by Example (близкий по смыслу перевод "тесты как требования", но устоявшегося термина нет [прим. переводчика]) или разработка через приёмочное тестирование (A-TDD) это подход к совместному прояснению требований путём создания примеров и автотестов, которые используются для уточнения требований - создавая исполняемые спецификации. Такие спецификации создаются командами вместе с Владельцем Продукта и другими заинтересованными лицами на воркшопе по формированию требований. <---- Перечитать
 
 Note on terminology: We'll use both A-TDD and Specification by Example
 
