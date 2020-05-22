@@ -18,7 +18,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 - [Размышления о Тестировании / Thinking About Testing](thinking-about-testing.ru.md)
 - [Автоматизация тестирования / Test Automation](test-automation.ru.md)
 - [Приёмочное тестирование / Acceptance Testing](acceptance-testing.ru.md)
-- Specification by Example
+- [Specification by Example](specification-by-example.ru.md)
 
 Истинная гибкость (agility) может быть достигнута только тогда, когда вы можете менять свой продукт простыми, быстрыми и
 гибкими способами. В этой связи:
