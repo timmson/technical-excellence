@@ -55,7 +55,7 @@ A-TDD состоит из трёх шагов:
 
 Точный список зависит от конкретного продукта, контекста, рабочих соглашений, и [Критериев Готовности](../framework/definition-of-done.html).
 
-**Поставить** — When the tests pass, the requirement is reviewed with the Product Owner and other stakeholders. This might lead to new requirements or a change in the existing tests.
+**Поставить** — Когда тесты проходят, требования проверяются Владельцем Продукта и другими заинтересованными лицами. Это может привести к появлению новых требований или изменению существующих тестов.
 
 A more detailed way of describing A-TDD is shown below
 
