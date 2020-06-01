@@ -91,21 +91,21 @@ The workshop-related experiments are strongly connected to those in the Requirem
 
 Прояснение неотложных элементов может быть сделано через воркшоп в стиле A-TDD. Чтобы прояснить, Уточнение Бэклога Продукта состоит не только из A-TDD воркшопа, но он может быть частью активности по уточнению. Другие активности включают оценку и разбиение.
 
-### Clarification over writing tests
+### Прояснение важнее, чем написание тестов
 
-A-TDD is for совместной clarifying requirements. The emphasis is on communication, collaboration, and learning through examples and tests. The goal is increased understanding, and tests are the means of getting there. The appropriately titled book on this subject, [Bridging the Communication Gap](http://www.amazon.com/Bridging-Communication-Gap-Specification-Acceptance/dp/0955683610) stresses:
+A-TDD для совместного прояснения требований. Акцент на общении, совместной работе и обучении через примеры и тесты. Цель состоит в улучшении понимания, и тесты являются средством её достижения. Книга на эту тему, названая подходящим образом, [Bridging the Communication Gap](http://www.amazon.com/Bridging-Communication-Gap-Specification-Acceptance/dp/0955683610) подчёркивает:
 
-> [Acceptance-test driven development] is not a programming technique: it is a communication technique that brings people involved in a software project closer.
+> [Разработка через приёмочное тестирование] не является техникой программирования: это техника для общения, которая сближает людей, вовлечённых в процесс разработки.
 
-People are often so preoccupied with the tangible outputs of a workshop—the tests—that they forget about the intangible outcomes—the learning. Understanding and clarity of the requirements is the key output of a requirements workshop; the tests are an expression of these.
+Люди часто озабочены осязаемыми выходом воркшопа - тестами - поэтому они забывают о нематериальных результатах - обучении. Понимание и ясность требований - это ключевой выход воркшопов по уточнению требований; тесты являются выражением этого.
 
-This is not a false dichotomy. The tests are important, and this technique is called acceptance-test-driven development. Without tests, it would be just a requirements workshop—but avoid confusing means with ends.
+Тут нет ложной дихотомии. Тесты тоже важны, и эта техника называется разработкой через приёмочное тестирование. Без тестов это будет только воркшоп по прояснению требований — но избегайте путаницы целей и средств.
 
-### Use examples
+### Используйте примеры
 
-> “Can you give me an example?”
+> “Вы можете привести пример?”
 
-This question can suddenly transform a vague and abstract discussion into a clear and concrete one. When discussing new products, people tend to end up talking in concepts and abstract terms. They talk past each other without understanding—they are stuck. Asking for examples brings the discussion back to reality.
+Этот вопрос может внезапно превратить смутное и абстрактное обсуждение в понятное и конкретное. Когда обсуждаются новые продукты, люди склонны заканчивать разговор на концептах и абстрактных понятиях. Они говорят друг с другом без понимания - они застряли. Приведение примеров возвращает обсуждение к реальности.
 
 For example, we hear assertions such as “The system needs to recover from error situations.” This is vague, so we ask for examples that transform the discussion. This could be “When we unplug the cable, the system should not crash”—which is concrete and understandable. Examples are also used for further clarification, such as, “How should the system recover if we remove a unit from the system while it is running?”
 
@@ -113,12 +113,12 @@ Examples are not just useful for clarifying requirements, but also for clarifyin
 
 <figure>
   <img src="/img/test_automation/examples.png" alt="examples.png">
-  <figcaption>Examples</figcaption>
+  <figcaption>Примеры</figcaption>
 </figure>
 
 The above figure shows the relationship between examples, requirements, and tests. During requirement workshops, use examples to elaborate requirements and transform these into tests.
 
-### Don't ‘optimizing’ the requirements workshop
+### Не ‘оптимизируйте’ воркшоп по уточнению требований
 
 When we were discussing A-TDD with a large product group, they noted, “We improved the A-TDD workshop. Only three people participate: the Product Owner, the Scrum Master, and a specialist in the team.” We asked them how the other team members would understand the requirements so that they can implement them and the answer was, “The specialist will tell them.” They ‘optimized’ the workshop представление traditional analyst-team передача.
 
