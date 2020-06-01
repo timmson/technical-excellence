@@ -133,9 +133,9 @@ Computers suck the жизнь кровь out of a workshop. They become the cent
 
 Эти примеры рабочего процесса могут заканчиваться похоже, с небольшими различиями в один или два шага. Тесты рабочего процесса содержать скрытые бизнес-правила, которые могут быть извлечены и положены в основу тестов на основе данных. Это фокусирует дискуссию на прояснении области требований и снижает сложность, убирая неуместные детали.
 
-### Test the walls
+### Проверяйте стены
 
-The rightful home of tests is on the wall—well, with a whiteboard between the tests and the wall. Big whiteboard spaces promote collaboration—the purpose of the workshop. The whiteboard sketches are captured with photos. After the workshop, the tests may be distilled and written in a tool.
+Правильным домом для тестов должны быть стены - конечно, с ”белыми досками” между ними. Большие пространства ”белых досок” продвигают совместную работу — предназначение воркшопов. Зарисовки на них фотографируется. После воркшопа, тесты могут быть ”дистиллированы” и зафиксированы на компьютере.
 
 <figure>
   <img src="/img/test_automation/atdd_wall1.jpg" alt="atdd_wall1.jpg">
@@ -145,7 +145,7 @@ The rightful home of tests is on the wall—well, with a whiteboard between the 
   <img src="/img/test_automation/atdd_wall2.jpg" alt="atdd_wall2.jpg">
 </figure>
 
-### Use table format
+### Используйте настольный формат
 
 Expressing business rules in tables makes them more comprehensible and assists in finding missing cases. Tables inspire clear thinking. Influential computer scientist [Дэвид Парнас is a long-time promoter](http://link.springer.com/chapter/10.1007/978-3-7091-6510-2_12#page-1) of tables for documenting requirements.
 
