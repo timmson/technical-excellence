@@ -83,13 +83,13 @@ The workshop-related experiments are strongly connected to those in the Requirem
 
 ### Обсудить на воркшопе во время Уточнения Бэклога Продукта
 
-The team and Product Owner ‘inspect’ the Product Backlog during the [Product Backlog refinement](../framework/product-backlog-refinement.html) to ensure it is in a good shape. This activity includes the following:
+Команда и Владелец Продукта ‘инспектируют’ Бэклог Продукта во время [Уточнения Бэклога Продукта](../framework/product-backlog-refinement.html), чтобы удостовериться, что он находится в хорошей форме. Эта активность включает следующее:
 
-* Estimate and clarify newly added Product Backlog items.
-* Split large items into smaller ones so that they can be selected for implementation.
-* Clarify the imminent items so that the team understands them well enough to implement them.
+* Оценить и прояснить недавно добавленные Элементы Бэклога Продукта.
+* Разделить большие элементы на маленькие, что бы они могли быть выбраны для реализации.
+* Прояснить неотложные элементы так, чтобы команда хороша поняла их на уровне, достаточном для реализации.
 
-The clarification of imminent items can be done through A-TDD-style requirements workshops. Just to be clear, Product Backlog refinement is not only a A-TDD requirement workshops, but it can be part of the refinement activity. Other activities include estimation and splitting.
+Прояснение неотложных элементов может быть сделано через воркшоп в стиле A-TDD. Чтобы прояснить, Уточнение Бэклога Продукта состоит не только из A-TDD воркшопа, но он может быть частью активности по уточнению. Другие активности включают оценку и разбиение.
 
 ### Clarification over writing tests
 
