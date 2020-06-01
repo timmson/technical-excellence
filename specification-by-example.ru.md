@@ -57,25 +57,25 @@ A-TDD состоит из трёх шагов:
 
 **Поставить** — Когда тесты проходят, требования проверяются Владельцем Продукта и другими заинтересованными лицами. Это может привести к появлению новых требований или изменению существующих тестов.
 
-A more detailed way of describing A-TDD is shown below
+Более подробное описание A-TDD показано ниже
 
 <figure>
   <img src="/img/test_automation/atdd_clarified.png" alt="atdd_clarified.png">
-  <figcaption>A-TDD in more detail</figcaption>
+  <figcaption>A-TDD в деталях</figcaption>
 </figure>
 
-The steps in A-TDD map nicely to the LeSS cycle
+A-TDD шаги хорошо отражаются в LeSS цикле
 
 <figure>
   <img src="/img/test_automation/atdd_in_iteration.png" alt="atdd_in_iteration.png">
-  <figcaption>A-TDD steps mapped to Scrum iteration</figcaption>
+  <figcaption>Отражённые в Скрам итерации A-TDD шаги</figcaption>
 </figure>
 
-*Discuss in workshop*—Before the detailed Sprint Planning, the team, Product Owner, and other stakeholders clarify the requirements совместно in a workshop.
+*Обсудить на воркшопе* — Перед детализацией требований на Планированием Спринта, они совместно проясняются командой, Владельцем Продукта, и другими заинтересованными лицами на воркшопе.
 
-*Develop in concurrence*—Tasks for implementing the tests/requirements are created in the detailed Sprint Planning and implemented during the iteration. All activities happen “at about the same time.”
+*Реализовать одновременно* — Задачи для реализации тестов/требований созданы во время Планирования Спринта и реализованы в течение итерации. Все активности происходят “примерно в одно и то же время”.
 
-*Deliver for acceptance* —The working product increment—the passing acceptance tests—are delivered for acceptance to stakeholders and discussed together in the Sprint Review.
+*Поставить для приёмки* — The working product increment—the passing acceptance tests—are delivered for acceptance to stakeholders and discussed together in the Sprint Review.
 
 ## Discuss in Workshop
 
