@@ -170,7 +170,7 @@ Computers suck the жизнь кровь out of a workshop. They become the cent
 7. *Итоги* — Владелец Продукта подводит итоги работы. Далее следует краткое обсуждение воркшопа.
 8. *Фиксация результатов* — участники делают фотографии всех записей и размещают их в вики. Они уже могли бы сделать выжимку в виде нескольких тестов и оформить их в A-TDD инструменте.
 
-## Develop in Concurrence
+## Разработать одновременно
 
 After the requirements are clear, they need to be implemented. The different activities required for implementation are done in concurrence. The team extends the tests while at the same time implementing the code, writing the documentation, updating the design description, and so forth.
 
@@ -180,9 +180,9 @@ Many examples are created during the requirements workshop. Not all of these bec
 
 How to distill tests from examples? Some techniques:
 
-* **Duplication**—Remove duplication among examples by writing the tests in a different form. For example, a set of workflow tests might be combined into a business-rule test. Most of this should have happened during the workshop.
-* **Equivalence class**—Some examples are part of the same equivalence class and therefore it is enough to keep one test. People with a testing speciality are especially valuable since equivalence-class partitioning is a classic testing technique.
-* **Acceptance**—Since not all examples are of equal importance, ask the Product Owner, “What set of examples do you want to see running at the end of the iteration?”
+* **Duplication** — Remove duplication among examples by writing the tests in a different form. For example, a set of workflow tests might be combined into a business-rule test. Most of this should have happened during the workshop.
+* **Equivalence class** — Some examples are part of the same equivalence class and therefore it is enough to keep one test. People with a testing speciality are especially valuable since equivalence-class partitioning is a classic testing technique.
+* **Acceptance** — Since not all examples are of equal importance, ask the Product Owner, “What set of examples do you want to see running at the end of the iteration?”
 
 ### Use A-TDD coaches and facilitators
 
@@ -220,7 +220,7 @@ We worked with some groups that defined the demo steps during the Sprint plannin
 
 During Sprint Planning, an alternative is to define the examples that need to pass and show the progress by using these tests in the Sprint Review.
 
-## Recommended Readings
+## Рекомендуем к прочтению
 
 * [*Specification by Example*](http://www.amazon.com/Specification-Example-Successful-Deliver-Software/dp/1617290084), by Гойко Аджич. This book covers several case studies about "Specification by Example". Гойко coined the term to replace all previous terms such as A-TDD.
 * [*Bridging the Communication Gap*](http://www.amazon.com/Bridging-Communication-Gap-Specification-Acceptance/dp/0955683610/ref=sr_1_1?ie=UTF8&qid=1415541943&sr=8-1&keywords=bridging+communication+gap) , by Гойко Аджич. The book before Specification by Example which has a strong focus on requirements clarifications and workshops.
