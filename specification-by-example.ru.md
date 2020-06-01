@@ -145,30 +145,30 @@ Computers suck the жизнь кровь out of a workshop. They become the cent
   <img src="/img/test_automation/atdd_wall2.jpg" alt="atdd_wall2.jpg">
 </figure>
 
-### Используйте настольный формат
+### Используйте табличный формат
 
-Expressing business rules in tables makes them more comprehensible and assists in finding missing cases. Tables inspire clear thinking. Influential computer scientist [Дэвид Парнас is a long-time promoter](http://link.springer.com/chapter/10.1007/978-3-7091-6510-2_12#page-1) of tables for documenting requirements.
+Выражение бизнес-правила в таблицах делает их более понятными и помогает найти пропущенные сценарии. Таблицы вдохновляют ясное мышление. Влиятельный учёный в области информатики [Дэвид Парнас продвигает на протяжении долгого времени](http://link.springer.com/chapter/10.1007/978-3-7091-6510-2_12#page-1) таблицы для документации требований.
 
-> [When documenting requirements,] writing, understanding, and discovery go on at the same time… Tabular notations are of great help in situations like this one. One first determines the structure of the table, making sure that the headers cover all the possible cases, then turns one’s attention to completing the individual entries in the table.
+> [Когда документирование требований,] написание, понимание, и раскрытие происходят в одной и той же таблицы… Табличная нотация является лучшей помощью в ситуациях, подобных данной. Сначала определяют структуры таблицы, убеждаясь, что заголовки покрывают все возможные сценарии, а затем обращают внимание на заполнение отдельных записей в таблице.
 
-### Use Workflow tests
+### Используйте тесты рабочего процесса
 
-Extracting business rules and using data-driven tests is not always possible or desirable. Some requirements are just better expressed in a workflow (multi-step scenario) example. Also, data-driven business-rule tests can often be complemented with workflow examples that, in a way, link them.
+Извлечение бизнес-правил и использование тестов на основе данных не всегда возможно или желаемо. Некоторые требования лучше выражать в виде примера рабочего процесса (многошагового сценария). Также, тесты бизнес-правил на основе данных могут быть часто дополнены примерами рабочего процесса, таким образом, связывая их.
 
-Caution: When most of your tests are workflow tests, then you probably missed some business rules.
+Предупреждение: Когда большая часть ваших тестов это тесты рабочего процесса, то вы, возможно, упустили некоторые бизнес-правила.
 
-### Typical workshop agenda
+### Типичный план воркшопа
 
-How is an A-TDD requirements workshop structured? We frequently use the following agenda:
+Из чего состоит A-TDD воркшоп? Мы часто используем следующий план: 
 
-1. *Introduction*—the Product Owner welcomes everybody to the workshop and explains its purpose.
-2. *Selection*—the team and Product Owner pick the items from the Product Backlog that will be worked on.
-3. *Overview*—the Product Owner or representative gives a short overview of the selected requirements.
-4. *Diverge*—the team splits into two or three subgroups that each pick an item and start writing examples on whiteboards. The Product Owner and representatives rotate between subgroups.
-5. *Merge*—the subgroups combine and one at a time share their work with the whole group.
-6. *Repeat*—the diverge-merge cycles are usually 30–45 minutes long. One workshop contains multiple cycles.
-7. *Conclude*—the Product Owner summarizes the work. Then, there is a brief reflection on the workshop.
-8. *Distill*—participants take photos of all the work and put them on the wiki. They might already distill some tests and document them in their A-TDD tool.
+1. *Вступление* — Владелец Продукта приветствует всех на воркшопе и объясняет его цель.
+2. *Отбор* — команда и Владелец Продукта выбирают элементы из Бэклога продукта, над которыми будут работать
+3. *Обзор* — Владелец Продукта или его представитель дают короткий обзор выбранные требований.
+4. *Расхождение* — команда делится на две или три подгруппы, каждая из которых берёт элемент и начинает набрасывать примеры на досках. Владелец Продукта и его представители перемещаются между подгруппами.
+5. *Схождение* — подгруппы сходятся на время, чтобы поделиться результатами с остальными.
+6. *Повторение* — цикл расхождения-схождения обычно занимает 30-45 минут. Один воркшоп содержит несколько циклов.
+7. *Итоги* — the Product Owner summarizes the work. Then, there is a brief reflection on the workshop.
+8. *Фиксация результатов* — participants take photos of all the work and put them on the wiki. They might already distill some tests and document them in their A-TDD tool.
 
 ## Develop in Concurrence
 
