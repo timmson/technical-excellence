@@ -68,20 +68,20 @@ A-TDD шаги хорошо отражаются в LeSS цикле
 
 <figure>
   <img src="/img/test_automation/atdd_in_iteration.png" alt="atdd_in_iteration.png">
-  <figcaption>Отражённые в Скрам итерации A-TDD шаги</figcaption>
+  <figcaption>Отражения шагов A-TDD в в Скраме</figcaption>
 </figure>
 
 *Обсудить на воркшопе* — Перед детализацией требований на Планированием Спринта, они совместно проясняются командой, Владельцем Продукта, и другими заинтересованными лицами на воркшопе.
 
 *Реализовать одновременно* — Задачи для реализации тестов/требований созданы во время Планирования Спринта и реализованы в течение итерации. Все активности происходят “примерно в одно и то же время”.
 
-*Поставить для приёмки* — The working product increment—the passing acceptance tests—are delivered for acceptance to stakeholders and discussed together in the Sprint Review.
+*Поставить для приёмки* — Инкремент работающего продукта, проходящего приёмочные тесты, поставляется для приёмки заинтересованным лицам и обсуждается с ними на Обзоре Спринта.
 
-## Discuss in Workshop
+## Обсудить на воркшопе
 
-The workshop-related experiments are strongly connected to those in the Requirements chapter. This section covers A-TDD-oriented topics; the Requirements chapter covers requirements workshops in more detail.
+The workshop-related experiments are strongly connected to those in the Requirements chapter. Этот раздел покрывает A-TDD темы; раздел "Требования" раскрывает тему воркшопов более детально.
 
-### Discuss in workshop during Product Backlog refinement
+### Обсудить на воркшопе во время Уточнения Бэклога Продукта
 
 The team and Product Owner ‘inspect’ the Product Backlog during the [Product Backlog refinement](../framework/product-backlog-refinement.html) to ensure it is in a good shape. This activity includes the following:
 
