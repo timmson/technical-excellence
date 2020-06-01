@@ -26,36 +26,36 @@ A-TDD объединяет следующие основные идеи:
 
 **Одновременное проектирование** — Авторы книги [Concurrent Engineering Effectiveness](http://www.amazon.com/Concurrent-Engineering-Effectiveness-Integrating-Organizations/dp/1569902313) определяют одновременное проектирование так: “Существует настолько тесная связь между участниками в процессе разработки ПО, что они могут осуществлять большую часть их работы одновременно”. Сокращение времени разработки - основной драйвер одновременного проектирования. Двухнедельные итерации слишком малы, поэтому командам нужно постигать путь работать одновременно — последовательная разработка не работает в коротких циклах. Мы видели, как команды изобретают Specification By Example снова и снова, просто потому что они хотели ответить на вопрос: “Как мы можем выполнять нашу работу одновременно.”
 
-**Предотвращение вместо обнаружения** — В одном из первых исследований в книге [A Study of the Toyota Production System](http://www.amazon.com/Study-Toyota-Production-System-Engineering/dp/0915299178), Сигэо Синго пишет: “Предназначение инспекции должно быть в предотвращении; однако, мы должно изменить наш образ мышления, чтобы инспекция имела данную цель.” Так же, в статье [“The Growth of Software Testing,”](https://www.researchgate.net/profile/David_Gelperin/publication/234808293_The_growth_of_software_testing/links/5743149208ae9f741b37d89a/The-growth-of-software-testing.pdf) авторы идентифицируют пять периодов эволюции тестирования ПО. Они называют последний период: “Период направленный на предотвращение” and state, “Asking test-related questions… early is often more important to software quality and cost-effective development than actually executing the tests.” This is exactly what Specification by Example strives to do. When including people specialized in testing in the requirements workshop, they can ask the test-related questions, and in that way improve the requirements and prevent defects. The Total Quality movement—an influence to Toyota and lean development—also promotes prevention over detection.
+**Предотвращение вместо обнаружения** — В одном из первых исследований в книге [A Study of the Toyota Production System](http://www.amazon.com/Study-Toyota-Production-System-Engineering/dp/0915299178), Сигэо Синго пишет: “Предназначение инспекции должно быть в предотвращении; однако, мы должно изменить наш образ мышления, чтобы инспекция имела данную цель.” Так же, в статье [“The Growth of Software Testing,”](https://www.researchgate.net/profile/David_Gelperin/publication/234808293_The_growth_of_software_testing/links/5743149208ae9f741b37d89a/The-growth-of-software-testing.pdf) авторы идентифицируют пять периодов эволюции тестирования ПО. Они называют последний период  “Период направленный на предотвращение” и стадия , “Задавать вопросы, связанные с тестированием… рано часто важнее для обеспечения качества ПО и экономически эффективной разработки, чем собственно выполнение тестов”. Это в точности то, что Specification by Example старается сделать. Когда специалисты по тестированию принимают участие в воркшопе по уточнению требований, они могут задавать вопросы о тестировании, и таким способом улучшать требования и препятствовать появлению дефектов. Всеобщее управление качеством (англ. Total Quality Management, TQM) - повлиявшее на Тойоты и бережливую разработку — также продвигает предотвращение вместо обнаружения.
 
 Как работает A-TDD? Иллюстрация ниже даёт общее представление.
 
 <figure>
   <img src="/img/test_automation/atdd.png" alt="atdd.png">
-  <figcaption>Общее представление о A-TDD</figcaption>
+  <figcaption>Обзор A-TDD</figcaption>
 </figure>
 
-## A-TDD overview
+## Обзор A-TDD
 
-A-TDD consists of three steps:
+A-TDD состоит из трёх шагов:
 
-1. Discuss the requirements in a workshop.
-2. Develop them concurrently during the iteration.
-3. Deliver the results to the stakeholders for acceptance.
+1. Обсудить требования на воркшопе.
+2. Реализовать требования одновременно в итерации.
+3. Поставить результат заинтересованным лицам для приёмки.
 
-**Discuss**—Requirements are discovered through discussion in a requirements workshop. Participants of a workshop are the cross-functional team, the Product Owner or representative, and any other stakeholder who potentially has information about the requirements. A common question to ask during such workshops is “Imagine the system to be finished. How would you use it and what would you expect from it?” Such a question results in examples of use, and these examples can be written as tests—the requirements. The workshop focus ought to be on discussion and discovery of requirements more than on the actual tests.
+**Обсудить** — Requirements are discovered through discussion in a requirements workshop. Participants of a workshop are the cross-functional team, the Product Owner or representative, and any other stakeholder who potentially has information about the requirements. A common question to ask during such workshops is “Imagine the system to be finished. How would you use it and what would you expect from it?” Such a question results in examples of use, and these examples can be written as tests—the requirements. The workshop focus ought to be on discussion and discovery of requirements more than on the actual tests.
 
-**Develop**—At the end of the workshop, the examples are distilled into tests and all activities needed to implement the requirement are done concurrently. These include:
+**Реализовать** — В конце воркшопа, примеры "дистиллированы" в тесты и все активности, которые нужны, чтобы реализовать требования одновременно. Они включают:
 
-* making the glue code between the tests and the system under test (“test libraries” and “lower-level tables” in Robot Framework or ‘fixtures’ in Fit)
-* implementing the requirement so that the tests pass
-* updating architectural and other internal documentation according to the working agreement of the team
-* writing customer documentation for the requirement
-* additional exploratory testing
+* создание "клея" между тестами и продуктивным кодом (“тестовые библиотеки” и “низкоуровневые таблицы” в Robot Framework или ‘фикстуры’ в Fit)
+* реализация требований, позволяющая тестам проходить
+* обновление архитектурной и другой внутренней документации согласно рабочему соглашению команды
+* пользовательская документация
+* дополнительное исследовательское тестирование
 
-The exact list depends on the product, context, working agreements, and the [Definition of Done](../framework/definition-of-done.html).
+Точный список зависит от конкретного продукта, контекста, рабочих соглашений, и [Критериев Готовности](../framework/definition-of-done.html).
 
-**Deliver**—When the tests pass, the requirement is reviewed with the Product Owner and other stakeholders. This might lead to new requirements or a change in the existing tests.
+**Поставить** — When the tests pass, the requirement is reviewed with the Product Owner and other stakeholders. This might lead to new requirements or a change in the existing tests.
 
 A more detailed way of describing A-TDD is shown below
 
