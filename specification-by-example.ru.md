@@ -175,9 +175,9 @@ A-TDD для совместного прояснения требований. �
 
 ### “Дистиллировать“ тесты
 
-Many examples are created during the requirements workshop. Not all of these become tests—only the essential parts of the requirements are distilled into tests. The не выжимка or duplicate parts are discarded—they have served their purpose for learning during the workshop.
+Много примеров создаётся во время воркшопа. Не все из них становятся тестами - только значимая часть требований “перегоняется“ в тесты. Неважные и дублирующие части отбрасываются — они отслужили свой цели обучения на воркшопе.
 
-How to distill tests from examples? Some techniques:
+Как “дистиллировать“ тесты из примеров? Вот несколько техник:
 
 * **Duplication** — Remove duplication among examples by writing the tests in a different form. For example, a set of workflow tests might be combined into a business-rule test. Most of this should have happened during the workshop.
 * **Equivalence class** — Some examples are part of the same equivalence class and therefore it is enough to keep one test. People with a testing speciality are especially valuable since equivalence-class partitioning is a classic testing technique.
