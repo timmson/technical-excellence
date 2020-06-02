@@ -185,9 +185,9 @@ A-TDD для совместного прояснения требований. �
 
 ### Используйте тренеров и фасилитаторов по A-TDD
 
-A-TDD is easy to do, and hard to adopt. It requires challenging deeply rooted assumptions and changes in habit. An (external) coach with experience in A-TDD and organizational change is frequently needed for this. Find a coach.
+A-TDD легко сделать и трудно принять. Он требует бросить вызов глубоким укоренившимся предположениям и изменить привычки. Часто для этого необходим тренер (внешний) с опытом в A-TDD и организационных изменениях. Найдите такого тренера.
 
-It is important to realize that the skills of a good A-TDD coach are different from those of a good TDD coach. TDD coaching is more technical, and focused on individual developers, whereas A-TDD involves the whole team. In additional to technical skills, a good A-TDD coach has excellent workshop-facilitation skills.
+Важно понимать, что навыки хорошего A-TDD тренера отличаются от таковых у тренера по TDD. Обучение TDD более техническое и сфокусировано на конкретных разработчиках, тогда как A-TDD вовлекает команду целиком. В дополнении к техническим, хороший A-TDD тренер имеет хорошие отличные навыки фасилитации.
 
 ### Use an A-TDD Tool
 
