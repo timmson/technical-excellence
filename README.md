@@ -6,7 +6,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 
 Как помочь проекту, можно прочитать в [CONTRIBUTE.md](CONTRIBUTE.md)
 
-![less_technical_excellence](https://less.works/img/technical-excellence/xtechnical-excellence-overview.png.pagespeed.ic.SpWvIkJ3jo.webp)
+![less_technical_excellence](/img/design_%26_architecture/technical-excellence-overview.png)
 
 ## Содержание
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
