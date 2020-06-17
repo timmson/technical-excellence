@@ -1,6 +1,6 @@
 ---
 title: Clean Code
-order: 25
+order: 30
 ---
 
 ## Recommended Videos
