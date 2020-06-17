@@ -10,8 +10,8 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 
 ## Содержание
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
-- Continuous Delivery
-- Clean Code
+- [Непрерывная поставка / Continuous Delivery](continuous-delivery.ru.md)
+- [Чистый код / Clean Code](clean-code.ru.md)
 - [Архитектура и Проектирование / Architecture & Design](architecture-design.ru.md)
 - [Модульное тестирование / Unit-testing](unit-testing.ru.md)
 - [Разработка через тестирование/ Test-Driven Development](test-driven-development.ru.md)
