@@ -1,7 +1,4 @@
----
-title: Унаследованный код
-order: 25
----
+# Унаследованный код
 
 > I don’t want to achieve immortality through my work...  I want to achieve it through not dying. —Woody Allen
 
@@ -11,7 +8,9 @@ Existing well-structured reusable code is a valuable asset. However, this asset 
 
 But before diving into the subject, it is worth appreciating how many jobs exist because of legacy code. We travel around the world and frequently work in developing countries. In these places, people have risen out of poverty because of the jobs created to maintain legacy code.  In  countries such  as  India and China, several cities exploded in size and wealth over the last decade because of the outsourcing industry, and much of this outsourcing relates to legacy code. It is worth appreciating this. On the other hand, what would have happened if all this energy was put into creative, innovative new products? Besides which, legacy code has also destroyed companies...
 
-![Figure 1. Browser market share and releases](/img/legacy-code/browser-wars-en.png?raw=true)
+![_](/img/legacy-code/browser-wars-en.png)
+
+*Browser market share and releases*
 
 One of the best examples is Netscape, which once *owned* the browser market. But in 1995, Microsoft realized the huge potential of the Internet and started what would  later be known as “the browser wars” [[CY00](https://www.amazon.com/Competing-Internet-Time-Netscape-Microsoft/dp/0684863456)]. In 2000, Microsoft won the first battle of the browsers.
 
@@ -44,9 +43,11 @@ Many companies are stuck in a vicious cycle of *forced promises* and *unrealisti
 
 How does the developer react? Charles Lecht [[Lecht67](https://www.amazon.com/management-computer-programming-projects/dp/B0006BRZGU)] already warned us over 40 years ago: The developer will *“feel the obligation to respond out of respect, fear or misguided loyalty”* and reluctantly commit to the deadline. The developer opens his *secret toolbox* and does everything possible to make the short-term deadline by using *tools* such as hardcoding, copy-paste-modify programming, skipping testing, working overtime, and other quality-destroying shortcuts [[Schwaber07a](https://www.amazon.com/Enterprise-Scrum-Developer-Best-Practices/dp/0735623376)]. Nobody notices the use of these ‘tools,’ and so the deadline is made. Management rewards developers for their hard work and applauds their “great teamwork” and “fighting spirit.”
 
-These quality-destroying shortcuts result in bad legacy code, which slows down the development and the organization falls behind its competition. A predictable scenario unfolds. They need to reclaim the market and therefore make new promises, starting the vicious cycle all over again. The **technical debt**—the legacy code—makes development go slower. The **learning debt**—lack of renewal in developer skills—compounds this slowdown. Developers are so busy keeping unrealistic commitments that they have no time to keep up to date and refresh their skills (Figure 2).
+These quality-destroying shortcuts result in bad legacy code, which slows down the development and the organization falls behind its competition. A predictable scenario unfolds. They need to reclaim the market and therefore make new promises, starting the vicious cycle all over again. The **technical debt**—the legacy code—makes development go slower. The **learning debt**—lack of renewal in developer skills—compounds this slowdown. Developers are so busy keeping unrealistic commitments that they have no time to keep up to date and refresh their skills.
 
-![Figure 2. Dynamics of unrealistic deadline](/img/legacy-code/causal-loop-legacy-en.png?raw=true)
+![_](/img/legacy-code/causal-loop-legacy-en.png)
+
+*Dynamics of unrealistic deadline*
 
 Bob Martin, in *Clean Code*, argues that a software craftsman would not make such an unrealistic promise, and that the legacy code problem can be solved by educating developers to be more *professional* [[Martin08](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)].
 
@@ -187,7 +188,7 @@ While replacing lethal code:
 * do not add functionality to the old code
 * do not add functionality to the replacement code
 
-## Conclusion
+## Заключение
 
 There are billions of lines of legacy code in the world, and the total is increasing every day. This has created massive problems (for example, Y2K), and it will still create monumental ones in the future. But egacy code will not disappear unless the root causes are tackled:
 
@@ -200,10 +201,9 @@ How to deal with existing legacy code? It is better to gradually improve the cod
 
 > Making things is about making people. [[Kato06 - Kato, I., 2006. Summary Notes from Art Smalley Interview with Mr. Isao Kato](http://artoflean.com/documents/pdfs/Mr_Kato_Interview_on_TWI_and_TPS.pdf)]
 
-## Recommended Readings
+## Рекомендуем к Прочтению
 
 At the time we write this book, surprisingly little has been written about such a huge and costly problem as legacy code. Here are some references we found useful related to improving your code gradually:
-
 * Working Effectively with Legacy Code, by Michael Feathers. Concrete advice on how to gradually improve your legacy system at code level.
 * Refactoring: Improving the Design of Existing Code, by Martin Fowler. The classic work on improving existing code.
 * Refactoring Workbook, by Bill Wake. A concrete guide for becoming better at refactoring code.
@@ -212,21 +212,17 @@ At the time we write this book, surprisingly little has been written about such 
 so that your systems stays stable.
 
 The following material covers the organizational dynamics behind legacy code:
-
 * Enterprise Scrum, by Ken Schwaber. Chapter 9 of Enterprise Scrum is one of the few descriptions explaining the relationship between customer promises and the creation of legacy
 code.
 * Sustainable Software Development: An Agile Perspective, by Kevin Tate. This book does not cover many new techniques but provides an excellent overview of the practices for creating software in a sustainable way.
 
 Software craftsman prevent creating legacy code and hence develop software at a sustainable rate. Some material on being a software craftsman:
-
 * The Pragmatic Programmer: From Journeyman to Master, by Andrew Hunt and Dave Thomas. Classic book on modern software craftsmanship.
 * Software Craftsmanship, by Pete McBreen dives in craftsmanship approach and compares it to the traditional software engineering perspective.
 * Agile Development, Principles, Patterns and Practices, by Bob Martin. Also known as Agile PPP, links good  code, modern practices, and eternal design principles to explain what it means to be a craftsman.
 * Clean Code: A Handbook of Agile Craftsmanship, by Bob Martin. The subtitle says it all. Clean Code is the code-focused prequel to Agile PPP
 
----
-
-## Notes
+## Сноcки
 
 1. <a name="footnote-1"></a> emphasis added.
 2. <a name="footnote-2"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
