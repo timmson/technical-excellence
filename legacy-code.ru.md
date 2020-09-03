@@ -11,7 +11,7 @@ Existing well-structured reusable code is a valuable asset. However, this asset 
 
 But before diving into the subject, it is worth appreciating how many jobs exist because of legacy code. We travel around the world and frequently work in developing countries. In these places, people have risen out of poverty because of the jobs created to maintain legacy code.  In  countries such  as  India and China, several cities exploded in size and wealth over the last decade because of the outsourcing industry, and much of this outsourcing relates to legacy code. It is worth appreciating this. On the other hand, what would have happened if all this energy was put into creative, innovative new products? Besides which, legacy code has also destroyed companies... 
 
-![Figure 9.1 browser market share and releases](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-browser-wars-en-thumb.png)
+![Figure 9.1 browser market share and releases](img/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-browser-wars-en.png)
 
 One of the best examples is Netscape, which once *owned* the browser market. But in 1995, Microsoft realized the huge potential of the Internet and started what would  later be known as “the browser wars” [CY00](https://www.amazon.com/Competing-Internet-Time-Netscape-Microsoft/dp/0684863456). In 2000, Microsoft won the first battle of the browsers.
 
@@ -43,7 +43,7 @@ How does the developer react? Charles Lecht [Lecht67](https://www.amazon.com/man
 
 These quality-destroying shortcuts result in bad legacy code, which slows down the development and the organization falls behind its competition. A predictable scenario unfolds. They need to reclaim the market and therefore make new promises, starting the vicious cycle all over again. The **technical debt**—the legacy code—makes development go slower. The **learning debt**—lack of renewal in developer skills—compounds this slowdown. Developers are so busy keeping unrealistic commitments that they have no time to keep up to date and refresh their skills (Figure 9.2).
 
-![Figure 9.2 dynamics of unrealistic deadline](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-causal-loop-legacy-en-thumb.png)
+![Figure 9.2 dynamics of unrealistic deadline](img/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-causal-loop-legacy-en.png)
 
 Bob Martin, in *Clean Code*, argues that a software craftsman would not make such an unrealistic promise, and that the legacy code problem can be solved by educating developers to be more *professional* [Martin08](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882).
 
@@ -136,15 +136,15 @@ When confronted with legacy code, developers frequently suggest rewrite, redesig
 
 In a product group with a 30-year-old code base, a developer asked us if we could help refactor a 5000-line function. We thought he was exaggerating. But when we paired up and measured the function, we discovered it was slightly larger than 5000 lines of code (LOC). How are 5000 LOC functions created? Does a developer wake up and think, “Gosh, what a wonderful day today! Let’s write a 5000 LOC function?” Probably not. When a developer writes new code, he usually *will* write it with decent quality. But over time the quality degrades. A function *becomes* 5000 LOC. Why does this happen? The customer requests a new requirement and this is hacked in because of poor development skills or unrealistic schedules. Code quality goes down and the effort needed to make changes goes up (see Figure 9.3).
 
-![Figure 9.3 code quality decreases over time](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality1-en-thumb.png)
+![Figure 9.3 code quality decreases over time](img/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality1-en.png)
 
 After some time it is too painful and takes too much effort to make changes to the code; developers start asking for a rewrite. At first the Product Owner refuses—a rewrite means high cost without new value. But as development speed drops, developers complain more, and eventually the Product Owner ‘agrees’ to the rewrite. During the rewrite, the ability to respond to changes—new requirements— is zero. But after the rewrite the code is of high quality, and consequently, new development is fast (see Figure 9.4).
 
-![Figure 9.4: Rewrite Increases Code Quality](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality2-en-thumb.png)
+![Figure 9.4: Rewrite Increases Code Quality](img/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality2-en.png)
 
 After the rewrite is finished, what happens? Pressure to rush in new requirements leads to hacks in the freshly cleaned code, causing the quality to degrade again and the implementation effort to increase (Figure 9.5). After a while, developers demand another rewrite. In some large product groups, we have seen components being rewritten three times.
 
-![Figure 9.5: Code Base Quality Degrades Again After The Rewrite](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality3-en-thumb.png)
+![Figure 9.5: Code Base Quality Degrades Again After The Rewrite](img/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality3-en.png)
 
 > Key insight:
 > The problem is not having legacy code,
@@ -152,12 +152,12 @@ After the rewrite is finished, what happens? Pressure to rush in new requirement
 
 The focus needs to be on preventing the creation of new legacy code instead of on the legacy code itself. It needs to be on *growing code healthfully* instead of allowing it to degrade over time. How? Improve the code every time a change is made. *“If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot”* [Martin08](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) (see Figure 9.6).
 
-![Figure 9.6: Growing the Code Healthfully](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality4-en-thumb.png)
+![Figure 9.6: Growing the Code Healthfully](img/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-code-quality4-en.png)
 
 ## Try... Clean up your neighborhood
 Growing healthy code is a key strategy for eliminating legacy code. You can do so by cleaning up your neighborhood; by gradually fixing your “broken windows” [HT99](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X). Every time you make a change, look around your change point—the neighborhood—for code that can be improved—the broken windows—and add a couple of tests and refactor (see Figure 9.7). When starting this practice, every change is a little slower. But over time the code improves and the development speed increases because of the healthier code base.
 
-![Figure 9.7: Clean Up Your Neighborhood](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-clean-neighbourhood-en-thumb.png)
+![Figure 9.7: Clean Up Your Neighborhood](img/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-clean-neighbourhood-en.png)
 
 Having legacy code means having technical debt—and it costs to get out of debt. A rewrite strategy attempts to settle the debt all at once. On the other hand, cleaning up your neighborhood distributes the payments. It focuses the effort to the parts that change most—the most important ones. The legacy code that does not change does not get improved—and that is okay.
 
