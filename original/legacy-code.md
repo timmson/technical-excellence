@@ -11,7 +11,7 @@ Existing well-structured reusable code is a valuable asset. However, this asset 
 
 But before diving into the subject, it is worth appreciating how many jobs exist because of legacy code. We travel around the world and frequently work in developing countries. In these places, people have risen out of poverty because of the jobs created to maintain legacy code.  In  countries such  as  India and China, several cities exploded in size and wealth over the last decade because of the outsourcing industry, and much of this outsourcing relates to legacy code. It is worth appreciating this. On the other hand, what would have happened if all this energy was put into creative, innovative new products? Besides which, legacy code has also destroyed companies... 
 
-![Figure 9.1 browser market share and releases](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-browser-wars-en-thumb.png | width=100)
+![Figure 9.1 browser market share and releases](https://less.works/scaling-book-images/practices-scaling-lean-agile-development/chapter-9-browser-wars-en-thumb.png | width=500)
 
 One of the best examples is Netscape, which once *owned* the browser market. But in 1995, Microsoft realized the huge potential of the Internet and started what would  later be known as “the browser wars” [[CY00](https://www.amazon.com/Competing-Internet-Time-Netscape-Microsoft/dp/0684863456)]. In 2000, Microsoft won the first battle of the browsers.
 
