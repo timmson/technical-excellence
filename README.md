@@ -11,6 +11,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 ## Содержание
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
 - [Непрерывная поставка / Continuous Delivery](continuous-delivery.ru.md)
+- [Унаследованный код / Legacy Code](legacy-code.ru.md)
 - [Чистый код / Clean Code](clean-code.ru.md)
 - [Архитектура и Проектирование / Architecture & Design](architecture-design.ru.md)
 - [Модульное тестирование / Unit-testing](unit-testing.ru.md)
