@@ -131,5 +131,3 @@ order: 60
 * [Capybara](https://github.com/jnicklas/capybara)
 
 Выше всего лишь самый общий список, но каждый день появляются новые и новые инструменты.
-
-Перевод статьи осуществлён [Кротовым Артёмом](https://www.facebook.com/artem.v.krotov).
