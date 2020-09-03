@@ -436,6 +436,11 @@ Several of our clients have dug themselves into a rather difficult hole by creat
 
 Rather than branches, try configurable designs (for example, with meta-data or some pluggable architecture) that activates/includes (or not) specific components or features.
 
+### Avoid... Create ‘designs’ and then send them for offshore implementation
+We sometimes visit organizations that claim they no longer “do the waterfall” and yet have a requirements group, a design team, an implementation group, and a testing department—the waterfall expressed in their organizational structure, filled with the waste of handoff and silo mentality. Some groups starting to offshore work to India or China reintroduce and aggravate these problems by, for example, having a group in Europe do detailed UML diagrams of a speculative design that is then sent to a group of programmers in India to code. This is a familiar variation of waterfall mentality; avoid it. It is simply a mini-waterfall in short iteration cycles.
+
+Also: See [“Avoid…Architects hand off to ‘coders’”](#dont-let-architects-hand-off-to-coders).
+
 ### Use architectural and design patterns
 
 Detailed architectural design for large systems is beyond the current scope, which emphasizes process-oriented design tips. But there is a wealth of well-written robust solutions in the **design pattern** community to help create an agile architecture. Get the books, learn and apply them (see Recommended Readings).

@@ -3,8 +3,6 @@ title: Унаследованный код
 order: 25
 ---
 
-This is “Chapter 9. Legacy Code” of [Larman10](https://www.amazon.com/Practices-Scaling-Lean-Agile-Development/dp/0321636406). Authors are Craig Larman and Bas Vodde.
-
 > I don’t want to achieve immortality through my work...  I want to achieve it through not dying. —Woody Allen
 
 If you work for a large product group, then by the time you are reading this chapter you are probably thinking, “This book contains some useful ideas, but we have five million lines of code in our homegrown programming language that we need to maintain. These ideas do not work in my environment.” Well, this chapter is for you.
@@ -69,7 +67,7 @@ A common quick-fix response by management to market pressure is to ‘order’ d
 
 This is another lesson that has been *taught* again and again. Perhaps the first large-scale project in the world was the Semi Automatic Ground Environment (SAGE) system that was developed during the 1950s. The project was in a hurry so... 
 
-> Within a year approximately **1000 people** were involved with the development of the SAGE system. People were recruited and trained from a variety of walks of life. Streetcar conductors, undertakers (with at least one year training in calculus), school teachers, curtain cleaners, and others were hastily assembled, trained in programming for some number of weeks,and assigned parts in a very complex organization ...  The originally hoped for **capacities of the system were cut** considerably. The system was first delivered **over a year late** and **considerably more cost** than was originally expected<sup>1</sup>. [Schwartz74 - Schwartz, J., 1974. “Construction of Software: Problems and Practicalities,” published in [Horowitz74](http://www.amazon.com/Practical-Strategies-Developing-Software-Systems/dp/0201029774)]
+> Within a year approximately **1000 people** were involved with the development of the SAGE system. People were recruited and trained from a variety of walks of life. Streetcar conductors, undertakers (with at least one year training in calculus), school teachers, curtain cleaners, and others were hastily assembled, trained in programming for some number of weeks,and assigned parts in a very complex organization ...  The originally hoped for **capacities of the system were cut** considerably. The system was first delivered **over a year late** and **considerably more cost** than was originally expected<sup>[1](#footnote-1)</sup>. [Schwartz74 - Schwartz, J., 1974. “Construction of Software: Problems and Practicalities,” published in [Horowitz74](http://www.amazon.com/Practical-Strategies-Developing-Software-Systems/dp/0201029774)]
 
 Instead of a focus on cultivating great developers or hiring a few great people, there is a focus on hiring the maximum amount of bodies (or *heads*, as in *head count*) which in turn results in a rushed and inadequate new-hire education program. This quick fix leads to groups with low-average development skills, groups with a low aptitude for being great developers, and so ultimately to more and more bad legacy code.
 
@@ -91,7 +89,7 @@ The leadership of a product group may believe they understand how these educatio
 
 As such, do not assume that university graduates have much skill in software development—especially in agile development.
 
-**Organizational support** — Most companies do a poor job at educating developers. We frequently hear, “Everybody who graduated from university can code,” thereby implying that educating basic development skills is unnecessary. Our coaching experiences suggest otherwise. Many developers in large product groups lack fundamental skills such as good design of software, efficiently working with editors, effectively using their programming language, or automating tasks by writing scripts. Organizations are failing to educate in these areas because many business leaders have reasonably but incorrectly assumed that people learned these skills at university—unaware that a computer science curriculum does not teach software development skills, and that most university professors do not know and cannot teach modern development practices<sup>2</sup>.
+**Organizational support** — Most companies do a poor job at educating developers. We frequently hear, “Everybody who graduated from university can code,” thereby implying that educating basic development skills is unnecessary. Our coaching experiences suggest otherwise. Many developers in large product groups lack fundamental skills such as good design of software, efficiently working with editors, effectively using their programming language, or automating tasks by writing scripts. Organizations are failing to educate in these areas because many business leaders have reasonably but incorrectly assumed that people learned these skills at university—unaware that a computer science curriculum does not teach software development skills, and that most university professors do not know and cannot teach modern development practices<sup>[2](#footnote-2)</sup>.
 
 In contrast, lean organizations invest in educating their employees. One study shows that Japanese lean companies spend eight times as much effort educating new employees than their USA counterparts and twice as much as their European counterparts [WJR90](https://www.amazon.com/Machine-That-Changed-World-Revolutionizing/dp/0743299795).
 
@@ -113,10 +111,10 @@ Organizations trivialize programming by
 
 **Outsourcing the programming** — Especially in  large  product groups, we encounter businesses that do not consider writing code their “core business” and so have outsourced it. They write specifications, architectural documents, and design documents, and then send them to cheap-rate developers offshore to “do the implementation and testing.” A recipe for disaster. The source code is the place of real value—gemba. For more, see:
 
-* See “Try... Think ‘gardening’ over ‘architecting’—Create a culture of living, growing design” at [less.works](architecture-design.md#think-gardening-over-architectingcreate-a-culture-of-living-growing-design)
-* See “Try... Architects and system engineers are regular (feature) team members” at [less.works](architecture-design.md#architects-and-system-engineers-are-regular-feature-team-members)
-* See “Avoid... Architecture astronauts (PowerPoint architects)” at [less.works](architecture-design.md#avoid-architecture-astronauts-powerpoint-architects)
-* See “Avoid... Architects hand off to ‘coders’” at [less.works](architecture-design.md#dont-let-architects-hand-off-to-coders)
+* See [“Try... Think ‘gardening’ over ‘architecting’—Create a culture of living, growing design”](architecture-design.md#think-gardening-over-architecting---create-a-culture-of-living-growing-design)
+* See [“Try... Architects and system engineers are regular (feature) team members”](architecture-design.md#architects-and-system-engineers-are-regular-feature-team-members)
+* See [“Avoid... Architecture astronauts (PowerPoint architects)”](architecture-design.md#avoid-architecture-astronauts-powerpoint-architects)
+* See [“Avoid... Architects hand off to ‘coders’”](architecture-design.md#dont-let-architects-hand-off-to-coders)
 * See “Avoid... Create ‘designs’ and then send them for offshore implementation” at [Larman10, p.316](https://www.amazon.com/Practices-Scaling-Lean-Agile-Development/dp/0321636406)
 
 **Career paths** — Large organizations want to offer a future for their employees; predefined management or technical career paths are a typical solution. People who follow the management path shift away from technical work and become “professional managers.” Those who follow the technical path spend their time writing “architectural documents.” Whatever career path you follow, it won’t contain any programming.
@@ -167,7 +165,7 @@ Having legacy code means having technical debt—and it costs to get out of debt
 We are frequently asked whether to start with unit tests or highlevel tests. Another false dichotomy. They are both important! It is often easier to add high-level tests to a legacy code base, and they help in ensuring that existing functionality works. But unit tests run fast. Fast-running unit tests help when you are gradually refactoring legacy code. Therefore, write unit tests *and* high-level tests when cleaning up your neighborhood.
 
 ### Try... Rewrite lethal legacy code
-Sometimes it is impossible to gradually grow the code base healthfully. For example, suppose that part of the low-level code is written in PL/M and no one is willing to learn PL/M. Or, part of your code base is written in a home-grown language, whose compiler only runs on VAX/VMS. When gradual change is impossible<sup>3</sup> — the legacy is lethal—then it is necessary to ‘amputate’ that part of the code instead of letting it kill your product [Parnas94 - Parnas, D., 1994. “Software Aging,” Proceedings of the 16th International Conference on Software Engineering, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)].
+Sometimes it is impossible to gradually grow the code base healthfully. For example, suppose that part of the low-level code is written in PL/M and no one is willing to learn PL/M. Or, part of your code base is written in a home-grown language, whose compiler only runs on VAX/VMS. When gradual change is impossible<sup>[3](#footnote-3)</sup> — the legacy is lethal—then it is necessary to ‘amputate’ that part of the code instead of letting it kill your product [Parnas94 - Parnas, D., 1994. “Software Aging,” Proceedings of the 16th International Conference on Software Engineering, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)].
 
 While replacing lethal code:
 * cover it with test
@@ -205,7 +203,9 @@ Software craftsman prevent creating legacy code and hence develop software at a 
 * Agile Development, Principles, Patterns and Practices, by Bob Martin. Also known as Agile PPP, links good  code, modern practices, and eternal design principles to explain what it means to be a craftsman.
 * Clean Code: A Handbook of Agile Craftsmanship, by Bob Martin. The subtitle says it all. Clean Code is the code-focused prequel to Agile PPP
 
+---
+
 ## Notes
-1 - emphasis added
-2 - “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
-3 - It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible.
+1. <a name="footnote-1"></a> emphasis added.
+2. <a name="footnote-2"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
+3. <a name="footnote-3"></a> It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible.
