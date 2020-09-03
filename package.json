@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/timmson/technical-excellence#readme",
   "dependencies": {
-    "markdownlint-cli": "0.19.0",
-    "yaspeller": "6.0.2"
+    "markdownlint-cli": "0.23.2",
+    "yaspeller": "7.0.0"
   }
 }

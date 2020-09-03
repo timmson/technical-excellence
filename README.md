@@ -1,4 +1,5 @@
-# Technical Excellence RU
+# Техническое совершенство
+
 Project of translation Technical Excellence section of LeSS.works to Russian
 
 Это проект предназначен для перевода на русский язык материалов раздела.
@@ -9,6 +10,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 ![less_technical_excellence](/img/technical-excellence/technical-excellence-overview.png)
 
 ## Содержание
+
 - [Непрерывная интеграция / Continuous Integration](continuous-integration.ru.md)
 - [Непрерывная поставка / Continuous Delivery](continuous-delivery.ru.md)
 - [Унаследованный код / Legacy Code](legacy-code.ru.md)
@@ -24,14 +26,12 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 Истинная гибкость (agility) может быть достигнута только тогда, когда вы можете менять свой продукт простыми, быстрыми и
 гибкими способами. В этой связи:
 
-```
-Организационная Гибкость ограничена Технической Гибкостью
-(Organizational Agility is constrained by Technical Agility)
-```
+> Организационная Гибкость ограничена Технической Гибкостью
+> (Organizational Agility is constrained by Technical Agility)
 
 С другой стороны, когда вы редко вносите изменения в свой продукт, то независимо от того, как устроены ваши команды,
 как выглядит ваша орг. структура, или какой фреймворк вы применяете, вы в любом случае будете долго реагировать на изменения.
 
 Хорошо, что мы знаем несколько простых инженерных практик, которые помогают командам сохранять высокое качество в
-меняющихся условиях. Изучение этих практик не требует применения магии, поэтому большинство людей могут им научиться. 
+меняющихся условиях. Изучение этих практик не требует применения магии, поэтому большинство людей могут им научиться.
 Однако, большинство людей *не сталкивается* с такими практиками в рамках университетской программы. Следовательно, ваша организация **должна** инвестировать в их обучение, как правило, через коучинг.
