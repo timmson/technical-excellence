@@ -113,10 +113,10 @@ Organizations trivialize programming by
 
 **Outsourcing the programming** — Especially in  large  product groups, we encounter businesses that do not consider writing code their “core business” and so have outsourced it. They write specifications, architectural documents, and design documents, and then send them to cheap-rate developers offshore to “do the implementation and testing.” A recipe for disaster. The source code is the place of real value—gemba. For more, see:
 
-* See “Try... Think ‘gardening’ over ‘architecting’—Create a culture of living, growing design” at [less.works](architecture-design.md#think-gardening-over-architectingcreate-a-culture-of-living-growing-design)
-* See “Try... Architects and system engineers are regular (feature) team members” at [less.works](architecture-design.md#architects-and-system-engineers-are-regular-feature-team-members)
-* See “Avoid... Architecture astronauts (PowerPoint architects)” at [less.works](architecture-design.md#avoid-architecture-astronauts-powerpoint-architects)
-* See “Avoid... Architects hand off to ‘coders’” at [less.works](architecture-design.md#dont-let-architects-hand-off-to-coders)
+* See [“Try... Think ‘gardening’ over ‘architecting’—Create a culture of living, growing design”](architecture-design.md#think-gardening-over-architecting---create-a-culture-of-living-growing-design)
+* See [“Try... Architects and system engineers are regular (feature) team members”](architecture-design.md#architects-and-system-engineers-are-regular-feature-team-members)
+* See [“Avoid... Architecture astronauts (PowerPoint architects)”](architecture-design.md#avoid-architecture-astronauts-powerpoint-architects)
+* See [“Avoid... Architects hand off to ‘coders’”](architecture-design.md#dont-let-architects-hand-off-to-coders)
 * See “Avoid... Create ‘designs’ and then send them for offshore implementation” at [Larman10, p.316](https://www.amazon.com/Practices-Scaling-Lean-Agile-Development/dp/0321636406)
 
 **Career paths** — Large organizations want to offer a future for their employees; predefined management or technical career paths are a typical solution. People who follow the management path shift away from technical work and become “professional managers.” Those who follow the technical path spend their time writing “architectural documents.” Whatever career path you follow, it won’t contain any programming.
