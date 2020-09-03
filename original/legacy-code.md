@@ -136,15 +136,15 @@ When confronted with legacy code, developers frequently suggest rewrite, redesig
 
 In a product group with a 30-year-old code base, a developer asked us if we could help refactor a 5000-line function. We thought he was exaggerating. But when we paired up and measured the function, we discovered it was slightly larger than 5000 lines of code (LOC). How are 5000 LOC functions created? Does a developer wake up and think, “Gosh, what a wonderful day today! Let’s write a 5000 LOC function?” Probably not. When a developer writes new code, he usually *will* write it with decent quality. But over time the quality degrades. A function *becomes* 5000 LOC. Why does this happen? The customer requests a new requirement and this is hacked in because of poor development skills or unrealistic schedules. Code quality goes down and the effort needed to make changes goes up (see Figure 3).
 
-![Figure 3. Code quality decreases over time](/img/legacy-code/9-code-quality1-en.png)
+![Figure 3. Code quality decreases over time](/img/legacy-code/code-quality1-en.png)
 
 After some time it is too painful and takes too much effort to make changes to the code; developers start asking for a rewrite. At first the Product Owner refuses—a rewrite means high cost without new value. But as development speed drops, developers complain more, and eventually the Product Owner ‘agrees’ to the rewrite. During the rewrite, the ability to respond to changes—new requirements— is zero. But after the rewrite the code is of high quality, and consequently, new development is fast (see Figure 4).
 
-![Figure 4. Rewrite Increases Code Quality](/img/legacy-code/9-code-quality2-en.png)
+![Figure 4. Rewrite Increases Code Quality](/img/legacy-code/code-quality2-en.png)
 
 After the rewrite is finished, what happens? Pressure to rush in new requirements leads to hacks in the freshly cleaned code, causing the quality to degrade again and the implementation effort to increase (Figure 5). After a while, developers demand another rewrite. In some large product groups, we have seen components being rewritten three times.
 
-![Figure 5. Code Base Quality Degrades Again After The Rewrite](/img/legacy-code/9-code-quality3-en.png)
+![Figure 5. Code Base Quality Degrades Again After The Rewrite](/img/legacy-code/code-quality3-en.png)
 
 > Key insight:
 > The problem is not having legacy code,
@@ -152,12 +152,12 @@ After the rewrite is finished, what happens? Pressure to rush in new requirement
 
 The focus needs to be on preventing the creation of new legacy code instead of on the legacy code itself. It needs to be on *growing code healthfully* instead of allowing it to degrade over time. How? Improve the code every time a change is made. *“If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot”* [[Martin08](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)] (see Figure 6).
 
-![Figure 6: Growing the Code Healthfully](/img/legacy-code/9-code-quality4-en.png)
+![Figure 6: Growing the Code Healthfully](/img/legacy-code/code-quality4-en.png)
 
 ## Try... Clean up your neighborhood
 Growing healthy code is a key strategy for eliminating legacy code. You can do so by cleaning up your neighborhood; by gradually fixing your “broken windows” [[HT99](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)]. Every time you make a change, look around your change point—the neighborhood—for code that can be improved—the broken windows—and add a couple of tests and refactor (see Figure 7). When starting this practice, every change is a little slower. But over time the code improves and the development speed increases because of the healthier code base.
 
-![Figure 7: Clean Up Your Neighborhood](/img/legacy-code/9-clean-neighbourhood-en.png)
+![Figure 7: Clean Up Your Neighborhood](/img/legacy-code/clean-neighbourhood-en.png)
 
 Having legacy code means having technical debt—and it costs to get out of debt. A rewrite strategy attempts to settle the debt all at once. On the other hand, cleaning up your neighborhood distributes the payments. It focuses the effort to the parts that change most—the most important ones. The legacy code that does not change does not get improved—and that is okay.
 
