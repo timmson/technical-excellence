@@ -1,42 +1,43 @@
 # Унаследованный код
 
-> I don’t want to achieve immortality through my work...  I want to achieve it through not dying. —Woody Allen
+> Я не хочу достичь бессмертия с помощью своей работы, я просто не буду умирать. — Вуди Аллен
 
-If you work for a large product group, then by the time you are reading this chapter you are probably thinking, “This book contains some useful ideas, but we have five million lines of code in our homegrown programming language that we need to maintain. These ideas do not work in my environment.” Well, this chapter is for you.
+Если вы работаете в большой продуктовой группе, значит за время чтения этой статьи вы, вероятно, будете думать: “Это статья содержит столько полезных идей, но у нас пять миллионов строк кода на нашем доморощенном языке программирования, которые мы обязаны поддерживать. Это идеи не будут у нас работать”. В общем, это статья как раз для вас.
 
-Existing well-structured reusable code is a valuable asset. However, this asset can turn into legacy code—poorly structured, inadequately documented code with lots of duplication and without automated tests. Legacy code constrains organizational agility and, as will be seen, leads to a serious competitive disadvantage. This chapter is about how to write that legacy code, and how to avoid it.
+Существующий хорошо структурированный переиспользуемый код является ценным активом. Тем не менее, этот актив может стать плохо структурированным с неадекватной документацией унаследованным кодом (legacy code) с большим количеством повторений и без автотестов. Унаследованный код ограничивает организационную гибкость, и как мы увидим, ведёт к серьёзному конкурентному недостатку. Это статья о том, как писать такой унаследованный код, и как этого избегать.
 
-But before diving into the subject, it is worth appreciating how many jobs exist because of legacy code. We travel around the world and frequently work in developing countries. In these places, people have risen out of poverty because of the jobs created to maintain legacy code.  In  countries such  as  India and China, several cities exploded in size and wealth over the last decade because of the outsourcing industry, and much of this outsourcing relates to legacy code. It is worth appreciating this. On the other hand, what would have happened if all this energy was put into creative, innovative new products? Besides which, legacy code has also destroyed companies...
+Но перед погружением в тему будет нужно отметить, сколько работы существуют благодаря унаследованному коду. Мы путешествуем по миру и часто работаем в развивающихся странах. Там люди вышли из бедности благодаря рабочим местам, созданным для поддержки устаревшего кода. В таких странах, как Индия и Китай, несколько городов выросли в размерах и уровне жизни за последнее десятилетие не без помощи индустрии заказной разработки (outsourcing industry), и большая её часть относится к унаследованному коду. Это стоит отметить тоже. С другой стороны, что бы произошло, если бы всю эту энергию направили на творческие, инновационные продукты? Кроме того, унаследованный код разрушал компании...
 
 ![_](/img/legacy-code/browser-wars-en.png)
 
-*Browser market share and releases*
+*Рынок и релизы браузеров*
 
-One of the best examples is Netscape, which once *owned* the browser market. But in 1995, Microsoft realized the huge potential of the Internet and started what would  later be known as “the browser wars” [[CY00](https://www.amazon.com/Competing-Internet-Time-Netscape-Microsoft/dp/0684863456)]. In 2000, Microsoft won the first battle of the browsers.
+Браузер Netscape - один из лучших примеров, который по началу *владел* рынком браузеров. Но в 1995 года компания Microsoft осознала громадный потенциал сети Интернет и начала то, что в последствии назовут “войнами браузеров“ [[см. книгу Competing On Internet Time](https://www.amazon.com/Competing-Internet-Time-Netscape-Microsoft/dp/0684863456)]. В 2000 году она выиграла первую битву браузеров.
 
-There are many reasons for this. One is that Netscape did not release a new browser for three and a half years. Why not? *“Because the browser was rewritten independently of the ‘legacy’ code that formed the basis of Netscape’s Communicator browsers”* [[Festa00](http://news.cnet.com/2100-1023-248549.html)]. In 2007 AOL, (which bought Netscape in 1999) officially killed the Netscape browser [[Netscape08 - Netscape, 2008. “End of Support for Netscape Browsers,” Netscape Blog](http://blog.netscape.com/2007/12/28/end-of-support-for-netscape-web-browsers)].
+Для этого было много причин. Одна из них в том, что Netscape [не выпускала](http://news.cnet.com/2100-1023-248549.html) новой версии своего браузера три с половиной года. Но почему? *“Потому что браузер был переписан заново, без использования кодовой базы, что формировала основу Netscape’s Communicator browser”*. В 2007 компания AOL, (которая купила Netscape в 1999 году) официально [убила](http://blog.netscape.com/2007/12/28/end-of-support-for-netscape-web-browsers) браузер Netscape.
 
-This chapter solves all your legacy code problems... okay, maybe not. It will make your legacy code problem a little less painful and perhaps, one day, resolved.
+Это статья решит все ваши проблемы с унаследованным кодом... ок, а может и нет. Но она сделает вашу проблему унаследованного кода немного менее болезненной и возможно, в один день, решённой.
 
-## How To Write New Legacy Code
+## Как Писать Новый Унаследованный Код
 
-Writing legacy code is easy—we can explain it in a few simple steps. Companies have generated piles of legacy code for decades. At Xerox we once heard a maxim, “There are many lessons taught, but few lessons learned.” This is particularly true for legacy code. How to prevent the lesson of legacy code being *taught* over and over again, but was never learned?
+Писать унаследованный код просто - мы объясним это за несколько простых шагов. Компании создают кучи унаследованного кода за одно десятилетие. В компании Xerox мы однажды услышали изречение: “Мы преподавали много уроков, не выучили мы несколько”. Это отчасти правда для унаследованного кода. Как предотвратить *преподавание* такого урока унаследованного кода снова и снова, который так и не бы выучен?  
 
-How long has it been taught? In 1967, in what is perhaps the first book on software project management, the author taught us:
+Как долго он преподаётся? В 1967 года, возможно, в первой [книге](https://www.amazon.com/management-computer-programming-projects/dp/B0006BRZGU) о проектах по разработке ПО автор учил нас:
 
-> Equally responsible for the initiation of project with predefined failure is management that insists upon having fixed commitments from programming personnel prior to the latter’s understanding what the commitments are for. Too frequently, management does not realize that in asking the staff for “the impossible”, the staff will feel the obligation to respond out of respect, fear or misguided loyalty. Saying “no” to the boss frequently requires courage, political and psychological wisdom, and business maturity that comes with much experience. [[Lecht67](https://www.amazon.com/management-computer-programming-projects/dp/B0006BRZGU)]
+> В равной степени ответственным за начало проекта с заранее понятным провалом является руководство, которое настаивает на наличии фиксированных обязательств со стороны программистов до того, как последний поймет, для чего эти обязательства. Слишком часто руководство не осознает, что, прося сотрудников о “невозможном”, сотрудники будут чувствовать себя обязанными ответить из уважения, страха или ошибочной лояльности. Чтобы сказать начальнику “нет”, часто требуется смелость, политическая и психологическая мудрость, а также деловая зрелость, которая приходит с большим опытом.
 
-There are clear causes of legacy code:
+Ниже указаны чёткие причины унаследованного кода:
 
-* unrealistic deadlines with fixed content
-* poor development skills
+* нереалистичные сроки сдачи фиксированного объёма работ
+* низкий уровень навыков разработки
 
-And of course, in these causes lie the keys to prevent legacy code...
+И конечно в этих причинах лежат ключи к предотвращению унаследованного кода...
 
 ## How To Avoid Writing New Legacy Code
 
 ### Avoid... Fixed content with unrealistic deadlines
 
+“Мы обещали передать этот релиз нашим ключевым клиентам, и *только приемлемые обязательства* от отдел R&D на первое февраля”
 “We promised this release to our key customer, and the *only acceptable commitment* from R&D is the first of February,” said an angry email sent by a director to the management of the product group we were coaching. We read it in disbelief and wondered about the *only acceptable commitment*. We decided to ignore the email—for now—and get back to *normal* work—coaching a developer in refactoring a legacy component that was hacked together last release to meet that deadline.
 
 Many companies are stuck in a vicious cycle of *forced promises* and *unrealistic commitments*. In today’s time-to-market era, customers ‘force’ them to promise too much. “If you cannot deliver by the end of the year, we will buy from your competitor who will make that promise.” Sales people or executives could respond by being transparent and by working toward a mutual beneficial long-term relationship (customer collaboration), but instead they check whether the contractual penalty for being late is tolerable (contract negotiation) and reply, “Yes, no problem, we can do it!” After which the same cycle starts within the organization. The executive orders the head of R&D to “do it” and “make it happen” because “it is a customer promise.” The promise travels through the organizational hierarchy to the developer, who cannot pass it on any further.
