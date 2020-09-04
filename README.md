@@ -27,6 +27,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 ---
 Организационная Гибкость ограничена Технической Гибкостью
 (Organizational Agility is constrained by Technical Agility)
+
 ---
 
 С другой стороны, когда вы редко вносите изменения в свой продукт, то независимо от того, как устроены ваши команды,
