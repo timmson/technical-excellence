@@ -204,6 +204,7 @@ How to deal with existing legacy code? It is better to gradually improve the cod
 ## Рекомендуем к Прочтению
 
 At the time we write this book, surprisingly little has been written about such a huge and costly problem as legacy code. Here are some references we found useful related to improving your code gradually:
+
 * Working Effectively with Legacy Code, by Michael Feathers. Concrete advice on how to gradually improve your legacy system at code level.
 * Refactoring: Improving the Design of Existing Code, by Martin Fowler. The classic work on improving existing code.
 * Refactoring Workbook, by Bill Wake. A concrete guide for becoming better at refactoring code.
@@ -212,17 +213,19 @@ At the time we write this book, surprisingly little has been written about such 
 so that your systems stays stable.
 
 The following material covers the organizational dynamics behind legacy code:
+
 * Enterprise Scrum, by Ken Schwaber. Chapter 9 of Enterprise Scrum is one of the few descriptions explaining the relationship between customer promises and the creation of legacy
 code.
 * Sustainable Software Development: An Agile Perspective, by Kevin Tate. This book does not cover many new techniques but provides an excellent overview of the practices for creating software in a sustainable way.
 
 Software craftsman prevent creating legacy code and hence develop software at a sustainable rate. Some material on being a software craftsman:
+
 * The Pragmatic Programmer: From Journeyman to Master, by Andrew Hunt and Dave Thomas. Classic book on modern software craftsmanship.
 * Software Craftsmanship, by Pete McBreen dives in craftsmanship approach and compares it to the traditional software engineering perspective.
 * Agile Development, Principles, Patterns and Practices, by Bob Martin. Also known as Agile PPP, links good  code, modern practices, and eternal design principles to explain what it means to be a craftsman.
 * Clean Code: A Handbook of Agile Craftsmanship, by Bob Martin. The subtitle says it all. Clean Code is the code-focused prequel to Agile PPP
 
-## Сноcки
+## Сноски
 
 1. <a name="footnote-1"></a> emphasis added.
 2. <a name="footnote-2"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
