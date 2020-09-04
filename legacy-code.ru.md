@@ -33,14 +33,16 @@
 
 И конечно в этих причинах лежат ключи к предотвращению унаследованного кода...
 
-## How To Avoid Writing New Legacy Code
+## Как Избежать Написания Унаследованного Кода
 
-### Avoid... Fixed content with unrealistic deadlines
+### Избегайте нереалистичные сроки сдачи фиксированного объёма работ
 
-“Мы обещали передать этот релиз нашим ключевым клиентам, и *только приемлемые обязательства* от отдел R&D на первое февраля”
-“We promised this release to our key customer, and the *only acceptable commitment* from R&D is the first of February,” said an angry email sent by a director to the management of the product group we were coaching. We read it in disbelief and wondered about the *only acceptable commitment*. We decided to ignore the email—for now—and get back to *normal* work—coaching a developer in refactoring a legacy component that was hacked together last release to meet that deadline.
+“Мы обещали передать этот релиз нашим ключевым клиентам, и ждём первое февраля, как *единственно приемлемые обязательства* от отдела разработки” - было написано в злом письме директора менеджменту продуктовой группы, которую мы консультировали. Мы недоверчиво прочитали это письмо и задались вопросом о *единственно приемлемых обязательствах*. Мы решили не обращать пока на него внимания и вернуться к *обычной* работе - обучению разработчика рефакторингу унаследованного компонента, который был сломан вместе с последним релизом, чтобы успеть к этому срок. 
 
-Many companies are stuck in a vicious cycle of *forced promises* and *unrealistic commitments*. In today’s time-to-market era, customers ‘force’ them to promise too much. “If you cannot deliver by the end of the year, we will buy from your competitor who will make that promise.” Sales people or executives could respond by being transparent and by working toward a mutual beneficial long-term relationship (customer collaboration), but instead they check whether the contractual penalty for being late is tolerable (contract negotiation) and reply, “Yes, no problem, we can do it!” After which the same cycle starts within the organization. The executive orders the head of R&D to “do it” and “make it happen” because “it is a customer promise.” The promise travels through the organizational hierarchy to the developer, who cannot pass it on any further.
+Много компаний застревают в порочном круге *навязанных обещаний* и *нереалистичных обязательств*. Сегодня в эру высоких скоростей клиенты ‘принуждают’ их обещать слишком многое. “Если вы не можете поставить к концу года, мы купим у ваших конкурента, кто даёт такое обещание”.
+
+
+Sales people or executives could respond by being transparent and by working toward a mutual beneficial long-term relationship (customer collaboration), but instead they check whether the contractual penalty for being late is tolerable (contract negotiation) and reply, “Yes, no problem, we can do it!” After which the same cycle starts within the organization. The executive orders the head of R&D to “do it” and “make it happen” because “it is a customer promise.” The promise travels through the organizational hierarchy to the developer, who cannot pass it on any further.
 
 How does the developer react? Charles Lecht [[Lecht67](https://www.amazon.com/management-computer-programming-projects/dp/B0006BRZGU)] already warned us over 40 years ago: The developer will *“feel the obligation to respond out of respect, fear or misguided loyalty”* and reluctantly commit to the deadline. The developer opens his *secret toolbox* and does everything possible to make the short-term deadline by using *tools* such as hardcoding, copy-paste-modify programming, skipping testing, working overtime, and other quality-destroying shortcuts [[Schwaber07a](https://www.amazon.com/Enterprise-Scrum-Developer-Best-Practices/dp/0735623376)]. Nobody notices the use of these ‘tools,’ and so the deadline is made. Management rewards developers for their hard work and applauds their “great teamwork” and “fighting spirit.”
 
