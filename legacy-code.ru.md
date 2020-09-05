@@ -35,7 +35,7 @@
 
 ## Как Избежать Написания Унаследованного Кода
 
-### Избегайте нереалистичные сроки сдачи фиксированного объёма работ
+### Избегайте нереалистичных сроков сдачи фиксированного объёма работ
 
 “Мы обещали передать этот релиз нашим ключевым клиентам, и ждём первое февраля, как *единственно приемлемые обязательства* от отдела разработки” - было написано в злом письме директора менеджменту продуктовой группы, которую мы консультировали. Мы недоверчиво прочитали это письмо и задались вопросом о *единственно приемлемых обязательствах*. Мы решили не обращать пока на него внимания и вернуться к *обычной* работе - обучению разработчика рефакторингу унаследованного компонента, который был сломан вместе с последним релизом, чтобы успеть к этому срок.
 
@@ -47,28 +47,28 @@
 
 ![_](/img/legacy-code/causal-loop-legacy-en.png)
 
-*Dynamics of unrealistic deadline*
+*Динамика нереалистичных сроков*
 
-Bob Martin, in *Clean Code*, argues that a software craftsman would not make such an unrealistic promise, and that the legacy code problem can be solved by educating developers to be more *professional* [[Martin08](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)].
+Боб Мартин в книге *[Чистый Код](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)* утверждает, что мастера не давали бы таких невыполнимых обещаний, и проблема унаследованного кода могла быть решена обучением разработчиков, чтобы повысить их *профессионализм*.
 
-Martin is partly right. But this view ignores the fact that a developer is part of a larger system that reinforces this behavior. Not only should software craftsmanship be enhanced, but also the *system* in which developers work.
+Мартин частично прав. Но это представление игнорирует тот факт, что разработчик является частью большой системы, которая изменяет его поведение. Нужно, чтобы не только разработчики поменялись, но и *система* в целом, в которой они работают.
 
-In Europe, we once visited the director of a large (embedded system) product group and his management team. The director explained that the group had successfully met their last release goal, and so questioned the motivation to adopt large-scale Scrum. Just then, one of his managers spoke up and said, “Well, what really happened was that near the end of the last release we were far behind and so we did serious overtime work and pulled over one hundred people off another product and got them to help. That’s why we shipped on schedule. Now, we are seriously behind on the current release, because so much bad code was created in the last release that we are spending most of our time fixing defects reported from our customers, and having to work with a mess of a code base.”
+Однажды в Европе мы посетили директора большой продуктовой группы (которая разрабатывала встраиваемые системы) и его команду менеджеров. Директор объяснил, что группа успешно достигла цель в последнем релизе, и поставил под сомнение мотивацию для внедрения масштабируемого Скрама. В этот момент один из его менеджеров заговорил и сказал: “Что ж, на самом деле ближе к концу последнего релиза мы сильно отстали, поэтому мы много работали сверхурочно, вытащили более сотни человек из другого продукта и заставили их помочь. Вот почему мы выполнили поставку к сроку. Сейчас мы серьёзно отстаём от графика текущего релиза, потому что в последнем релизе было создано так много плохого кода, что мы тратим большую часть времени на исправление дефектов, о которых сообщают нам наши клиенты, и вынуждены работать с беспорядком в кодовой базе”.  
 
-Observe the relationship between these situations and the absence of lean thinking. For example, the *waste of wishful thinking* plays out in these scenarios. One of the three sources of waste in lean is *overburden*—it is easy to see how the heroic push near the end of release creates more waste in the future. And there is no *stop and fix* culture—quite the opposite, it is “carry on and don’t fix.”
+Обратите внимание на взаимосвязь между этими ситуациями и отсутствием бережливого мышления. Например, *потеря от выдачи желаемого за действительное* присутствует в этих случаях. Один из трёх источников потерь в бережливом мышлении - *перегрузка* (overburden) - легко увидеть, как героический толчок ближе к концу релиза приводит к ещё большим потерям в будущем. И тут также нет культуры *остановись и исправь* (stop and fix) - с точностью противоположная “продолжай и не исправляй”.
 
-Telling your customers “We do not know the content and we have no idea when it will be done” is commercial suicide. But this concern, which we frequently hear from executives, is a false dichotomy—either *make unrealistic commitments or do not make any commitments at all*.
+Сказать вашим клиентам “Мы не понимаем сути и понятия не имеем, когда это будет сделано будет” коммерческим суицидом. Но это беспокойство, которое мы часто слышим от руководителей, является ложной дихотомией - либо *брать на себя нереалистичные обязательства, либо вообще не брать на себя никаких обязательств*.
 
-There is an alternative where both the customer and the client accept the reality of product development: It is not 95% predictable. You can accept this reality by being transparent toward your customers during development. How? For example, by...
+Есть альтернатива, когда клиент и заказчик вместе принимают реальность продуктовой разработки: Она не предсказуема на 95%. Вы можете принять эту реальность, если будете демонстрировать прозрачность по отношению к своим клиентам во время разработки. Например, ...
 
-* reporting your development status to your key customer iteration by iteration; for example, with a Release Burndown chart and updated Product Backlog
-* allowing key customers to give feedback on priorities and modified goals as they see how things are unfolding, and then adjusting the plan accordingly
-* giving estimates with probability distributions or giving multiple estimates [[DL03](https://www.amazon.com/Waltzing-Bears-Managing-Software-Projects/dp/0932633609)]
-* other techniques that promote cooperating with customers frequently, based on realism and transparency
+* отчитываясь о вашем статусе разработки вашим ключевым клиентам каждую итерацию; например, с помощью Диаграммы Сгорания Релиза (Release Burndown chart) и обновлённого Бэклога Продукта
+* давая возможность ключевым клиентам оставлять обратную связь по приоритетам и изменении целей по мере того, как они видят, как идут дела, а затем корректируют план соответствующим образом
+* предоставляя оценки с распределением вероятности или несколько оценок [см. книгу Вальсируя с Медведями](https://www.amazon.com/Waltzing-Bears-Managing-Software-Projects/dp/0932633609)
+* используя другие техники, которые продвигают частое взаимодействие с клиентами, основанные на реальности и прозрачности
 
-By such changes in how product companies relate to customers, the pressure to create bad legacy code is reduced.
+Благодаря изменениям, как продуктовые компании относятся к своим клиентам, уменьшается давление, создающее унаследованный код.
 
-A common quick-fix response by management to market pressure is to ‘order’ development to “add more resources,” since they are ‘cheap.’ A product group we worked with *was forced* to add hundreds of people within a one-year period. An exception? No, another example: The leader of a product group we worked with recently got ‘promoted’ to a new product. The new product had 900 people, 12 different sites, and 20 active branches. It was behind the competition, and the previous management tried to save it by adding more people—now it was even more behind.
+Обычный быстрый ответ менеджмента на давление рынка в ‘приказе’ разработке “добавить больше ресурсов”, пока они ‘дешёвые’. Мы работали с продуктовой группой, которую *принудили* набрать сотни людей за период в один-два года. Исключение? Нет, вот ещё пример: руководитель продуктовой группы, с которой мы работали, недавно был ‘повышен‘ до нового продукта. В новом продукте было 900 человек, 12 разных офисов и 20 активных филиалов. Этот продукт отставал от конкурентов, и предыдущее руководство пыталось спасти его, добавляя больше людей - теперь оно отставало ещё больше.
 
 This is another lesson that has been *taught* again and again. Perhaps the first large-scale project in the world was the Semi Automatic Ground Environment (SAGE) system that was developed during the 1950s. The project was in a hurry so...
 
@@ -76,9 +76,9 @@ This is another lesson that has been *taught* again and again. Perhaps the first
 
 Instead of a focus on cultivating great developers or hiring a few great people, there is a focus on hiring the maximum amount of bodies (or *heads*, as in *head count*) which in turn results in a rushed and inadequate new-hire education program. This quick fix leads to groups with low-average development skills, groups with a low aptitude for being great developers, and so ultimately to more and more bad legacy code.
 
-### Poor Development Skills
+### Низкие Навыки Разработки
 
-The organizational dynamics of promises and commitment does not explain the whole legacy code story. Bob Martin is right—the industry definitely needs software craftsmanship.
+Организационная динамика обещаний и обязательств полностью не описывает историю об унаследованном коде. Боб Мартин прав - индустрии определённо точно нужны хорошие инженеры.
 
 It seems to us that the average skill level of software developers in large product groups is quite weak. Developers are frequently not familiar with basic good development techniques—simple practices such as information hiding and encapsulation, or good design principles [[Martin02](https://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445ё)]. In embedded systems we sometimes hear developers exclaim, “Those are object-oriented techniques, but we are developing in C”, not realizing that some of these concepts were developed in non-object-oriented technologies (for example, [Parnas72 - Parnas, D., 1972. “On the Criteria to be Used in Decomposing Systems in Modules,” Communications of the ACM, Vol. 15, Issue 12, 1972, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)]). We observed a trend:
 
@@ -158,9 +158,10 @@ After the rewrite is finished, what happens? Pressure to rush in new requirement
 
 ![Figure 5. Code Base Quality Degrades Again After The Rewrite](/img/legacy-code/code-quality3-en.png)
 
-> Key insight:
-> The problem is not having legacy code,
-> it is creating legacy code.
+---
+Key insight: The problem is not having legacy code, it is creating legacy code.
+
+---
 
 The focus needs to be on preventing the creation of new legacy code instead of on the legacy code itself. It needs to be on *growing code healthfully* instead of allowing it to degrade over time. How? Improve the code every time a change is made. *“If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot”* [[Martin08](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)] (see Figure 6).
 
