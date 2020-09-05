@@ -108,11 +108,11 @@ Organizations also fail to recognize the need for continuous improvement. They n
 
 In 1999, Dave Thomas and Andy Hunt published an excellent book, *The Pragmatic Programmer* [[HT99](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)], summarizing the attitude and behavior of a modern, professional developer. We encourage people to read this, and more broadly, to take responsibility for keeping up to date.
 
-### Avoid... Trivializing programming
+### Избегайте тривиализации разработки
 
 “*I’m an architect, writing code is something the low-level implementation people do.*” We hear statements such as this from ivory-tower architects who consider programming to be beneath them. The organization for which this architect works has created a culture of trivializing programming. Such a culture de-emphasizes code, devalues writing clean code, and devalues learning about programming. In such a culture people want to rise in the social and organizational hierarchy—and that means move away from programming. Coding is just the early career phase that they have to go through. Such a culture is one that gives rise to legacy code.
 
-Organizations trivialize programming by
+Организации тривилизируют разработку с помощью:
 
 * outsourcing the programming
 * career paths
@@ -120,11 +120,11 @@ Organizations trivialize programming by
 
 **Outsourcing the programming** — Especially in  large  product groups, we encounter businesses that do not consider writing code their “core business” and so have outsourced it. They write specifications, architectural documents, and design documents, and then send them to cheap-rate developers offshore to “do the implementation and testing.” A recipe for disaster. The source code is the place of real value—gemba. For more, see:
 
-* See [“Try... Think ‘gardening’ over ‘architecting’—Create a culture of living, growing design”](architecture-design.md#think-gardening-over-architecting---create-a-culture-of-living-growing-design)
-* See [“Try... Architects and system engineers are regular (feature) team members”](architecture-design.md#architects-and-system-engineers-are-regular-feature-team-members)
-* See [“Avoid... Architecture astronauts (PowerPoint architects)”](architecture-design.md#avoid-architecture-astronauts-powerpoint-architects)
-* See [“Avoid... Architects hand off to ‘coders’”](architecture-design.md#dont-let-architects-hand-off-to-coders)
-* See “Avoid... Create ‘designs’ and then send them for offshore implementation” at [Larman10, p.316](https://www.amazon.com/Practices-Scaling-Lean-Agile-Development/dp/0321636406)
+* [“Выращивание”, а не “строительство” - Создавайте культуру живого, растущего дизайна системы”](architecture-design.ru.md#выращивание-а-не-строительство---создавайте-культуру-живого-растущего-дизайна-системы)
+* [“Архитекторы и системные инженеры являются постоянными членами фиче-команд”](architecture-design.ru.md#архитекторы-и-системные-инженеры-являются-постоянными-членами-фиче-команд)
+* [“Избегайте архитектурных астронавтов (PowerPoint-архитекторов)”](architecture-design.ru.md#избегайте-архитектурных-астронавтов--powerpoint-архитекторов)
+* [“Не позволяйте архитекторам просто “передавать” требования конечным разработчикам”](architecture-design.ru.md#не-позволяйте-архитекторам-просто-передавать-требования-конечным-разработчикам)
+* [“Избегайте создания ‘дизайна’ и последующей отправки его в оффшор для реализации”](architecture-design.ru.md#избегайте-создания-дизайна-и-последующей-отправки-его-в-оффшор-для-реализации)
 
 **Career paths** — Large organizations want to offer a future for their employees; predefined management or technical career paths are a typical solution. People who follow the management path shift away from technical work and become “professional managers.” Those who follow the technical path spend their time writing “architectural documents.” Whatever career path you follow, it won’t contain any programming.
 
