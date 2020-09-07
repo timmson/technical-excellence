@@ -90,9 +90,9 @@
 * поддержки в организации
 * самообучения
 
-The leadership of a product group may believe they understand how these educational forums are working, but it may not be so...
+Руководство продуктовой группы может полагать, что понимает, как работают эти образовательные форумы, но это может быть не так...
 
-**Школы** — Universities are not doing a good job in teaching basic skills to developers. There is a shocking gap between what is happening in industry and in universities. Many educators have never worked in industry and have not seen the long-term dynamics of development skills and legacy code. They also lack a Go See attitude. Some universities recently added agile development practices to their computer science curriculum. This is good. However, deep experience is required to really grasp agile practices such as testdriven development, and educators seldom have this experience.
+**Школы** — В университетах не преподают базовые навыки разработчикам. Это шокирующий разрыв между академическим образованием и промышленной разработкой. Многие преподаватели никогда не работали в промышленной разработки и не могли наблюдать долгосрочную динамику навыков разработки и унаследованного кода. Им также не хватает практики Пойди и Посмотри. Некоторые университеты недавно добавили гибкие практики разработки в их учебную программу по информатике. Это хорошо. Однако требуется глубокий опыт, чтобы действительно понять гибкие практики, такие как разработка через тестирование (TDD), а преподаватели редко имеют такой опыт.
 
 As such, do not assume that university graduates have much skill in software development—especially in agile development.
 
