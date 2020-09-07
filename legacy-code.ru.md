@@ -70,13 +70,13 @@
 
 Обычный быстрый ответ менеджмента на давление рынка в ‘приказе’ разработке “добавить больше ресурсов”, пока они ‘дешёвые’. Мы работали с продуктовой группой, которую *принудили* набрать сотни людей за период в один-два года. Исключение? Нет, вот ещё пример: руководитель продуктовой группы, с которой мы работали, недавно был ‘повышен‘ до нового продукта. В новом продукте было 900 человек, 12 разных офисов и 20 активных филиалов. Этот продукт отставал от конкурентов, и предыдущее руководство пыталось спасти его, добавляя больше людей - теперь оно отставало ещё больше.
 
-This is another lesson that has been *taught* again and again. Perhaps the first large-scale project in the world was the Semi Automatic Ground Environment (SAGE) system that was developed during the 1950s. The project was in a hurry so...
+Вот другой урок, который *преподаётся* снова и снова. Возможно, первым крупномасштабным проектом в мире была [SAGE](https://en.wikipedia.org/wiki/Semi-Automatic_Ground_Environment) система, которая разрабатывалась в 1950-х. Проект торопился, поэтому...
 
-> Within a year approximately **1000 people** were involved with the development of the SAGE system. People were recruited and trained from a variety of walks of life. Streetcar conductors, undertakers (with at least one year training in calculus), school teachers, curtain cleaners, and others were hastily assembled, trained in programming for some number of weeks,and assigned parts in a very complex organization ...  The originally hoped for **capacities of the system were cut** considerably. The system was first delivered **over a year late** and **considerably more cost** than was originally expected<sup>[1](#footnote-1)</sup>. [Schwartz74 - Schwartz, J., 1974. “Construction of Software: Problems and Practicalities,” published in [[Horowitz74](http://www.amazon.com/Practical-Strategies-Developing-Software-Systems/dp/0201029774)]]
+> В течение года примерно **1000 человек** было вовлечено в разработку SAGE системы. Были набраны и обучены люди из самых разных слоёв общества. Проводники трамвая, сотрудники похоронного бюро (по крайней мере, с одним годом обучения математике), школьные учителя, чистильщики занавесок и другие были в спешном порядке собраны, обучены программированию в течение определённого количества недель и распределены по частям в очень сложной организации... Первоначально ожидаемые **мощности системы были значительно сокращены**. Система была впервые поставлена **с опозданием в год** и **значительно дороже**, чем ожидалось<sup>[1](#footnote-1)</sup>.
 
-Instead of a focus on cultivating great developers or hiring a few great people, there is a focus on hiring the maximum amount of bodies (or *heads*, as in *head count*) which in turn results in a rushed and inadequate new-hire education program. This quick fix leads to groups with low-average development skills, groups with a low aptitude for being great developers, and so ultimately to more and more bad legacy code.
+Вместо фокуса на выращивании великих разработчиков или найма небольшого количества крутых людей они сконцентрировались на найме максимального количества “голов” (англ. *heads*, *head count*) что, в свою очередь, приводит к поспешной и неадекватной образовательной программе для новых сотрудников. Это быстрое решение приводит к группам с низким средним уровнем навыков разработки, группам с низкой способностью быть хорошими разработчиками и, в конечном итоге, ко все большему и большему количеству плохого унаследованного кода.
 
-### Низкие Навыки Разработки
+### Низкие Навыки Разработчиков
 
 Организационная динамика обещаний и обязательств полностью не описывает историю об унаследованном коде. Боб Мартин прав - индустрии определённо точно нужны хорошие инженеры.
 
@@ -228,6 +228,6 @@ Software craftsman prevent creating legacy code and hence develop software at a 
 
 ## Сноски
 
-1. <a name="footnote-1"></a> emphasis added.
+1. <a name="footnote-1"></a> статья Дж. Шварфца “Построение ПО: Проблемы и Практики” (J. Schwartz, Constructing of Software: Problems and Practices), позже опубликованная в [книге](http://www.amazon.com/Practical-Strategies-Developing-Software-Systems/dp/0201029774)), жирный шрифт добавлен.
 2. <a name="footnote-2"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
 3. <a name="footnote-3"></a> It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible.
