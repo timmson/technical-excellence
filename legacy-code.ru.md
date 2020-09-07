@@ -80,29 +80,29 @@
 
 Организационная динамика обещаний и обязательств полностью не описывает историю об унаследованном коде. Боб Мартин прав - индустрии определённо точно нужны хорошие инженеры.
 
-It seems to us that the average skill level of software developers in large product groups is quite weak. Developers are frequently not familiar with basic good development techniques—simple practices such as information hiding and encapsulation, or good design principles [[Martin02](https://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445ё)]. In embedded systems we sometimes hear developers exclaim, “Those are object-oriented techniques, but we are developing in C”, not realizing that some of these concepts were developed in non-object-oriented technologies (for example, [Parnas72 - Parnas, D., 1972. “On the Criteria to be Used in Decomposing Systems in Modules,” Communications of the ACM, Vol. 15, Issue 12, 1972, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)]). We observed a trend:
+Нам кажется, что средний уровень навыков разработчиков в больших продуктовых группах довольно низкий. Разработчики часто не знакомы с хорошими базовыми техниками - простыми практиками, таки как сокрытие и инкапсуляция, или принципы хорошего дизайна. При разработке встраиваемых систем мы иногда слышим восклицания “Это техники для ООП, а мы пишем на языке Си”, но их авторы не понимают, что некоторые из этих концептов были разработаны для не-объектно-ориентированных языков <sup>[2](#footnote-2)</sup>. Мы наблюдали следующий тренд
 
-> The larger the product group, the smaller the knowledge of ‘modern’ development practices.
+> Чем больше продуктовая группа, тем меньший объём знаний ‘современных’ практик разработки
 
-But these practices are essential for sustainable software development [[Tate05](https://www.amazon.com/Sustainable-Software-Development-Agile-Perspective/dp/0321286081)]. Fortunately, development skills are not solely dependent on raw talent; they can be taught and improved by
+Но эти практики являются основными для бесконечно [повторяемого процесса разработки](https://www.amazon.com/Sustainable-Software-Development-Agile-Perspective/dp/0321286081). К счастью, навыки разработки зависят не только от чистого таланта; они могут быть изучены и улучшены с помощью
 
-* schools
-* organizational support
-* self-study
+* школ
+* поддержки в организации
+* самообучения
 
 The leadership of a product group may believe they understand how these educational forums are working, but it may not be so...
 
-**Schools** — Universities are not doing a good job in teaching basic skills to developers. There is a shocking gap between what is happening in industry and in universities. Many educators have never worked in industry and have not seen the long-term dynamics of development skills and legacy code. They also lack a Go See attitude. Some universities recently added agile development practices to their computer science curriculum. This is good. However, deep experience is required to really grasp agile practices such as testdriven development, and educators seldom have this experience.
+**Школы** — Universities are not doing a good job in teaching basic skills to developers. There is a shocking gap between what is happening in industry and in universities. Many educators have never worked in industry and have not seen the long-term dynamics of development skills and legacy code. They also lack a Go See attitude. Some universities recently added agile development practices to their computer science curriculum. This is good. However, deep experience is required to really grasp agile practices such as testdriven development, and educators seldom have this experience.
 
 As such, do not assume that university graduates have much skill in software development—especially in agile development.
 
-**Organizational support** — Most companies do a poor job at educating developers. We frequently hear, “Everybody who graduated from university can code,” thereby implying that educating basic development skills is unnecessary. Our coaching experiences suggest otherwise. Many developers in large product groups lack fundamental skills such as good design of software, efficiently working with editors, effectively using their programming language, or automating tasks by writing scripts. Organizations are failing to educate in these areas because many business leaders have reasonably but incorrectly assumed that people learned these skills at university—unaware that a computer science curriculum does not teach software development skills, and that most university professors do not know and cannot teach modern development practices<sup>[2](#footnote-2)</sup>.
+**Поддержка в организации** — Most companies do a poor job at educating developers. We frequently hear, “Everybody who graduated from university can code,” thereby implying that educating basic development skills is unnecessary. Our coaching experiences suggest otherwise. Many developers in large product groups lack fundamental skills such as good design of software, efficiently working with editors, effectively using their programming language, or automating tasks by writing scripts. Organizations are failing to educate in these areas because many business leaders have reasonably but incorrectly assumed that people learned these skills at university—unaware that a computer science curriculum does not teach software development skills, and that most university professors do not know and cannot teach modern development practices<sup>[3](#footnote-3)</sup>.
 
 In contrast, lean organizations invest in educating their employees. One study shows that Japanese lean companies spend eight times as much effort educating new employees than their USA counterparts and twice as much as their European counterparts [[WJR90](https://www.amazon.com/Machine-That-Changed-World-Revolutionizing/dp/0743299795)].
 
 Organizations also fail to recognize the need for continuous improvement. They not only need to provide education in basic skills, they need to create an environment in which employees are constantly challenged and learning. How? Managers acting as teachers, peers educating one another (for example, by pair programming) and internal or external dedicated coaches—all supporting an environment of learning and continuous improvement.
 
-**Self-study** — Many developers do not keep themselves up to date. Quality guru Philip Crosby saw lack of knowledge caused by a shortage of learning as a main cause of bad quality.
+**Самообучение** — Many developers do not keep themselves up to date. Quality guru Philip Crosby saw lack of knowledge caused by a shortage of learning as a main cause of bad quality.
 
 > People subconsciously retard their own intellectual growth. They come to rely on cliches and habits. Once they reach the age of their own personal comfort with the world, they stop learning and their mind runs on idle for the rest of their days. They may progress organizationally, they may be ambitious and eager, and they may even work night and day. But they learn no more. [[Crosby80](https://www.amazon.com/Quality-Free-Certain-Becomes-Business/dp/0070145121)]
 
@@ -181,7 +181,7 @@ We are frequently asked whether to start with unit tests or highlevel tests. Ano
 
 ### Try... Rewrite lethal legacy code
 
-Sometimes it is impossible to gradually grow the code base healthfully. For example, suppose that part of the low-level code is written in PL/M and no one is willing to learn PL/M. Or, part of your code base is written in a home-grown language, whose compiler only runs on VAX/VMS. When gradual change is impossible<sup>[3](#footnote-3)</sup> — the legacy is lethal—then it is necessary to ‘amputate’ that part of the code instead of letting it kill your product [Parnas94 - Parnas, D., 1994. “Software Aging,” Proceedings of the 16th International Conference on Software Engineering, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)].
+Sometimes it is impossible to gradually grow the code base healthfully. For example, suppose that part of the low-level code is written in PL/M and no one is willing to learn PL/M. Or, part of your code base is written in a home-grown language, whose compiler only runs on VAX/VMS. When gradual change is impossible<sup>[4](#footnote-4)</sup> — the legacy is lethal—then it is necessary to ‘amputate’ that part of the code instead of letting it kill your product [Parnas94 - Parnas, D., 1994. “Software Aging,” Proceedings of the 16th International Conference on Software Engineering, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)].
 
 While replacing lethal code:
 
@@ -229,5 +229,6 @@ Software craftsman prevent creating legacy code and hence develop software at a 
 ## Сноски
 
 1. <a name="footnote-1"></a> статья Дж. Шварфца “Построение ПО: Проблемы и Практики” (J. Schwartz, Constructing of Software: Problems and Practices), позже опубликованная в [книге](http://www.amazon.com/Practical-Strategies-Developing-Software-Systems/dp/0201029774)), жирный шрифт добавлен.
-2. <a name="footnote-2"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
-3. <a name="footnote-3"></a> It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible.
+2. <a name="footnote-2"></a> Например, статья Д. Парнаса (D. Parnas) [“O критериях декомпозиции систем на модули”](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf).
+3. <a name="footnote-3"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
+4. <a name="footnote-4"></a> It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible.
