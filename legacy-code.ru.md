@@ -74,7 +74,7 @@
 
 > В течение года примерно **1000 человек** было вовлечено в разработку SAGE системы. Были набраны и обучены люди из самых разных слоёв общества. Проводники трамвая, сотрудники похоронного бюро (по крайней мере, с одним годом обучения математике), школьные учителя, чистильщики занавесок и другие были в спешном порядке собраны, обучены программированию в течение определённого количества недель и распределены по частям в очень сложной организации... Первоначально ожидаемые **мощности системы были значительно сокращены**. Система была впервые поставлена **с опозданием в год** и **значительно дороже**, чем ожидалось<sup>[1](#footnote-1)</sup>.
 
-Вместо фокуса на выращивании великих разработчиков или найма небольшого количества крутых людей они сконцентрировались на найме максимального количества “голов” (англ. *heads*, *head count*) что, в свою очередь, приводит к поспешной и неадекватной образовательной программе для новых сотрудников. Это быстрое решение приводит к группам с низким средним уровнем навыков разработки, группам с низкой способностью быть хорошими разработчиками и, в конечном итоге, ко все большему и большему количеству плохого унаследованного кода.
+Вместо фокуса на выращивании великих разработчиков или найма небольшого количества крутых людей они сконцентрировались на найме максимального количества “*голов*” (англ. heads, head count) что, в свою очередь, приводит к поспешной и неадекватной образовательной программе для новых сотрудников. Это быстрое решение приводит к группам с низким средним уровнем навыков разработки, группам с низкой способностью быть хорошими разработчиками и, в конечном итоге, ко все большему и большему количеству плохого унаследованного кода.
 
 ### Низкие Навыки Разработчиков
 
@@ -108,17 +108,17 @@ As such, do not assume that university graduates have much skill in software dev
 
 В 1999 году Дейв Томас (Dave Thomas) и Энди Хант (Andy Hunt) опубликовали превосходную книгу [*The Pragmatic Programmer*](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)], обобщающей отношение и поведение современного профессионального разработчика. Мы призываем людей читать её и брать на себя ответственность за то, чтобы быть в курсе последних событий.
 
-### Избегайте тривиализации разработки
+### Избегайте тривилизации разработки
 
-“*I’m an architect, writing code is something the low-level implementation people do.*” We hear statements such as this from ivory-tower architects who consider programming to be beneath them. The organization for which this architect works has created a culture of trivializing programming. Such a culture de-emphasizes code, devalues writing clean code, and devalues learning about programming. In such a culture people want to rise in the social and organizational hierarchy—and that means move away from programming. Coding is just the early career phase that they have to go through. Such a culture is one that gives rise to legacy code.
+“*Я архитектор, написанием кода должны заниматься люди более низкого уровня*”. Мы слышим подобные заявления от архитекторов из башни из слоновой кости, которые считают, что программирование ниже их уровня. Организация, в которой работает этот архитектор, создала культуру тривилизации (упрощение, признание обыденным, англ. trivializing) программирования. Такая культура принижает значение кода, обесценивает написание чистого кода и обесценивает знания о программировании. В такой культуре люди хотят подняться в социальной и организационной иерархии - а это означает отход от программирования. Программирование является всего лишь ранним этапом карьеры, который им предстоит пройти. Такая культура порождает унаследованный код.
 
 Организации тривилизируют разработку с помощью:
 
-* outsourcing the programming
-* career paths
-* salary differences
+* аутсорсинг (англ. outsourcing) разработки
+* карьерная лестница
+* разница в зарплате
 
-**Outsourcing the programming** — Especially in  large  product groups, we encounter businesses that do not consider writing code their “core business” and so have outsourced it. They write specifications, architectural documents, and design documents, and then send them to cheap-rate developers offshore to “do the implementation and testing.” A recipe for disaster. The source code is the place of real value—gemba. For more, see:
+**Аутсорсинг разработки** — Особенно в больших продуктовых группах мы сталкиваемся с руководством, которое не считает написание кода своим “основным бизнесом”, и поэтому передали его на аутсорсинг. Они составляют спецификации, архитектурную и проектную документацию, а затем отправляют их дешёвым разработчикам в оффшор, чтобы “выполнить внедрение и тестирование.” Рецепт катастрофы. Исходный код - это место реальной ценности - гемба. Подробнее смотрите:
 
 * [“Выращивание”, а не “строительство” - Создавайте культуру живого, растущего дизайна системы”](architecture-design.ru.md#выращивание-а-не-строительство---создавайте-культуру-живого-растущего-дизайна-системы)
 * [“Архитекторы и системные инженеры являются постоянными членами фиче-команд”](architecture-design.ru.md#архитекторы-и-системные-инженеры-являются-постоянными-членами-фиче-команд)
@@ -126,19 +126,19 @@ As such, do not assume that university graduates have much skill in software dev
 * [“Не позволяйте архитекторам просто “передавать” требования конечным разработчикам”](architecture-design.ru.md#не-позволяйте-архитекторам-просто-передавать-требования-конечным-разработчикам)
 * [“Избегайте создания ‘дизайна’ и последующей отправки его в оффшор для реализации”](architecture-design.ru.md#избегайте-создания-дизайна-и-последующей-отправки-его-в-оффшор-для-реализации)
 
-**Career paths** — Large organizations want to offer a future for their employees; predefined management or technical career paths are a typical solution. People who follow the management path shift away from technical work and become “professional managers.” Those who follow the technical path spend their time writing “architectural documents.” Whatever career path you follow, it won’t contain any programming.
+**Карьерная лестница** — Крупные организации хотят обеспечить будущим своих сотрудников; предопределённые управленческие или технические карьерные пути - типичное решение. Люди, идущие по пути менеджмента, уходят от технической работы и становятся “профессиональными менеджерами”. Те, кто идёт по техническому пути, тратят своё время на написание “архитектурных документов”. Какой бы карьерный путь вы ни выбрали, он не будет содержать никакого программирования.
 
-Salary differences—Of all software-development-related jobs, the salary of programmers is, on average, among the lowest [[Jones08](https://www.amazon.com/Applied-Software-Measurement-Analysis-Productivity/dp/0071502440)]. Naturally but unfortunately, these salary differences do not promote becoming a better developer but instead promote stopping work as a developer. Is there an alternative? Pete McBreen promotes a model of software craftsmanship in which salary is directly linked to skill. Development skill is measured by a developer’s portfolio and peer references [[McBreen01](https://www.amazon.com/Software-Craftsmanship-Imperative-Pete-McBreen/dp/0201733862)].
+**Разница в зарплате** — Из всех профессий, связанных с разработкой программного обеспечения, зарплата программистов в среднем одна из самых низких (см. книгу [Applied Software Measurement](https://www.amazon.com/Applied-Software-Measurement-Analysis-Productivity/dp/0071502440)). Естественно, но, к сожалению, эта разница в заработной плате не способствует тому, чтобы стать лучшим разработчиком, а вместо этого способствует прекращению работы в качестве разработчика. Есть ли альтернатива? Пит МакБрин (Pete McBreen) [продвигает](https://www.amazon.com/Software-Craftsmanship-Imperative-Pete-McBreen/dp/0201733862) модель мастерства в области программного обеспечения, в которой зарплата напрямую связана с навыками. Навыки разработчиков измеряются портфолио разработчика и отзывами коллег.
 
-## Try... Raise awareness of the negative impact of legacy code
+## Повышайте осведомлённость негативного влияния унаследованного кода
 
-More *legacy* code is more than a liability, it’s a *boat anchor*. It is hard to deliver value fast and adapt quickly when your massive 15 million lines of code is a steaming pile of...  well, you know.
+Больше *унаследованного* кода - это не просто помеха, это *якорь*. Трудно быстро поставить ценность и быстро адаптироваться, когда ваши огромные 15 миллионов строк кода представляют собой дымящуюся кучу... ну, вы знаете чего.
 
-Some developers and many nontechnical people in product development do not grasp the negative impact of legacy code—in terms of cost servicing this technical debt and in terms of opportunities lost because of degradation of speed and ability to change.
+Некоторые разработчики и многие нетехнические специалисты в продуктовой разработки не осознают негативное влияние унаследованного кода - с точки зрения затрат на обслуживание этого технического долга и с точки зрения возможностей, утраченных из-за снижения скорости и способности вносить изменения.
 
-We encourage technical leaders to proactively educate their business and technical community on this issue, and to explore the cost of legacy code.
+Мы призываем технических руководителей активно информировать своих бизнес-людей и техническое сообщество по этому вопросу и исследовать стоимость устаревшего кода.
 
-## Ok, I’ve Got Legacy, Now What
+## Хорошо, у нас есть унаследованный код, что дальше
 
 You probably recognize these causes of legacy code, but you already have piles of it. How to get rid of it? In *Working Effectively with Legacy Code* [[Feathers04](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052)], Michael Feathers provides concrete codelevel techniques for gradually improving your code. This chapter does not repeat these; we recommend Feathers’s book. But we do cover some general strategies for dealing with legacy code.
 
