@@ -169,33 +169,35 @@ As such, do not assume that university graduates have much skill in software dev
 
 ---
 
-Концентрация должна быть на предотвращении создания нового унаследованного кода, а не на нём самом. Фокус должен быть на *выращивании здорового кода* вместо предоставления ему возможности деградировать со временем. Как? Улучшайте качество кода каждый раз, когда меняете его. *“Если бы мы все оставляли после себя наш код немного чище, чем когда мы за него взялись, тл код просто не мог гнить”* - [утверждает](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) Боб Мартин (см. Иллюстрацию 5).
+Концентрация должна быть на предотвращении создания нового унаследованного кода, а не на нём самом. Фокус должен быть на *выращивании здорового кода* вместо предоставления ему возможности деградировать со временем. Как? Улучшайте качество кода каждый раз, когда меняете его. *“Если бы мы все оставляли после себя наш код немного чище, чем когда мы за него взялись, тл код просто не мог гнить”* - [утверждает](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) Боб Мартин (см. Иллюстрацию 6).
 
 ![_](/img/legacy-code/code-quality4-en.png)
 
 *Иллюстрация 6: Выращивание здорового кода*
 
-## Try... Clean up your neighborhood
+## Улучшайте код по соседству
 
-Growing healthy code is a key strategy for eliminating legacy code. You can do so by cleaning up your neighborhood; by gradually fixing your “broken windows” [[HT99](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)]. Every time you make a change, look around your change point—the neighborhood—for code that can be improved—the broken windows—and add a couple of tests and refactor (see Figure 7). When starting this practice, every change is a little slower. But over time the code improves and the development speed increases because of the healthier code base.
+Выращивание здорового кода - ключевая стратегия устранения устаревшего кода. Вы можете следовать ей, улучшая также “соседей“ (небольшие участки вокруг вашего кода, который вы меняете) и постепенно исправляя [“разбитые окна“](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X). Каждый раз, когда вы вносите изменения, оглядывайтесь вокруг своей точки изменения - на её соседей - код, который может быть улучшен - разбитые окна - добавьте пару тестов, проведите рефакторинг (см. Иллюстрацию 7). Когда начинаете применять эту практику, каждое изменение происходит немного медленнее. Но со временем код улучшается, а скорость разработки увеличивается из-за более здорового кода.
 
-![Figure 7: Clean Up Your Neighborhood](/img/legacy-code/clean-neighbourhood-en.png)
+![_](/img/legacy-code/clean-neighbourhood-en.png)
 
-Having legacy code means having technical debt—and it costs to get out of debt. A rewrite strategy attempts to settle the debt all at once. On the other hand, cleaning up your neighborhood distributes the payments. It focuses the effort to the parts that change most—the most important ones. The legacy code that does not change does not get improved—and that is okay.
+*Иллюстрация 7: Улучшайте код по соседству*
 
-### Try... Write both high-level and unit tests
+Унаследованный код означает наличие технического долга - а из долгов стоит выбираться. Стратегия переделывания пытается погасить долг сразу. С другой стороны, улучшение кода по соседству распределяет выплаты. Она фокусирует усилия на тех частях, которые меняются больше всего - на самых важных. Унаследованный код, который не меняется и не улучшается - и это нормально.
 
-We are frequently asked whether to start with unit tests or highlevel tests. Another false dichotomy. They are both important! It is often easier to add high-level tests to a legacy code base, and they help in ensuring that existing functionality works. But unit tests run fast. Fast-running unit tests help when you are gradually refactoring legacy code. Therefore, write unit tests *and* high-level tests when cleaning up your neighborhood.
+### Пишите высокоуровневые и модульные тесты
 
-### Try... Rewrite lethal legacy code
+Нас часто спрашивают, начинать ли с модульных тестов или с высокоуровневых тестов. Ещё одна ложная дихотомия. Они все важны! Часто проще добавить высокоуровневые тесты к унаследованной кодовой базе, и они помогают гарантировать, что существующие функциональные возможности работают. Но модульные тесты работают быстро. Быстро выполняемые модульные тесты помогают при постепенном рефакторинге унаследованного кода. Поэтому напишите модульные тесты *и* высокоуровневые тесты при улучшении по соседству.
 
-Sometimes it is impossible to gradually grow the code base healthfully. For example, suppose that part of the low-level code is written in PL/M and no one is willing to learn PL/M. Or, part of your code base is written in a home-grown language, whose compiler only runs on VAX/VMS. When gradual change is impossible<sup>[4](#footnote-4)</sup> — the legacy is lethal—then it is necessary to ‘amputate’ that part of the code instead of letting it kill your product [Parnas94 - Parnas, D., 1994. “Software Aging,” Proceedings of the 16th International Conference on Software Engineering, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)].
+### Переписывайте мёртвый унаследованный код
 
-While replacing lethal code:
+Иногда невозможно постепенно провести оздоровление кодовой базы. Например, предположим, что часть низкоуровневого кода написана на PL/M (устаревший процедурный язык, прим. переводчика), и никто не хочет изучать PL/M. Или часть вашего кода написана на доморощенном языке, компилятор которого работает только на VAX/VMS (проприетарная серверная операционная система, прим. переводчика). Когда постепенное изменение невозможно<sup>[4](#footnote-4)</sup> - унаследованный код уже мёртв - тогда необходимо ‘ампутировать‘ эту часть кода вместо того, чтобы позволить ей убить ваш продукт.
 
-* cover it with test
-* do not add functionality to the old code
-* do not add functionality to the replacement code
+При замене мёртвого кода:
+
+* покройте его тестами
+* не добавляйте функциональности в старый код
+* не добавляйте функциональности в заменённый код
 
 ## Заключение
 
@@ -239,4 +241,4 @@ Software craftsman prevent creating legacy code and hence develop software at a 
 1. <a name="footnote-1"></a> статья Дж. Шварфца “Построение ПО: Проблемы и Практики” (J. Schwartz, Constructing of Software: Problems and Practices), позже опубликованная в [книге](http://www.amazon.com/Practical-Strategies-Developing-Software-Systems/dp/0201029774)), жирный шрифт добавлен.
 2. <a name="footnote-2"></a> Например, статья Д. Парнаса (D. Parnas) [“O критериях декомпозиции систем на модули”](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf).
 3. <a name="footnote-3"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
-4. <a name="footnote-4"></a> It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible.
+4. <a name="footnote-4"></a> It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible [Parnas94 - Parnas, D., 1994. “Software Aging,” Proceedings of the 16th International Conference on Software Engineering, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)].
