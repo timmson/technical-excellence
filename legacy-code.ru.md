@@ -152,24 +152,28 @@ As such, do not assume that university graduates have much skill in software dev
 
 *Иллюстрация 3. Качество кода падает со временем*
 
-After some time it is too painful and takes too much effort to make changes to the code; developers start asking for a rewrite. At first the Product Owner refuses—a rewrite means high cost without new value. But as development speed drops, developers complain more, and eventually the Product Owner ‘agrees’ to the rewrite. During the rewrite, the ability to respond to changes—new requirements— is zero. But after the rewrite the code is of high quality, and consequently, new development is fast (see Figure 4).
+Через какое-то время вносить изменения в код становится слишком болезненно и требуется слишком много усилий; разработчики начинают просить переделать существующее решение. Сначала Владелец продукта отказывается - переписывание означает высокую затраты без добавления новой ценности для продукта. Но по мере того, как скорость разработки падает, разработчики жалуются все больше, и в конечном итоге владелец продукта ‘соглашается’ на переделывание. Во время него способность реагировать на изменения - новые требования - равна нулю. Но после окончания переработки код получается качественным, а значит, и новая разработка идёт быстро (см. Иллюстрацию 4).
 
 ![_](/img/legacy-code/code-quality2-en.png)
 
-*Иллюстрация 4. Rewrite Increases Code Quality*
+*Иллюстрация 4. Переделывание улучшает качество*
 
-After the rewrite is finished, what happens? Pressure to rush in new requirements leads to hacks in the freshly cleaned code, causing the quality to degrade again and the implementation effort to increase (Figure 5). After a while, developers demand another rewrite. In some large product groups, we have seen components being rewritten three times.
+Что происходит после? Давление поспешить с новыми требованиями приводит к загрязнению только что очищенного кода, что снова приводит к ухудшению качества и увеличению усилий по разработке (см. Иллюстрацию 5). Через некоторое время разработчики требуют ещё раз всё переделать. В некоторых крупных продуктовых группах мы видели, как компоненты переписывались трижды.
 
-![Figure 5. Code Base Quality Degrades Again After The Rewrite](/img/legacy-code/code-quality3-en.png)
+![_](/img/legacy-code/code-quality3-en.png)
+
+*Иллюстрация 5. Качество кода вновь после переписывания*
 
 ---
-Key insight: The problem is not having legacy code, it is creating legacy code.
+**Ключевой момент: Проблема не в наличии унаследованного коде, а в его создании.**
 
 ---
 
-The focus needs to be on preventing the creation of new legacy code instead of on the legacy code itself. It needs to be on *growing code healthfully* instead of allowing it to degrade over time. How? Improve the code every time a change is made. *“If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot”* [[Martin08](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)] (see Figure 6).
+Концентрация должна быть на предотвращении создания нового унаследованного кода, а не на нём самом. Фокус должен быть на *выращивании здорового кода* вместо предоставления ему возможности деградировать со временем. Как? Улучшайте качество кода каждый раз, когда меняете его. *“Если бы мы все оставляли после себя наш код немного чище, чем когда мы за него взялись, тл код просто не мог гнить”* - [утверждает](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) Боб Мартин (см. Иллюстрацию 5).
 
-![Figure 6: Growing the Code Healthfully](/img/legacy-code/code-quality4-en.png)
+![_](/img/legacy-code/code-quality4-en.png)
+
+*Иллюстрация 6: Выращивание здорового кода*
 
 ## Try... Clean up your neighborhood
 
