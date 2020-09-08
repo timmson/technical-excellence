@@ -10,7 +10,7 @@
 
 ![_](/img/legacy-code/browser-wars-en.png)
 
-*Рынок и релизы браузеров*
+*Иллюстрация 1. Доля рынка и релизы браузеров*
 
 Браузер Netscape - один из лучших примеров, который по началу *владел* рынком браузеров. Но в 1995 года компания Microsoft осознала громадный потенциал сети Интернет и начала то, что в последствии назовут “войнами браузеров“ [[см. книгу Competing On Internet Time](https://www.amazon.com/Competing-Internet-Time-Netscape-Microsoft/dp/0684863456)]. В 2000 году она выиграла первую битву браузеров.
 
@@ -47,7 +47,7 @@
 
 ![_](/img/legacy-code/causal-loop-legacy-en.png)
 
-*Динамика нереалистичных сроков*
+*Иллюстрация 2. Динамика нереалистичных сроков*
 
 Боб Мартин в книге *[Чистый Код](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)* утверждает, что мастера не давали бы таких невыполнимых обещаний, и проблема унаследованного кода могла быть решена обучением разработчиков, чтобы повысить их *профессионализм*.
 
@@ -146,13 +146,17 @@ As such, do not assume that university graduates have much skill in software dev
 
 Столкнувшись с унаследованным кодом, разработчики часто предлагают его переписать, изменить дизайн или перестроить архитектуру - отказаться от унаследованного кода и написать его снова. В следующий раз будет лучше... Сопротивляйтесь этому искушению. Почему?
 
-In a product group with a 30-year-old code base, a developer asked us if we could help refactor a 5000-line function. We thought he was exaggerating. But when we paired up and measured the function, we discovered it was slightly larger than 5000 lines of code (LOC). How are 5000 LOC functions created? Does a developer wake up and think, “Gosh, what a wonderful day today! Let’s write a 5000 LOC function?” Probably not. When a developer writes new code, he usually *will* write it with decent quality. But over time the quality degrades. A function *becomes* 5000 LOC. Why does this happen? The customer requests a new requirement and this is hacked in because of poor development skills or unrealistic schedules. Code quality goes down and the effort needed to make changes goes up (see Figure 3).
+В продуктовой группе с 30-летней кодовой базой разработчик спросил нас, можем ли мы помочь в рефакторинге (улучшение, переделывание, англ. refactoring) функции из 5000 строк. Мы думали, что он преувеличивает. Но когда мы объединили и измерили функцию, мы обнаружили, что она немного больше 5000 строк кода. Как могла быть создана такая функция? Просыпается разработчик и думает: “Боже, какой сегодня чудесный день! Напишем функцию из 5000 строк?”. Вероятно, что нет. Когда разработчик пишет новый код, он обычно *пишет* его с приличным качеством. Но со временем качество ухудшается. И функция *становиться* из 5000 строк. Почему так происходит? Клиент запрашивает новое требование, и оно ломает логику текущего решения из-за плохих навыков разработки или нереалистичных сроков. Качество кода снижается, а усилия, необходимые для внесения изменений, возрастают (см. Иллюстрацию 3).
 
-![Figure 3. Code quality decreases over time](/img/legacy-code/code-quality1-en.png)
+![_](/img/legacy-code/code-quality1-en.png)
+
+*Иллюстрация 3. Качество кода падает со временем*
 
 After some time it is too painful and takes too much effort to make changes to the code; developers start asking for a rewrite. At first the Product Owner refuses—a rewrite means high cost without new value. But as development speed drops, developers complain more, and eventually the Product Owner ‘agrees’ to the rewrite. During the rewrite, the ability to respond to changes—new requirements— is zero. But after the rewrite the code is of high quality, and consequently, new development is fast (see Figure 4).
 
-![Figure 4. Rewrite Increases Code Quality](/img/legacy-code/code-quality2-en.png)
+![_](/img/legacy-code/code-quality2-en.png)
+
+*Иллюстрация 4. Rewrite Increases Code Quality*
 
 After the rewrite is finished, what happens? Pressure to rush in new requirements leads to hacks in the freshly cleaned code, causing the quality to degrade again and the implementation effort to increase (Figure 5). After a while, developers demand another rewrite. In some large product groups, we have seen components being rewritten three times.
 
