@@ -140,11 +140,11 @@ As such, do not assume that university graduates have much skill in software dev
 
 ## Хорошо, у нас есть унаследованный код, что дальше
 
-You probably recognize these causes of legacy code, but you already have piles of it. How to get rid of it? In *Working Effectively with Legacy Code* [[Feathers04](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052)], Michael Feathers provides concrete codelevel techniques for gradually improving your code. This chapter does not repeat these; we recommend Feathers’s book. But we do cover some general strategies for dealing with legacy code.
+Вы, вероятно, понимаете причины появления унаследованного кода, но он у вас уже есть. Как от него избавиться? В своей книге [*Working Effectively with Legacy Code*](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052) Майкл Физерс (Michael Feathers) рассказывает о конкретных методах разработки для постепенного улучшения вашего кода. В этой статье мы не будем повторяться; мы рекомендуем книгу Физерса. Но мы рассмотрим некоторые общие стратегии работы с унаследованным кодом.
 
-### Avoid... Rewriting legacy code
+### Избегайте переписывания унаследованного кода
 
-When confronted with legacy code, developers frequently suggest rewrite, redesign, or rearchitect—scrap the legacy and write it again. Next time it will be better...  Resist that temptation. Why?
+Столкнувшись с унаследованным кодом, разработчики часто предлагают его переписать, изменить дизайн или перестроить архитектуру - отказаться от унаследованного кода и написать его снова. В следующий раз будет лучше... Сопротивляйтесь этому искушению. Почему?
 
 In a product group with a 30-year-old code base, a developer asked us if we could help refactor a 5000-line function. We thought he was exaggerating. But when we paired up and measured the function, we discovered it was slightly larger than 5000 lines of code (LOC). How are 5000 LOC functions created? Does a developer wake up and think, “Gosh, what a wonderful day today! Let’s write a 5000 LOC function?” Probably not. When a developer writes new code, he usually *will* write it with decent quality. But over time the quality degrades. A function *becomes* 5000 LOC. Why does this happen? The customer requests a new requirement and this is hacked in because of poor development skills or unrealistic schedules. Code quality goes down and the effort needed to make changes goes up (see Figure 3).
 
