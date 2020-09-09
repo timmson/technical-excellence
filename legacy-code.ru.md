@@ -210,7 +210,7 @@ As such, do not assume that university graduates have much skill in software dev
 
 Как работать с существующим унаследованным кодом? Лучше постепенно улучшать код, чем полностью заменять его. Это требует инвестиций в навыки разработки и применения современных практик, таких как TDD. Единственный способ вырастить лучший код - это вырастить отличных людей. Это тема бережливого мышления.
 
-> Making things is about making people. [Summary Notes from Art Smalley Interview with Mr. Isao Kato, 2006](http://artoflean.com/wp-content/uploads/2019/01/Mr_Kato_Interview_on_TWI_and_TPS.pdf)
+> Создание вещей - это в первую очередь создание людей (англ. Making things is about making people) [Summary Notes from Art Smalley Interview with Mr. Isao Kato, 2006](http://artoflean.com/wp-content/uploads/2019/01/Mr_Kato_Interview_on_TWI_and_TPS.pdf).
 
 ## Рекомендуем к Прочтению
 
@@ -224,20 +224,19 @@ As such, do not assume that university graduates have much skill in software dev
 
 Следующий материал охватывает организационную динамику, связанную с унаследованным кодом:
 
-* Enterprise Scrum, by Ken Schwaber. Chapter 9 of Enterprise Scrum is one of the few descriptions explaining the relationship between customer promises and the creation of legacy
-code.
-* Sustainable Software Development: An Agile Perspective, by Kevin Tate. This book does not cover many new techniques but provides an excellent overview of the practices for creating software in a sustainable way.
+* [*The Enterprise and Scrum (Developer Best Practices)*](https://www.amazon.com/Ken-Schwaber/dp/0735623376/) Кена Швабера. Глава 9 - одно из немногих описаний, объясняющих взаимосвязь между обещаниями клиентов и созданием унаследованного кода.
+* [*Sustainable Software Development: An Agile Perspective*](https://www.amazon.com/Sustainable-Software-Development-Agile-Perspective/dp/0321286081/) Кэвина Тейта. Эта книга не охватывает многих новых техник, но даёт отличный обзор методов устойчивого создания программного обеспечения.
 
-Software craftsman prevent creating legacy code and hence develop software at a sustainable rate. Some material on being a software craftsman:
+Мастер разработки программного обеспечения предотвращает создание унаследованного кода и, следовательно, разрабатывает программное обеспечение с устойчивой скоростью. Некоторые материалы о том, как стать мастером разработки:
 
-* The Pragmatic Programmer: From Journeyman to Master, by Andrew Hunt and Dave Thomas. Classic book on modern software craftsmanship.
-* Software Craftsmanship, by Pete McBreen dives in craftsmanship approach and compares it to the traditional software engineering perspective.
-* Agile Development, Principles, Patterns and Practices, by Bob Martin. Also known as Agile PPP, links good  code, modern practices, and eternal design principles to explain what it means to be a craftsman.
-* Clean Code: A Handbook of Agile Craftsmanship, by Bob Martin. The subtitle says it all. Clean Code is the code-focused prequel to Agile PPP
+* [*The Pragmatic Programmer*](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X) Энди Ханта и Дейва. Классическая книга по мастерству современного программного обеспечения.
+* [*Software Craftsmanship: The New Imperative*](https://www.amazon.com/Software-Craftsmanship-Imperative-Pete-McBreen/dp/0201733862) Пита МакБрина погружается в профессиональный подход и сравнивает его с традиционной перспективой разработки программного обеспечения.
+* [*Чистый код: создание, анализ и рефакторинг. Библиотека программиста*](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) Боба Мартина. Подзаголовок говорит сам за себя. Чистый код является приквелом к...
+* [*Agile Development, Principles, Patterns and Practices*](http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445) Боба Мартина. Также известная как Agile PPP, она связывает хороший код, современные практики и вечные принципы дизайна, чтобы объяснить, что значит быть мастером.
 
 ## Сноски
 
 1. <a name="footnote-1"></a> статья Дж. Шварфца “Построение ПО: Проблемы и Практики” (J. Schwartz, Constructing of Software: Problems and Practices), позже опубликованная в [книге](http://www.amazon.com/Practical-Strategies-Developing-Software-Systems/dp/0201029774)), жирный шрифт добавлен.
-2. <a name="footnote-2"></a> Например, статья Д. Парнаса (D. Parnas) [“O критериях декомпозиции систем на модули”](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf).
-3. <a name="footnote-3"></a> “Use your editor” is perhaps the most productivity increasing course you can give in many companies.
-4. <a name="footnote-4"></a> It is rarely impossible to do a gradual change. Therefore, challenge each time someone says that a gradual change is not possible [Parnas94 - Parnas, D., 1994. “Software Aging,” Proceedings of the 16th International Conference on Software Engineering, also in [HW01](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696)].
+2. <a name="footnote-2"></a> Например, статья Д. Парнаса (D. Parnas) [“On the Criteria To Be Used in Decomposing Systems into Modules”](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf).
+3. <a name="footnote-3"></a> “Используйте редактор кода, к которому вы привыкли” - это, пожалуй, самый эффективный курс повышения производительности, который вы можете преподавать во многих компаниях.
+4. <a name="footnote-4"></a> Редко бывает невозможно сделать постепенное изменение. Поэтому бросайте вызов каждый раз, когда кто-то говорит, что постепенное изменение невозможно. Статья Д. Парнаса (D. Parnas) [“Software Aging, Proceedings of the 16th International Conference on Software Engineering”](https://dl.acm.org/doi/10.5555/257734.257788), также доступная в книге [Software Fundamentals: Collected Papers by David L.Parnas](https://www.amazon.com/Software-Fundamentals-Collected-Papers-Parnas/dp/0201703696).
