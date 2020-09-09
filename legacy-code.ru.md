@@ -201,29 +201,28 @@ As such, do not assume that university graduates have much skill in software dev
 
 ## Заключение
 
-There are billions of lines of legacy code in the world, and the total is increasing every day. This has created massive problems (for example, Y2K), and it will still create monumental ones in the future. But egacy code will not disappear unless the root causes are tackled:
+В мире существуют миллиарды строк устаревшего кода, и их количество увеличивается с каждым днём. Это создало огромные проблемы (например, Проблема 2000 года), и оно будет создавать монументальные в будущем. Но унаследованный код не исчезнет, если не будут устранены первопричины:
 
-* unrealistic deadlines with fixed content
-* poor developer skills
+* нереалистичные сроки сдачи фиксированного объёма работ
+* низкий уровень навыков разработки
 
-These can be solved by educating people in the causes of legacy code and by improving developer education. However, the industry has failed to recognize these causes for decades. It is not likely to change in the next few years.
+Их можно решить, обучая людей устранять причины унаследованного кода и улучшая их уровень образованности. Однако промышленность десятилетиями не осознавала эти причины. Вряд ли это изменится в ближайшие несколько лет.
 
-How to deal with existing legacy code? It is better to gradually improve the code than to replace it. This requires investing in development skills and applying modern practices such as test-driven development. The only way to grow better code is to develop excellent people. This is a theme in lean thinking.
+Как работать с существующим унаследованным кодом? Лучше постепенно улучшать код, чем полностью заменять его. Это требует инвестиций в навыки разработки и применения современных практик, таких как TDD. Единственный способ вырастить лучший код - это вырастить отличных людей. Это тема бережливого мышления.
 
-> Making things is about making people. [[Kato06 - Kato, I., 2006. Summary Notes from Art Smalley Interview with Mr. Isao Kato](http://artoflean.com/documents/pdfs/Mr_Kato_Interview_on_TWI_and_TPS.pdf)]
+> Making things is about making people. [Summary Notes from Art Smalley Interview with Mr. Isao Kato, 2006](http://artoflean.com/wp-content/uploads/2019/01/Mr_Kato_Interview_on_TWI_and_TPS.pdf)
 
 ## Рекомендуем к Прочтению
 
-At the time we write this book, surprisingly little has been written about such a huge and costly problem as legacy code. Here are some references we found useful related to improving your code gradually:
+В то время, когда мы пишем эту книгу, было написано на удивление мало о такой огромной и дорогостоящей проблеме, как унаследованный код. Вот некоторые полезные ссылки, связанные с постепенным улучшением вашего кода:
 
-* Working Effectively with Legacy Code, by Michael Feathers. Concrete advice on how to gradually improve your legacy system at code level.
-* Refactoring: Improving the Design of Existing Code, by Martin Fowler. The classic work on improving existing code.
-* Refactoring Workbook, by Bill Wake. A concrete guide for becoming better at refactoring code.
-* Refactoring to Patterns, by Joshua Kerievsky. In this book, Joshua explains how to gradually refactor your code to standard, robust design patterns.
-* Refactoring in Large Software Projects,  by Stefan  Roock  and Martin Lippert. Large systems might need large refactorings. This book explains how to do these in as small steps as possible
-so that your systems stays stable.
+* [*Эффективная работа с унаследованным кодом*](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052) Майкла Физерса. Конкретные советы о том, как постепенно улучшать унаследованную систему на уровне кода.
+* [*Рефакторинг. Улучшение существующего кода*](https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature-ebook/dp/B07LCM8RG2) Мартина Фаулера. Классическая работа про улучшение существующего кода.
+* [*Refactoring Workbook*](https://www.amazon.com/Refactoring-Workbook-William-C-Wake/dp/0321109295) Билла Вейка. Конкретное руководство по совершенствованию рефакторинга кода.
+* [*Рефакторинг с использованием шаблонов*](https://www.amazon.com/Refactoring-Patterns-Joshua-Kerievsky/dp/0321213351) Джошуа Кериевски. В этой книге Джошуа объясняет, как постепенно реорганизовать код по стандартным надёжным шаблонам проектирования.
+* [*Refactoring in Large Software Projects*](https://www.amazon.com/Refactoring-Large-Software-Projects-Restructurings/dp/0470858923/) Стефана Рука и Мартина Липперта. Для больших систем может потребоваться большой рефакторинг. В этой книге объясняется, как сделать это как можно более мелкими шагами, чтобы ваши системы оставались стабильными.
 
-The following material covers the organizational dynamics behind legacy code:
+Следующий материал охватывает организационную динамику, связанную с унаследованным кодом:
 
 * Enterprise Scrum, by Ken Schwaber. Chapter 9 of Enterprise Scrum is one of the few descriptions explaining the relationship between customer promises and the creation of legacy
 code.
