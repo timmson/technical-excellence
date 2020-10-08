@@ -26,6 +26,8 @@
 
 Как давно это началось? Ещё в 1967 году, возможно, в первой [книге](https://www.amazon.com/management-computer-programming-projects/dp/B0006BRZGU) по управлению проектами разработки Чарльз Лехт (Charles Lecht) писал:
 
+> Equally responsible for the initiation of project with predefined failure is management that insists upon having fixed commitments from programming personnel prior to the latter’s understanding what the commitments are for. Too frequently, management does not realize that in asking the staff for “the impossible”, the staff will feel the obligation to respond out of respect, fear or misguided loyalty. Saying “no” to the boss frequently requires courage, political and psychological wisdom, and business maturity that comes with much experience
+
 > Ответственность за запуск заранее обречённого проекта в равной степени лежит как на менеджменте, который настаивает на фиксации определённых обязательств со стороны программистов, так и на самих программистах, которые не понимают то, на что соглашаются. Слишком часто менеджмент не осознает, что, прося сотрудников о “невозможном”, сотрудники будут чувствовать себя обязанными согласиться из уважения, страха или ложной лояльности. Чтобы сказать начальнику “нет”, часто требуется смелость, политическая и психологическая мудрость, а также понимание бизнеса, которые приходят с большим опытом.
 
 Ниже указаны явные причины появления унаследованного кода:
