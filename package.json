@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "spell": "npx yaspeller -l ru .",
+    "spell": "npx yaspeller -l ru *.md",
     "lint": "npx markdownlint **/*.md --ignore node_modules --ignore original",
     "fixlint": "npx markdownlint **/*.md --ignore node_modules --ignore original --fix",
     "test": "npm run spell && npm run lint",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/timmson/technical-excellence#readme",
   "dependencies": {
-    "markdownlint-cli": "0.23.2",
+    "markdownlint-cli": "0.33.0",
     "yaspeller": "8.0.1"
   }
 }

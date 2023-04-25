@@ -22,7 +22,7 @@ Project of translation Technical Excellence section of LeSS.works to Russian
 - [Требования в Примерах / Specification by Example](specification-by-example.ru.md)
 
 Истинная гибкость (agility) может быть достигнута только тогда, когда вы можете менять свой продукт простыми, быстрыми и
-гибкими способами. В этой связи:
+гибкими способами. В связи с этим:
 
 ---
 Организационная Гибкость ограничена Технической Гибкостью

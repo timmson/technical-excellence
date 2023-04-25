@@ -7,8 +7,7 @@
   "excludeFiles": [
     ".git",
     ".markdownlintrc",
-    "node_modules",
-    "original"
+    "node_modules/*"
   ],
   "ignoreUppercase": true,
   "ignoreUrls": true,
