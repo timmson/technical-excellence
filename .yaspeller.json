@@ -4,12 +4,6 @@
   "fileExtensions": [
     ".md"
   ],
-  "excludeFiles": [
-    ".git",
-    ".markdownlintrc",
-    "node_modules/*"
-  ],
-  "ignoreUppercase": true,
   "ignoreUrls": true,
   "ignoreCapitalization": true,
   "ignoreText": [],
@@ -24,6 +18,7 @@
     "CanonPrinterMotor",
     "Cem",
     "ci",
+    "Clean Coders",
     "ClearCase",
     "Cockburn.*",
     "CppUTest",
@@ -108,6 +103,7 @@
     "внутрикомандн.*",
     "воркшоп.*",
     "Вуди",
+    "выстроит",
     "Гаус.*",
     "гемба",
     "гиковы.*",
@@ -120,6 +116,7 @@
     "Дейкстра",
     "Джез.*",
     "Дзидока",
+    "Дэвид.*",
     "Кайдзен.*",
     "Каннингем.*",
     "Кериевски.*",
